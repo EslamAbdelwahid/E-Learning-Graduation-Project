@@ -4,11 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.Json.Serialization;
 
 namespace E_Learning.GraduationProject.Core.Entities
 {
-    using System.Text.Json.Serialization;
-
     public class LanguageConcept : BaseEntity<int>
     {
         [JsonPropertyName("conceptId")]
@@ -17,19 +16,14 @@ namespace E_Learning.GraduationProject.Core.Entities
         [JsonPropertyName("languageId")]
         public int ProgrammingLanguageId { get; set; }
 
-        [JsonPropertyName("title")]
         public string Title { get; set; }
 
-        [JsonPropertyName("description")]
         public string? Description { get; set; }
 
-        [JsonPropertyName("orderIndex")]
         public int OrderIndex { get; set; }
 
-        [JsonPropertyName("estimatedHours")]
         public int? EstimatedHours { get; set; }
 
-        [JsonPropertyName("difficultyLevel")]
         public DifficultyLevel DifficultyLevel { get; set; }
 
         public ProgrammingLanguage ProgrammingLanguage { get; set; }

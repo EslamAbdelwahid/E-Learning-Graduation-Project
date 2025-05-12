@@ -2,6 +2,7 @@
 using AutoMapper;
 using E_Learning.GraduationProject.Core;
 using E_Learning.GraduationProject.Core.Mapping.ConceptResources;
+using E_Learning.GraduationProject.Core.Mapping.ProgrammingLanguages;
 using E_Learning.GraduationProject.Core.Service.Contract;
 using E_Learning.GraduationProject.Repository;
 using E_Learning.GraduationProject.Repository.Data;
@@ -13,7 +14,6 @@ namespace E_Learning.GraduationProject.APIs
 {
     public class Program
     {
-        // Test git
         public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
@@ -26,10 +26,11 @@ namespace E_Learning.GraduationProject.APIs
             builder.Services.AddSwaggerGen();
 
 
-            builder.Services.AddScoped<IConceptResourceService, ConceptResourceService>();
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-            builder.Services.AddScoped<ITrackService, TrackService>();
-            
+            builder.Services.AddScoped<IConceptResourceService, ConceptResourceService>();
+            builder.Services.AddScoped<IProgrammingLanguageService, ProgrammingLanguageService>();
+
+
             builder.Services.AddDbContext<AppDbContext>(options =>
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
@@ -37,6 +38,7 @@ namespace E_Learning.GraduationProject.APIs
 
 
             builder.Services.AddAutoMapper(M => M.AddProfile(new ConceptResourceProfile()));
+            builder.Services.AddAutoMapper(M => M.AddProfile(new ProgrammingLanguageProfile()));
 
             var app = builder.Build();
 
@@ -73,7 +75,7 @@ namespace E_Learning.GraduationProject.APIs
 
             app.UseHttpsRedirection();
 
-            
+
             app.UseAuthorization();
 
 

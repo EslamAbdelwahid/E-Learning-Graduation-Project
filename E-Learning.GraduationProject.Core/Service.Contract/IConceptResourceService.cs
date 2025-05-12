@@ -16,10 +16,10 @@ namespace E_Learning.GraduationProject.Core.Service.Contract
         Task<ConceptResourceDto?> GetResourceByIdAsync(int resourceId);
 
         Task<ConceptResourceDto?> CreateResourceAsync(ConceptResourceDto model);
-                            
-        Task<ConceptResourceDto> UpdateResourceAsync(ConceptResourceDto model);
 
-        Task DeleteResourceAsync(ConceptResourceDto model);
+        Task<ConceptResourceDto?> UpdateResourceAsync(ConceptResourceDto model);
+
+        Task<int> DeleteResourceAsync(ConceptResourceDto model);
 
 
 

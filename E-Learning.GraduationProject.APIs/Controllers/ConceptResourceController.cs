@@ -68,7 +68,8 @@ namespace E_Learning.GraduationProject.APIs.Controllers
             if (resourceId is null) return BadRequest();
             var resource = await _resourceService.GetResourceByIdAsync(resourceId.Value);
             if (resource is null) return NotFound();
-            await _resourceService.DeleteResourceAsync(resource);
+            var result = await _resourceService.DeleteResourceAsync(resource);
+            if (result == 0) return BadRequest("the resource not deleted");
             return Ok();
         }
 

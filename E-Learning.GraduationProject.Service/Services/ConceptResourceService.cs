@@ -47,21 +47,22 @@ namespace E_Learning.GraduationProject.Service.Services
         public async Task<ConceptResourceDto?> CreateResourceAsync(ConceptResourceDto model)
         {
             await _unitOfWork.Repository<ConceptResource, int>().AddAsync(_mapper.Map<ConceptResource>(model));
-            return model;
+            var res = await _unitOfWork.CompleteAsync();
+            return res > 0 ? model : null;
         }
 
-        public async Task DeleteResourceAsync(ConceptResourceDto model)
+        public async Task<int> DeleteResourceAsync(ConceptResourceDto model)
         {
             _unitOfWork.Repository<ConceptResource, int>().Delete(_mapper.Map<ConceptResource>(model));
+            return await _unitOfWork.CompleteAsync();
         }
 
-        public async Task<ConceptResourceDto> UpdateResourceAsync(ConceptResourceDto model)
+        public async Task<ConceptResourceDto?> UpdateResourceAsync(ConceptResourceDto model)
         {
-
             _unitOfWork.Repository<ConceptResource, int>().Update(_mapper.Map<ConceptResource>(model));
+            var res = await _unitOfWork.CompleteAsync();
 
-            return model ;
-
+            return res > 0 ? model : null;
         }
     }
 }

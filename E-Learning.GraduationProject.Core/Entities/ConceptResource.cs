@@ -9,8 +9,8 @@ namespace E_Learning.GraduationProject.Core.Entities
         public override int Id { get; set; }
         public string Title { get; set; }
 
-        public int LanguageConceptId { get; set; }
-        public LanguageConcept LanguageConcept { get; set; }
+        public int? LanguageConceptId { get; set; }
+        public LanguageConcept? LanguageConcept { get; set; }
 
         public string Url { get; set; }
 

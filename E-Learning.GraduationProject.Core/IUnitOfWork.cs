@@ -12,6 +12,6 @@ namespace E_Learning.GraduationProject.Core
     {
         Task<int> CompleteAsync();
 
-        IGenericRepository<TEntity,TKey> Repository<TEntity, TKey>() where TEntity : BaseEntity<TKey>;
+        IGenericRepository<TEntity, TKey> Repository<TEntity, TKey>() where TEntity : BaseEntity<TKey>;
     }
 }
