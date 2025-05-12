@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace E_Learning.GraduationProject.Repository.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250510173408_Initial")]
+    [Migration("20250512123827_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -29,7 +29,8 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasAnnotation("Relational:JsonPropertyName", "ResourceId");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
@@ -39,7 +40,7 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<int>("LanguageConceptId")
+                    b.Property<int?>("LanguageConceptId")
                         .HasColumnType("int");
 
                     b.Property<string>("ResourceType")
@@ -152,7 +153,8 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasAnnotation("Relational:JsonPropertyName", "conceptId");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
@@ -176,7 +178,8 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("ProgrammingLanguageId")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasAnnotation("Relational:JsonPropertyName", "languageId");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -261,7 +264,8 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasAnnotation("Relational:JsonPropertyName", "languageId");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
@@ -274,7 +278,8 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
 
                     b.Property<string>("Difficulty")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasAnnotation("Relational:JsonPropertyName", "DifficultyLevel");
 
                     b.Property<string>("IconUrl")
                         .IsRequired()
@@ -296,46 +301,6 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("ProgrammingLanguages");
-                });
-
-            modelBuilder.Entity("E_Learning.GraduationProject.Core.Entities.SpecializationTrack", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTimeOffset>("CreatedAt")
-                        .HasColumnType("datetimeoffset");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("EstimatedCompletionWeeks")
-                        .HasColumnType("int");
-
-                    b.Property<string>("IconUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTimeOffset?>("UpdatedAt")
-                        .HasColumnType("datetimeoffset");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("SpecializationTracks");
                 });
 
             modelBuilder.Entity("E_Learning.GraduationProject.Core.Entities.StepResource", b =>
@@ -429,6 +394,46 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
                     b.ToTable("UserProgresses");
                 });
 
+            modelBuilder.Entity("E_Learning.GraduationProject.Core.Entities.Track", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTimeOffset>("CreatedAt")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("EstimatedCompletionWeeks")
+                        .HasColumnType("int");
+
+                    b.Property<string>("IconUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTimeOffset?>("UpdatedAt")
+                        .HasColumnType("datetimeoffset");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Tracks");
+                });
+
             modelBuilder.Entity("E_Learning.GraduationProject.Core.Entities.TrackStep", b =>
                 {
                     b.Property<int>("Id")
@@ -455,19 +460,19 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
                     b.Property<int>("OrderIndex")
                         .HasColumnType("int");
 
-                    b.Property<int>("SpecializationTrackId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TrackId")
+                        .HasColumnType("int");
 
                     b.Property<DateTimeOffset?>("UpdatedAt")
                         .HasColumnType("datetimeoffset");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("SpecializationTrackId");
+                    b.HasIndex("TrackId");
 
                     b.ToTable("TrackSteps");
                 });
@@ -476,9 +481,7 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
                 {
                     b.HasOne("E_Learning.GraduationProject.Core.Entities.LanguageConcept", "LanguageConcept")
                         .WithMany("Resources")
-                        .HasForeignKey("LanguageConceptId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("LanguageConceptId");
 
                     b.Navigation("LanguageConcept");
                 });
@@ -529,13 +532,13 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
 
             modelBuilder.Entity("E_Learning.GraduationProject.Core.Entities.TrackStep", b =>
                 {
-                    b.HasOne("E_Learning.GraduationProject.Core.Entities.SpecializationTrack", "SpecializationTrack")
+                    b.HasOne("E_Learning.GraduationProject.Core.Entities.Track", "Track")
                         .WithMany("TrackSteps")
-                        .HasForeignKey("SpecializationTrackId")
+                        .HasForeignKey("TrackId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("SpecializationTrack");
+                    b.Navigation("Track");
                 });
 
             modelBuilder.Entity("E_Learning.GraduationProject.Core.Entities.Identity.Student", b =>
@@ -555,7 +558,7 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
                     b.Navigation("Concepts");
                 });
 
-            modelBuilder.Entity("E_Learning.GraduationProject.Core.Entities.SpecializationTrack", b =>
+            modelBuilder.Entity("E_Learning.GraduationProject.Core.Entities.Track", b =>
                 {
                     b.Navigation("TrackSteps");
                 });

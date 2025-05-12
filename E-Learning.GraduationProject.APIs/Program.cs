@@ -30,7 +30,7 @@ namespace E_Learning.GraduationProject.APIs
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddScoped<IConceptResourceService, ConceptResourceService>();
             builder.Services.AddScoped<IProgrammingLanguageService, ProgrammingLanguageService>();
-            builder.Services.AddScoped<ITrackService, TrackService>();
+            builder.Services.AddScoped<ITrackService, TrackService>();  
 
             builder.Services.AddDbContext<AppDbContext>(options =>
             {

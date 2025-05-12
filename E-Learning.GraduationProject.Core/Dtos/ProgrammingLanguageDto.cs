@@ -18,7 +18,7 @@ namespace E_Learning.GraduationProject.Core.Dtos
 
         public string IconUrl { get; set; }
         
-        public DifficultyLevel Difficulty { get; set; }
+        public string Difficulty { get; set; }
 
         public bool IsActive { get; set; }
 

@@ -43,22 +43,35 @@ namespace E_Learning.GraduationProject.Service.Services
 
         public async Task<ProgrammingLanguageDto?> CreateProgrammingLanguageAsync(ProgrammingLanguageDto model)
         {
-            await _unitOfWork.Repository<ProgrammingLanguage, int>().AddAsync(_mapper.Map<ProgrammingLanguage>(model));
+            var entity = _mapper.Map<ProgrammingLanguage>(model);
+
+            await _unitOfWork.Repository<ProgrammingLanguage, int>().AddAsync(entity);
+
             var res  = await _unitOfWork.CompleteAsync();
-            
-            return res >0 ? model : null;
+
+            // this remap add any database generated values (createdAt or PK id) to the Dto 
+            return res > 0 ? _mapper.Map<ProgrammingLanguageDto>(entity) : null;
         }
 
         public async Task<ProgrammingLanguageDto?> UpdateProgrammingLanguageAsync(ProgrammingLanguageDto model)
         {
-            _unitOfWork.Repository<ProgrammingLanguage, int>().Update(_mapper.Map<ProgrammingLanguage>(model));
+            var entity = _mapper.Map<ProgrammingLanguage>(model);
+
+            _unitOfWork.Repository<ProgrammingLanguage, int>().Update(entity);
+
             var res = await _unitOfWork.CompleteAsync();
-            return res > 0 ? model : null;
+
+            return res > 0 ? _mapper.Map<ProgrammingLanguageDto>(entity) : null;
         }
 
-        public async Task<int> DeleteAsync(ProgrammingLanguageDto model)
+        public async Task<int> DeleteAsync(int id)
         {
-            _unitOfWork.Repository<ProgrammingLanguage, int>().Delete(_mapper.Map<ProgrammingLanguage>(model));
+            var entity = await _unitOfWork.Repository<ProgrammingLanguage, int>().GetByIdAsync(id);
+
+            if (entity is null) return 0;
+
+            _unitOfWork.Repository<ProgrammingLanguage, int>().Delete(entity);
+
             return await _unitOfWork.CompleteAsync();
         }
 
