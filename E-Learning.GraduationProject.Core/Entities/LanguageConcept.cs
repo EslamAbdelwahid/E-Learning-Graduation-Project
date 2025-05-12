@@ -16,7 +16,7 @@ namespace E_Learning.GraduationProject.Core.Entities
         [JsonPropertyName("languageId")]
         public int ProgrammingLanguageId { get; set; }
 
-        public string Title { get; set; }
+        public string? Title { get; set; }
 
         public string? Description { get; set; }
 

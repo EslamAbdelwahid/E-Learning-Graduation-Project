@@ -1,4 +1,4 @@
-﻿using E_Learning.GraduationProject.Core.Dtos;
+﻿using E_Learning.GraduationProject.Core.Dtos.Resources;
 using E_Learning.GraduationProject.Core.Entities;
 using E_Learning.GraduationProject.Core.Service.Contract;
 using Microsoft.AspNetCore.Http;
@@ -18,9 +18,8 @@ namespace E_Learning.GraduationProject.APIs.Controllers
             _resourceService = resourceService;
         }
 
-        // not tested yet
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ConceptResourceDto>>> GetAllResources()
+        public async Task<ActionResult<IEnumerable<ConceptResourceToReturn>>> GetAllResources()
         {
             var resources = await _resourceService.GetAllResourcesAsync();
             if (resources is null) return NotFound();
@@ -29,7 +28,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<ConceptResourceDto>> GetResourceById(int? id)
+        public async Task<ActionResult<ConceptResourceToReturn>> GetResourceById(int? id)
         {
             if (id is null) return BadRequest();
 
@@ -40,7 +39,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         }
 
         [HttpGet("{conceptId}/Resources")]
-        public async Task<ActionResult<IEnumerable<ConceptResourceDto>>> GetAllResourcesForSpecificConcept(int? conceptId)
+        public async Task<ActionResult<IEnumerable<ConceptResourceToReturn>>> GetAllResourcesForSpecificConcept(int? conceptId)
         {
             if (conceptId is null) return BadRequest();
 
@@ -52,7 +51,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<ConceptResourceDto>> CreateResource(ConceptResourceDto model)
+        public async Task<ActionResult<ConceptResourceToReturn>> CreateResource(ConceptResourceDto model)
         {
             var resource = await _resourceService.CreateResourceAsync(model);
 
@@ -66,15 +65,16 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         public async Task<IActionResult> DeleteResource(int? resourceId)
         {
             if (resourceId is null) return BadRequest();
-            var resource = await _resourceService.GetResourceByIdAsync(resourceId.Value);
-            if (resource is null) return NotFound();
-            var result = await _resourceService.DeleteResourceAsync(resource);
-            if (result == 0) return BadRequest("the resource not deleted");
+
+            var result = await _resourceService.DeleteResourceAsync(resourceId.Value);
+
+            if (result == 0) return BadRequest("Failed to Delete");
+
             return Ok();
         }
 
         [HttpPut]
-        public async Task<ActionResult<ConceptResourceDto>> UpdateResource(ConceptResourceDto model)
+        public async Task<ActionResult<ConceptResourceToReturn>> UpdateResource(ConceptResourceDto model)
         {
             var resource = await _resourceService.UpdateResourceAsync(model);
 

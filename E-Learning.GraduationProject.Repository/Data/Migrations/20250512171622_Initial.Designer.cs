@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace E_Learning.GraduationProject.Repository.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250512123827_Initial")]
+    [Migration("20250512171622_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -182,7 +182,6 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
                         .HasAnnotation("Relational:JsonPropertyName", "languageId");
 
                     b.Property<string>("Title")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTimeOffset?>("UpdatedAt")

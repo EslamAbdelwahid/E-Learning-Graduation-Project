@@ -58,10 +58,6 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         {
             if (id is null) return BadRequest();
 
-            var entity = await _programmingLanguageService.GetProgrammingLanguageByIdAsync(id.Value);
-
-            if (entity is null) return NotFound();
-
             var result = await _programmingLanguageService.DeleteAsync(id.Value);
 
             if (result == 0 ) return BadRequest("Failed to delete");

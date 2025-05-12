@@ -1,4 +1,4 @@
-﻿using E_Learning.GraduationProject.Core.Dtos;
+﻿using E_Learning.GraduationProject.Core.Dtos.Resources;
 using E_Learning.GraduationProject.Core.Entities;
 using System;
 using System.Collections.Generic;
@@ -11,15 +11,15 @@ namespace E_Learning.GraduationProject.Core.Service.Contract
     public interface IConceptResourceService
     {
         // pagination ToDo
-        Task<IEnumerable<ConceptResourceDto>?> GetAllResourcesAsync();
-        Task<IEnumerable<ConceptResourceDto>?> GetAllResourcesForSpecificConceptAsync(int conceptId);
-        Task<ConceptResourceDto?> GetResourceByIdAsync(int resourceId);
+        Task<IEnumerable<ConceptResourceToReturn>?> GetAllResourcesAsync();
+        Task<IEnumerable<ConceptResourceToReturn>?> GetAllResourcesForSpecificConceptAsync(int conceptId);
+        Task<ConceptResourceToReturn?> GetResourceByIdAsync(int resourceId);
 
-        Task<ConceptResourceDto?> CreateResourceAsync(ConceptResourceDto model);
+        Task<ConceptResourceToReturn?> CreateResourceAsync(ConceptResourceDto model);
 
-        Task<ConceptResourceDto?> UpdateResourceAsync(ConceptResourceDto model);
+        Task<ConceptResourceToReturn?> UpdateResourceAsync(ConceptResourceDto model);
 
-        Task<int> DeleteResourceAsync(ConceptResourceDto model);
+        Task<int> DeleteResourceAsync(int id);
 
 
 

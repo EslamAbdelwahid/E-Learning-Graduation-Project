@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using E_Learning.GraduationProject.Core;
-using E_Learning.GraduationProject.Core.Dtos;
+using E_Learning.GraduationProject.Core.Dtos.Resources;
 using E_Learning.GraduationProject.Core.Entities;
 using E_Learning.GraduationProject.Core.Service.Contract;
 using E_Learning.GraduationProject.Core.Specifications.ConceptResources;
@@ -28,41 +28,52 @@ namespace E_Learning.GraduationProject.Service.Services
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<ConceptResourceDto>?> GetAllResourcesAsync()
+        public async Task<IEnumerable<ConceptResourceToReturn>?> GetAllResourcesAsync()
         {
-            return _mapper.Map<IEnumerable<ConceptResourceDto>>(await _unitOfWork.Repository<ConceptResource, int>().GetAllAsync());
+            return _mapper.Map<IEnumerable<ConceptResourceToReturn>>(await _unitOfWork.Repository<ConceptResource, int>().GetAllAsync());
         }
-        public async Task<ConceptResourceDto?> GetResourceByIdAsync(int resourceId)
+        public async Task<ConceptResourceToReturn?> GetResourceByIdAsync(int resourceId)
         {
-            return _mapper.Map<ConceptResourceDto>(await _unitOfWork.Repository<ConceptResource, int>().GetByIdAsync(resourceId));
+            return _mapper.Map<ConceptResourceToReturn>(await _unitOfWork.Repository<ConceptResource, int>().GetByIdAsync(resourceId));
         }
 
-        public async Task<IEnumerable<ConceptResourceDto>?> GetAllResourcesForSpecificConceptAsync(int conceptId)
+        public async Task<IEnumerable<ConceptResourceToReturn>?> GetAllResourcesForSpecificConceptAsync(int conceptId)
         {
             var spec = new ConceptResourceSpecifications(conceptId);
             var resources = await _unitOfWork.Repository<ConceptResource, int>().GetAllWithSpecAsync(spec);
-            return _mapper.Map<IEnumerable<ConceptResourceDto>>(resources);
+            return _mapper.Map<IEnumerable<ConceptResourceToReturn>>(resources);
         }
 
-        public async Task<ConceptResourceDto?> CreateResourceAsync(ConceptResourceDto model)
+        public async Task<ConceptResourceToReturn?> CreateResourceAsync(ConceptResourceDto model)
         {
-            await _unitOfWork.Repository<ConceptResource, int>().AddAsync(_mapper.Map<ConceptResource>(model));
+            var entity = _mapper.Map<ConceptResource>(model);
+
+            await _unitOfWork.Repository<ConceptResource, int>().AddAsync(entity);
+
             var res = await _unitOfWork.CompleteAsync();
-            return res > 0 ? model : null;
+
+            return res > 0 ? _mapper.Map<ConceptResourceToReturn>(entity) : null;
         }
 
-        public async Task<int> DeleteResourceAsync(ConceptResourceDto model)
+        public async Task<int> DeleteResourceAsync(int id)
         {
-            _unitOfWork.Repository<ConceptResource, int>().Delete(_mapper.Map<ConceptResource>(model));
+            var resource = await _unitOfWork.Repository<ConceptResource, int>().GetByIdAsync(id);
+
+            if (resource is null) return 0; 
+
+            _unitOfWork.Repository<ConceptResource, int>().Delete(resource);
             return await _unitOfWork.CompleteAsync();
         }
 
-        public async Task<ConceptResourceDto?> UpdateResourceAsync(ConceptResourceDto model)
+        public async Task<ConceptResourceToReturn?> UpdateResourceAsync(ConceptResourceDto model)
         {
-            _unitOfWork.Repository<ConceptResource, int>().Update(_mapper.Map<ConceptResource>(model));
+            var entity = _mapper.Map<ConceptResource>(model);
+
+            _unitOfWork.Repository<ConceptResource, int>().Update(entity);
+
             var res = await _unitOfWork.CompleteAsync();
 
-            return res > 0 ? model : null;
+            return res > 0 ? _mapper.Map<ConceptResourceToReturn>(entity) : null;
         }
     }
 }

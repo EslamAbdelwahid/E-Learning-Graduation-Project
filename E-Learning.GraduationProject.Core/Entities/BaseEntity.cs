@@ -8,8 +8,9 @@ namespace E_Learning.GraduationProject.Core.Entities
 {
     public class BaseEntity<TKey>
     {
+        
         public virtual TKey Id { get; set; }
-        public DateTimeOffset CreatedAt { get; set; } = DateTimeOffset.UtcNow;
+        public DateTimeOffset CreatedAt { get; set; } = DateTimeOffset.Now;
         public DateTimeOffset? UpdatedAt { get; set; }
         public bool IsDeleted { get; set; }
 

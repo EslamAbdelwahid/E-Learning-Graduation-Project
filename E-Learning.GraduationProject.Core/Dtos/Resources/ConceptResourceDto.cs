@@ -7,17 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace E_Learning.GraduationProject.Core.Dtos
+namespace E_Learning.GraduationProject.Core.Dtos.Resources
 {
     public class ConceptResourceDto
     {
-        public int Id { get; set; }
 
         public string Title { get; set; }
 
-        
         public int? LanguageConceptId { get; set; }
-
 
         public string? ConceptName { get; set; } //languageConcept Title
 
@@ -27,6 +24,5 @@ namespace E_Learning.GraduationProject.Core.Dtos
 
         public int TotalDurationMinutes { get; set; }
 
-        public DateTimeOffset? CreatedAt { get; set; } 
     }
 }

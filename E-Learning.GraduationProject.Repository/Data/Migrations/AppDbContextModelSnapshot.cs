@@ -179,7 +179,6 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
                         .HasAnnotation("Relational:JsonPropertyName", "languageId");
 
                     b.Property<string>("Title")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTimeOffset?>("UpdatedAt")
