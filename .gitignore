@@ -1,0 +1,27 @@
+# Ignore Visual Studio temporary files
+.vs/
+*.user
+*.suo
+_ReSharper*/
+*.csproj.user
+
+# Ignore build output
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+
+# Ignore NuGet packages
+packages/
+*.nupkg
+
+# Ignore macOS / Windows temp files
+.DS_Store
+Thumbs.db
+
+# Optional: Ignore local settings and logs
+*.log
+*.cache
+*.sql
+*.sqlite
+*.tmp

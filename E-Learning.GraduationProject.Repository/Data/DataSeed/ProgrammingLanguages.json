@@ -1,0 +1,18 @@
+[
+  {
+    "languageId": 2,
+    "name": "Python",
+    "description": "An interpreted, high-level, general-purpose programming language known for its readability and versatility. Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming.",
+    "iconUrl": "/Images/Languages/python-original.svg",
+    "DifficultyLevel": "Basic",
+    "isActive": true
+  },
+  {
+    "languageId": 3,
+    "name": "C#",
+    "description": "A general-purpose, multi-paradigm programming language developed by Microsoft. C# encompasses static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented, and component-oriented programming disciplines.",
+    "iconUrl": "/Images/Languages/csharp-original.svg",
+    "DifficultyLevel": "Intermediate",
+    "isActive": true
+  }
+]

@@ -1,0 +1,877 @@
+[
+  {
+    "ResourceId": 189,
+    "Title": "شرح بايثون - تعلم لغة بايثون و اهمية تعلم البرمجة بلغة بايثون؟",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "ConceptId": null,
+    "Url": "https://www.youtube.com/watch?v=h3VCQjyaLws"
+  },
+  {
+    "ResourceId": 190,
+    "Title": "مقدمة كورس تعلم بايثون و اجابة الاسئلة الشائعة - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 14,
+    "ConceptId": null,
+    "Url": "https://www.youtube.com/watch?v=t-bCLbmgesI"
+  },
+  {
+    "ResourceId": 191,
+    "Title": "#00 تثبيت و تنصيب بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "ConceptId": null,
+    "Url": "https://www.youtube.com/watch?v=WTRKeSoynKI"
+  },
+  {
+    "ResourceId": 192,
+    "Title": "Install PyCharm - #01 تنصيب بايشارم - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 2,
+    "ConceptId": null,
+    "Url": "https://www.youtube.com/watch?v=SMyzYOPGeD8"
+  },
+  {
+    "ResourceId": 193,
+    "Title": "#02 كتابة اول سطر كود في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 1,
+    "ConceptId": null,
+    "Url": "https://www.youtube.com/watch?v=oMMW_Cx0qW8"
+  },
+  {
+    "ResourceId": 194,
+    "Title": "#03 بناء اول برنامج في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "ConceptId": null,
+    "Url": "https://www.youtube.com/watch?v=Vl1mHJMrEnk"
+  },
+  {
+    "ResourceId": 195,
+    "Title": "Python Variables - #04 المتغيرات في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 10,
+    "ConceptId": 1,
+    "Url": "https://www.youtube.com/watch?v=gQxch0k9B0E"
+  },
+  {
+    "ResourceId": 196,
+    "Title": "Python Strings - #05 السلاسل في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 10,
+    "ConceptId": 1,
+    "Url": "https://www.youtube.com/watch?v=5O_m0IGwQLw"
+  },
+  {
+    "ResourceId": 197,
+    "Title": "Python Numbers - #06 الارقام في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "ConceptId": 1,
+    "Url": "https://www.youtube.com/watch?v=HjfiVp0L3LI"
+  },
+  {
+    "ResourceId": 198,
+    "Title": "Python Inputs - #07 المدخلات في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "ConceptId": 1,
+    "Url": "https://www.youtube.com/watch?v=bWE45B_O9Lk"
+  },
+  {
+    "ResourceId": 199,
+    "Title": "Build Calculator in Python - #08 بناء اله حاسبه في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "ConceptId": 1,
+    "Url": "https://www.youtube.com/watch?v=hYC0ObXfGjs"
+  },
+  {
+    "ResourceId": 200,
+    "Title": "Build MadLibs in Python - #09 بناء تطبيق في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 2,
+    "ConceptId": 1,
+    "Url": "https://www.youtube.com/watch?v=N57Xvo8ilMw"
+  },
+  {
+    "ResourceId": 201,
+    "Title": "Python Lists - #10 القوائم في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "ConceptId": 3,
+    "Url": "https://www.youtube.com/watch?v=EgwCjNCx_v4"
+  },
+  {
+    "ResourceId": 202,
+    "Title": "Python Lists 2 - #11 القوائم في بايثون ٢ - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 10,
+    "ConceptId": 3,
+    "Url": "https://www.youtube.com/watch?v=SGp9syExKxk"
+  },
+  {
+    "ResourceId": 203,
+    "Title": "Python Tuples - #12 القوائم الثابتة في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "ConceptId": 3,
+    "Url": "https://www.youtube.com/watch?v=PNMSop-0kwM"
+  },
+  {
+    "ResourceId": 204,
+    "Title": "Python Functions - #13 الدوال في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "ConceptId": 5,
+    "Url": "https://www.youtube.com/watch?v=b4AEoHvCD_A"
+  },
+  {
+    "ResourceId": 205,
+    "Title": "Python Functions 2 - #14 الدوال في بايثون ٢ - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "ConceptId": 5,
+    "Url": "https://www.youtube.com/watch?v=HjiAlW4fbRw"
+  },
+  {
+    "ResourceId": 206,
+    "Title": "Python Conditionals - #15 الادوات الشرطية في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 13,
+    "ConceptId": 2,
+    "Url": "https://www.youtube.com/watch?v=IT1C46MDoxo"
+  },
+  {
+    "ResourceId": 207,
+    "Title": "Python Comparisons - #16 المقارنات في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "ConceptId": 2,
+    "Url": "https://www.youtube.com/watch?v=WCN4GDOZitU"
+  },
+  {
+    "ResourceId": 208,
+    "Title": "Build Calculator in Python 2 - #17 بناء اله حاسبه في بايثون ٢ - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "ConceptId": 2,
+    "Url": "https://www.youtube.com/watch?v=Vj8zWPW5kKg"
+  },
+  {
+    "ResourceId": 209,
+    "Title": "Python Dictionaries - #18 القواميس في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "ConceptId": 4,
+    "Url": "https://www.youtube.com/watch?v=mQ4AkeafCds"
+  },
+  {
+    "ResourceId": 210,
+    "Title": "Python While Loop - #19 الحلقات التكرارية في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 12,
+    "ConceptId": 2,
+    "Url": "https://www.youtube.com/watch?v=TXQSACBnvZ0"
+  },
+  {
+    "ResourceId": 211,
+    "Title": "Build a Snake game with Python | برمجة لعبة الثعبان بلغة بايثون | مشاريع بايثون | تعلم بايثون",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 72,
+    "ConceptId": 2,
+    "Url": "https://www.youtube.com/watch?v=NFqjO5z1jx0"
+  },
+  {
+    "ResourceId": 212,
+    "Title": "Python For Loop - #20 الحلقات التكرارية في بايثون ٢ - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 20,
+    "ConceptId": 2,
+    "Url": "https://www.youtube.com/watch?v=kXKcuqISXYo"
+  },
+  {
+    "ResourceId": 213,
+    "Title": "Python Sets - المجموعات في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 13,
+    "ConceptId": 4,
+    "Url": "https://www.youtube.com/watch?v=kp-LJqgJPmI"
+  },
+  {
+    "ResourceId": 214,
+    "Title": "Python Power() - #21 دالة الاس في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "ConceptId": 5,
+    "Url": "https://www.youtube.com/watch?v=muBnHp9JufE"
+  },
+  {
+    "ResourceId": 215,
+    "Title": "Python 2D Lists & Nested Loops - #22 قوائم ثنائية الابعاد في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 10,
+    "ConceptId": 3,
+    "Url": "https://www.youtube.com/watch?v=BXsVpjWKr2Q"
+  },
+  {
+    "ResourceId": 216,
+    "Title": "Python Comments - #23 التعليقات في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "ConceptId": null,
+    "Url": "https://www.youtube.com/watch?v=_5z9fX2vfDs"
+  },
+  {
+    "ResourceId": 217,
+    "Title": "Python Errors - #24 الاخطاء في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 9,
+    "ConceptId": 8,
+    "Url": "https://www.youtube.com/watch?v=jevAO7QlkQQ"
+  },
+  {
+    "ResourceId": 218,
+    "Title": "Python Reading Files - #25 قراءة الملفات في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 12,
+    "ConceptId": null,
+    "Url": "https://www.youtube.com/watch?v=ZCmdm-RuRFA"
+  },
+  {
+    "ResourceId": 219,
+    "Title": "Python Writing Files - #26 كتابة الملفات في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 11,
+    "ConceptId": null,
+    "Url": "https://www.youtube.com/watch?v=fVgRlbFAoeU"
+  },
+  {
+    "ResourceId": 220,
+    "Title": "Python Modules - #27 المكتبات في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 9,
+    "ConceptId": null,
+    "Url": "https://www.youtube.com/watch?v=Qj58RxZPw7c"
+  },
+  {
+    "ResourceId": 221,
+    "Title": "Python Classes & Objects - #28 الفئات و الكائنات في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 13,
+    "ConceptId": 7,
+    "Url": "https://www.youtube.com/watch?v=cqopVpEWvCc"
+  },
+  {
+    "ResourceId": 222,
+    "Title": "Python Class Functions - #29 دوال الفئات في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "ConceptId": 7,
+    "Url": "https://www.youtube.com/watch?v=ZaQgQN2HTGY"
+  },
+  {
+    "ResourceId": 223,
+    "Title": "Python Class Inheritance - #30 الوراثة في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "ConceptId": 7,
+    "Url": "https://www.youtube.com/watch?v=93_JLg55jGM"
+  },
+  {
+    "ResourceId": 224,
+    "Title": "Python Pong Game - مشاريع بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 66,
+    "ConceptId": 7,
+    "Url": "https://www.youtube.com/watch?v=xzuguCSizWw"
+  },
+  {
+    "ResourceId": 225,
+    "Title": "Python Object Oriented Programming - شرح للبرمجة كائنية التوجه في بايثون",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 161,
+    "ConceptId": 7,
+    "Url": "https://www.youtube.com/watch?v=A9kSngn7254"
+  },
+  {
+    "ResourceId": 226,
+    "Title": "OOP project Python | Build Tic Tac Toe - مشروع بايثون",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 124,
+    "ConceptId": 7,
+    "Url": "https://www.youtube.com/watch?v=GCYYkOSKj80"
+  },
+  {
+    "ResourceId": 227,
+    "Title": "Python Special/Dunder Methods - الدوال الخاصة في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 40,
+    "ConceptId": 7,
+    "Url": "https://www.youtube.com/watch?v=8BCN8gXbBY8"
+  },
+  {
+    "ResourceId": 228,
+    "Title": "Web Scraping with Python Beautiful Soup - مشاريع بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 75,
+    "ConceptId": null,
+    "Url": "https://www.youtube.com/watch?v=q0ert5YP968"
+  },
+  {
+    "ResourceId": 229,
+    "Title": "How to Convert a Python File to .EXE - تحويل ملف بايثون الي برنامج كامل",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "ConceptId": null,
+    "Url": "https://www.youtube.com/watch?v=OM0qcZRIfSg"
+  },
+  {
+    "ResourceId": 230,
+    "Title": "Python *args - Python args, kwargs & unpacking operators - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 11,
+    "ConceptId": 5,
+    "Url": "https://www.youtube.com/watch?v=qXpjgykUxgM"
+  },
+  {
+    "ResourceId": 231,
+    "Title": "Python **kwargs - Python args, kwargs & unpacking operators - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 19,
+    "ConceptId": 5,
+    "Url": "https://www.youtube.com/watch?v=PhnPgml7O30"
+  },
+  {
+    "ResourceId": 232,
+    "Title": "Python unpacking operators - Python args, kwargs & unpacking operators - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 15,
+    "ConceptId": 5,
+    "Url": "https://www.youtube.com/watch?v=QLJn3fFsy1k"
+  },
+  {
+    "ResourceId": 233,
+    "Title": "Web Scraping with Python Beautiful Soup - تعلم استخراج البيانات من اي موقع على الانترنت",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 67,
+    "ConceptId": null,
+    "Url": "https://www.youtube.com/watch?v=taL3r_JpwBg"
+  },
+  {
+    "ResourceId": 234,
+    "Title": "Python Turtle Crash Course | بايثون - رسم وجه الرجل الحديدي خطوة بخطوة",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 43,
+    "ConceptId": null,
+    "Url": "https://www.youtube.com/watch?v=XK4PMXb056c"
+  },
+  {
+    "ResourceId": 235,
+    "Title": "Build To Do List Application with Python - بناء تطبيق المهام بلغة بايثون",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 137,
+    "ConceptId": null,
+    "Url": "https://www.youtube.com/watch?v=xNm6y8SYcs4"
+  },
+  {
+    "ResourceId": 236,
+    "Title": "الداتا كلاس في بايثون هيوفر عليك ساعات | OOP Python Data Class",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 36,
+    "ConceptId": 7,
+    "Url": "https://www.youtube.com/watch?v=HJkY_Bbiqcc"
+  },
+  {
+    "ResourceId": 237,
+    "Title": "Python Pytest - Python Testing Course | كورس اختبار البرمجيات في بايثون",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 56,
+    "ConceptId": 8,
+    "Url": "https://www.youtube.com/watch?v=y_j4TqS-I6A"
+  },
+
+
+
+
+
+
+
+  {
+    "ResourceId": 1,
+    "Title": "C# Fundamentals: 01- Introduction + VS Installation",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 19,
+    "ConceptId": null,
+    "Url": "https://www.youtube.com/watch?v=DZHohhJDjHk&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=1&pp=iAQB"
+  },
+  {
+    "ResourceId": 2,
+    "Title": "C# Fundamentals: 02- Solutions and Projects",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 19,
+    "ConceptId": null,
+    "Url": "https://www.youtube.com/watch?v=N61cLfMOKro&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=2&pp=iAQB"
+  },
+  {
+    "ResourceId": 3,
+    "Title": "C# Fundamentals: 03- Language Syntax",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 18,
+    "ConceptId": null,
+    "Url": "https://www.youtube.com/watch?v=ArvFgo9wM3M&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=3&pp=iAQB"
+  },
+  {
+    "ResourceId": 4,
+    "Title": "C# Fundamentals: 04- Writing to Console",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "ConceptId": null,
+    "Url": "https://www.youtube.com/watch?v=xP1vT4Qpw1w&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=4&pp=iAQB"
+  },
+  {
+    "ResourceId": 5,
+    "Title": "C# Fundamentals: 05- Variables",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 16,
+    "ConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=Mc74_yTAK3Y&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=5&pp=iAQB"
+  },
+  {
+    "ResourceId": 6,
+    "Title": "C# Fundamentals: 06- Boolean Data Type",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 15,
+    "ConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=TchQzL53Fs0&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=6&pp=iAQB"
+  },
+  {
+    "ResourceId": 7,
+    "Title": "C# Fundamentals: 07- Char Data Type",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 18,
+    "ConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=l0bYsUt6QCo&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=7&pp=iAQB"
+  },
+  {
+    "ResourceId": 8,
+    "Title": "C# Fundamentals: 08- String Data Type (Part 1)",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 19,
+    "ConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=XiS02cy6DVc&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=8&pp=iAQB"
+  },
+  {
+    "ResourceId": 9,
+    "Title": "C# Fundamentals: 09- String Data Type (Part 2)",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 28,
+    "ConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=AH7Z443r7UY&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=9&pp=iAQB"
+  },
+  {
+    "ResourceId": 10,
+    "Title": "C# Fundamentals: 10- Numeric Data Types",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 23,
+    "ConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=ufPlWRNOzu4&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=10&pp=iAQB"
+  },
+  {
+    "ResourceId": 11,
+    "Title": "C# Fundamentals: 11- Arithmetic Operators",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "ConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=O70v7hrtvKk&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=11&pp=iAQB"
+  },
+  {
+    "ResourceId": 12,
+    "Title": "C# Fundamentals: 12- Operator Precedence",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 13,
+    "ConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=I1W_dX3R3x8&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=12&pp=iAQB"
+  },
+  {
+    "ResourceId": 13,
+    "Title": "C# Fundamentals: 13- Assignment Operators",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "ConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=8eg1BJLByTg&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=13&pp=iAQB"
+  },
+  {
+    "ResourceId": 14,
+    "Title": "C# Fundamentals: 14- Increment & Decrement Operators",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "ConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=zIloB3AXn-E&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=14&pp=iAQB"
+  },
+  {
+    "ResourceId": 15,
+    "Title": "C# Fundamentals: 15- Comparison Operators",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 9,
+    "ConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=DRX5HaEqyOg&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=15&pp=iAQB"
+  },
+  {
+    "ResourceId": 16,
+    "Title": "أساسيات C#: 016- تحليل وتحويل النصوص",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "ConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=BEPC0xuuUNc&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=16&pp=iAQB"
+  },
+  {
+    "ResourceId": 17,
+    "Title": "C# Fundamentals: 17- Control Flow / If Statement",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 14,
+    "ConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=BgwbcCXDwsk&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=17&pp=iAQB"
+  },
+  {
+    "ResourceId": 18,
+    "Title": "C# Fundamentals: 18- Debugger Basics",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 16,
+    "ConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=MjhIB67NJzQ&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=18&pp=iAQB"
+  },
+  {
+    "ResourceId": 19,
+    "Title": "C# Fundamentals: 19- Arrays",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 21,
+    "ConceptId": 27,
+    "Url": "https://www.youtube.com/watch?v=6TYFPAQ1TC4&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=19&pp=iAQB"
+  },
+  {
+    "ResourceId": 20,
+    "Title": "C# Fundamentals: 20- For Loop",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 17,
+    "ConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=gsGk3RiT0pA&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=20&pp=iAQB"
+  },
+  {
+    "ResourceId": 21,
+    "Title": "C# Fundamentals: 21- Ternary Operator",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "ConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=R3aDuY5e1hM&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=21&pp=iAQB"
+  },
+  {
+    "ResourceId": 22,
+    "Title": "C# Fundamentals: 22- Foreach Loop",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "ConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=I5ZnOUD1Jgk&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=22&pp=iAQB"
+  },
+  {
+    "ResourceId": 23,
+    "Title": "C# Fundamentals: 23- For & Foreach Training",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 16,
+    "ConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=xYIj-5EYFdw&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=23&pp=iAQB0gcJCYYJAYcqIYzv"
+  },
+  {
+    "ResourceId": 24,
+    "Title": "C# Fundamentals: 24- Do & While Loops",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 11,
+    "ConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=ysV-0wzT-bQ&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=24&pp=iAQB"
+  },
+  {
+    "ResourceId": 25,
+    "Title": "C# Fundamentals: 25- Switch Statement",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 13,
+    "ConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=DdGNXHx-vbE&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=25&pp=iAQB"
+  },
+  {
+    "ResourceId": 26,
+    "Title": "C# Fundamentals: 26- Methods - Part 1",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 11,
+    "ConceptId": 29,
+    "Url": "https://www.youtube.com/watch?v=RRggnGHx5m4&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=26&pp=iAQB"
+  },
+  {
+    "ResourceId": 27,
+    "Title": "C# Fundamentals: 27- Methods - Part 2",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 16,
+    "ConceptId": 29,
+    "Url": "https://www.youtube.com/watch?v=VWqLyREBjSI&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=27&pp=iAQB"
+  },
+  {
+    "ResourceId": 28,
+    "Title": "C# Fundamentals: 28- Comments",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 18,
+    "ConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=wqfwQHc1KjE&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=28&pp=iAQB"
+  },
+  {
+    "ResourceId": 29,
+    "Title": "C# Fundamentals: 29- Training: Array Findings",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 11,
+    "ConceptId": 27,
+    "Url": "https://www.youtube.com/watch?v=IaKWdvMghrk&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=29&pp=iAQB"
+  },
+  {
+    "ResourceId": 30,
+    "Title": "C# Fundamentals: 30- Training: Palindrome Words",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "ConceptId": 29,
+    "Url": "https://www.youtube.com/watch?v=vC4LsUi1cBs&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=30&pp=iAQB"
+  },
+  {
+    "ResourceId": 31,
+    "Title": "C# Fundamentals: 31- Value Types & Reference Types",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 20,
+    "ConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=ZnrQCpeNLx4&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=31&pp=iAQB"
+  },
+  {
+    "ResourceId": 32,
+    "Title": "C# Fundamentals: 32- Type Casting",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 13,
+    "ConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=xIv8MADL37g&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=32&pp=iAQB"
+  },
+  {
+    "ResourceId": 33,
+    "Title": "C# Fundamentals: 33- String Formatting",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 12,
+    "ConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=H4xyzvUth44&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=33&pp=iAQB"
+  },
+  {
+    "ResourceId": 34,
+    "Title": "C# Fundamentals: 34- String Split & Join",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "ConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=MRjPfLAOi7c&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=34&pp=iAQB"
+  },
+  {
+    "ResourceId": 35,
+    "Title": "C# Fundamentals: 35- StringBuilder",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 16,
+    "ConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=M7CPJ-3Sny8&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=35&pp=iAQB"
+  },
+  {
+    "ResourceId": 36,
+    "Title": "C# Fundamentals: 36- Compilation Process",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 22,
+    "ConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=9i1k1JZJ7e8&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=36&pp=iAQB"
+  },
+  {
+    "ResourceId": 37,
+    "Title": "C# Fundamentals: 37- Classes & Objects",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 15,
+    "ConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=BSqEP9IjeSY&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=37&pp=iAQB"
+  },
+  {
+    "ResourceId": 38,
+    "Title": "C# Fundamentals: 38- Constructor",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 10,
+    "ConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=dwwPclPr1b4&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=38&pp=iAQB"
+  },
+  {
+    "ResourceId": 39,
+    "Title": "C# Fundamentals: 39- Properties",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 20,
+    "ConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=uMjwZ-dx2-w&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=39&pp=iAQB"
+  },
+  {
+    "ResourceId": 40,
+    "Title": "C# Fundamentals: 40- Namespaces",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 13,
+    "ConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=YatETfErO-4&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=40&pp=iAQB"
+  },
+  {
+    "ResourceId": 41,
+    "Title": "C# Fundamentals: 41- Access Modifiers",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 14,
+    "ConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=wYKn1V337MA&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=41&pp=iAQB"
+  },
+  {
+    "ResourceId": 42,
+    "Title": "C# Fundamentals: 42- Constants & Read-Only Variables",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 13,
+    "ConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=rMBP5v5IKDw&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=42&pp=iAQB"
+  },
+  {
+    "ResourceId": 43,
+    "Title": "C# Fundamentals: 43- Static Classes",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "ConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=ZXy10xiJJ8I&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=43&pp=iAQB"
+  },
+  {
+    "ResourceId": 44,
+    "Title": "C# Fundamentals: 44- Variable Scopes",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 9,
+    "ConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=pYsGZt8FfUw&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=44&pp=iAQB"
+  },
+  {
+    "ResourceId": 45,
+    "Title": "C# Fundamentals: 45- ref & out Keywords",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 20,
+    "ConceptId": 29,
+    "Url": "https://www.youtube.com/watch?v=pn1_K4p-gNU&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=45&pp=iAQB0gcJCYYJAYcqIYzv"
+  },
+  {
+    "ResourceId": 46,
+    "Title": "C# Fundamentals: 46- Exceptions",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 27,
+    "ConceptId": 32,
+    "Url": "https://www.youtube.com/watch?v=NWwdOvaCVoA&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=46&pp=iAQB"
+  },
+  {
+    "ResourceId": 47,
+    "Title": "C# Fundamentals: 47- Enums",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 24,
+    "ConceptId": 28,
+    "Url": "https://www.youtube.com/watch?v=3egRzd5F1Ds&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=47&pp=iAQB"
+  },
+  {
+    "ResourceId": 48,
+    "Title": "C# Fundamentals: 48- Flags Enums",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 25,
+    "ConceptId": 28,
+    "Url": "https://www.youtube.com/watch?v=a1IhR8JxnM4&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=48&pp=iAQB"
+  },
+  {
+    "ResourceId": 49,
+    "Title": "C# Fundamentals: 49- Training App: Random Values Generator",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 11,
+    "ConceptId": 28,
+    "Url": "https://www.youtube.com/watch?v=8AAwpLyQY8E&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=49&pp=iAQB"
+  },
+  {
+    "ResourceId": 50,
+    "Title": "C# Fundamentals: 50- Training App - File System Command Line",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 23,
+    "ConceptId": 28,
+    "Url": "https://www.youtube.com/watch?v=4V9IG_Tl1n0&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=50&pp=iAQB"
+  },
+  {
+    "ResourceId": 51,
+    "Title": "C# Fundamentals: 51- Simple Math Expression Evaluator",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 47,
+    "ConceptId": 28,
+    "Url": "https://www.youtube.com/watch?v=tx0eoGzpSZ4&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=51&pp=iAQB"
+  },
+  {
+    "ResourceId": 52,
+    "Title": "C# Fundamentals: 52- Abstract Classes",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 26,
+    "ConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=pGbpEsijkFI&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=52&pp=iAQB"
+  },
+  {
+    "ResourceId": 53,
+    "Title": "C# Fundamentals: 53- Virtual & Protected Members",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 11,
+    "ConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=k-j7N6UrhO8&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=53&pp=iAQB"
+  },
+  {
+    "ResourceId": 54,
+    "Title": "C# Fundamentals: 54- Member Hiding/Shadowing",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "ConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=pzePA7I1dNk&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=54&pp=iAQB"
+  },
+  {
+    "ResourceId": 55,
+    "Title": "C# Fundamentals: 55- Interfaces",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 38,
+    "ConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=IhkPu8rfZv8&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=55&pp=iAQB"
+  },
+  {
+    "ResourceId": 56,
+    "Title": "C# Fundamentals: 56- ArrayList",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 18,
+    "ConceptId": 28,
+    "Url": "https://www.youtube.com/watch?v=Qdhkb1xFxow&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=56&pp=iAQB0gcJCYYJAYcqIYzv"
+  },
+  {
+    "ResourceId": 57,
+    "Title": "C# Fundamentals: 57- Generic List & Dictionary",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 34,
+    "ConceptId": 28,
+    "Url": "https://www.youtube.com/watch?v=IwRPQMxG-ME&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=57&pp=iAQB"
+  },
+  {
+    "ResourceId": 58,
+    "Title": "C# Fundamentals: 58- Stack & Queue",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 27,
+    "ConceptId": 28,
+    "Url": "https://www.youtube.com/watch?v=oQxgTUZjLU8&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=58&pp=iAQB"
+  },
+  {
+    "ResourceId": 59,
+    "Title": "C# Fundamentals: 059- Training: Password Manager",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 30,
+    "ConceptId": 28,
+    "Url": "https://www.youtube.com/watch?v=ERh-5JkHdRQ&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=59&pp=iAQB"
+  }
+
+
+
+
+]

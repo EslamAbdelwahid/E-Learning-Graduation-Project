@@ -1,0 +1,152 @@
+[
+  
+  {
+    "conceptId": 1,
+    "title": "Data Types and Variables",
+    "difficultyLevel": "Basic",
+    "orderIndex": 1,
+    "estimatedHours": 2,
+    "description": "Understand Python's data types (numbers, strings, lists, tuples, dictionaries, sets) and variable assignment, including type hints.",
+    "languageId": 2
+  },
+  {
+    "conceptId": 2,
+    "title": "Loops and Control Flow",
+    "difficultyLevel": "Basic",
+    "orderIndex": 2,
+    "estimatedHours": 2,
+    "description": "Master Python's loop structures (for, while) and control flow (if/elif/else, match/case) with emphasis on Pythonic approaches.",
+    "languageId": 2
+  },
+  {
+    "conceptId": 3,
+    "title": "Lists and Arrays",
+    "difficultyLevel": "Basic",
+    "orderIndex": 3,
+    "estimatedHours": 3,
+    "description": "Work with Python lists, list comprehensions, and NumPy arrays for efficient data manipulation and processing.",
+    "languageId": 2
+  },
+  {
+    "conceptId": 4,
+    "title": "Data Structures",
+    "difficultyLevel": "Intermediate",
+    "orderIndex": 4,
+    "estimatedHours": 4,
+    "description": "Learn Python's built-in data structures (dictionaries, sets, tuples) and from the collections module (deque, Counter, defaultdict, OrderedDict).",
+    "languageId": 2
+  },
+  {
+    "conceptId": 5,
+    "title": "Functions and Methods",
+    "difficultyLevel": "Intermediate", 
+    "orderIndex": 5,
+    "estimatedHours": 3,
+    "description": "Define and use functions in Python, including arguments, return values, lambda functions, decorators, and method implementation.",
+    "languageId": 2
+  },
+  {
+    "conceptId": 6,
+    "title": "Recursion",
+    "difficultyLevel": "Advanced",
+    "orderIndex": 6,
+    "estimatedHours": 3,
+    "description": "Implement recursive solutions in Python, with attention to stack limitations and optimization techniques like memoization.",
+    "languageId": 2
+  },
+  {
+    "conceptId": 7,
+    "title": "Object-Oriented Programming",
+    "difficultyLevel": "Advanced",
+    "orderIndex": 7,
+    "estimatedHours": 5,
+    "description": "Master classes, objects, inheritance, polymorphism, encapsulation, and special methods (__init__, __str__, etc.) in Python.",
+    "languageId": 2
+  },
+  {
+    "conceptId": 8,
+    "title": "Exception Handling",
+    "difficultyLevel": "Intermediate",
+    "orderIndex": 8,
+    "estimatedHours": 3,
+    "description": "Learn to use try/except/else/finally blocks, raise exceptions, and create custom exception classes in Python.",
+    "languageId": 2
+  }, 
+
+
+
+
+
+  {
+    "conceptId": 25,
+    "title": "Data Types and Variables",
+    "difficultyLevel": "Basic",
+    "orderIndex": 1,
+    "estimatedHours": 3,
+    "description": "Understand C#'s type system including value types, reference types, nullable types, var keyword, and constants.",
+    "languageId": 3
+  },
+  {
+    "conceptId": 26,
+    "title": "Loops and Control Flow",
+    "difficultyLevel": "Basic",
+    "orderIndex": 2,
+    "estimatedHours": 3,
+    "description": "Master C#'s loop structures (for, foreach, while, do-while) and control flow statements (if/else, switch, pattern matching).",
+    "languageId": 3
+  },
+  {
+    "conceptId": 27,
+    "title": "Arrays and Collections",
+    "difficultyLevel": "Basic",
+    "orderIndex": 3,
+    "estimatedHours": 3,
+    "description": "Work with arrays, lists, and other collection types in C#, including initialization, manipulation, and LINQ operations.",
+    "languageId": 3
+  },
+  {
+    "conceptId": 28,
+    "title": "Data Structures",
+    "difficultyLevel": "Intermediate",
+    "orderIndex": 4,
+    "estimatedHours": 4,
+    "description": "Learn about C#'s collection types including List, Dictionary, Queue, Stack, and specialized collections in System.Collections.Generic.",
+    "languageId": 3
+  },
+  {
+    "conceptId": 29,
+    "title": "Methods and Functions",
+    "difficultyLevel": "Intermediate",
+    "orderIndex": 5,
+    "estimatedHours": 4,
+    "description": "Define and use methods in C# with various parameter types (ref, out, params), method overloading, lambda expressions, and extension methods.",
+    "languageId": 3
+  },
+  {
+    "conceptId": 30,
+    "title": "Recursion",
+    "difficultyLevel": "Advanced",
+    "orderIndex": 6,
+    "estimatedHours": 3,
+    "description": "Implement recursive algorithms in C#, including handling potential stack overflow issues and optimization techniques.",
+    "languageId": 3
+  },
+  {
+    "conceptId": 31,
+    "title": "Object-Oriented Programming",
+    "difficultyLevel": "Advanced",
+    "orderIndex": 7,
+    "estimatedHours": 6,
+    "description": "Master C# OOP concepts including classes, interfaces, inheritance, polymorphism, encapsulation, and C#-specific features like properties and events.",
+    "languageId": 3
+  },
+  {
+    "conceptId": 32,
+    "title": "Exception Handling",
+    "difficultyLevel": "Intermediate",
+    "orderIndex": 8,
+    "estimatedHours": 3,
+    "description": "Learn to use try/catch/finally blocks, the using statement, exception filters, and creating custom exceptions in C#.",
+    "languageId": 3
+  }
+]
