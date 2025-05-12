@@ -1,0 +1,13 @@
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+# Explicitly define line endings for specific file types
+*.cs    text eol=lf         # Keep .cs files with Unix-style line endings
+*.csproj text eol=crlf     # MSBuild prefers CRLF on Windows
+*.sln    text eol=crlf
+*.json   text eol=lf        # Config files often prefer LF
+*.yaml   text eol=lf
+*.yml    text eol=lf
+*.xml    text eol=crlf
+*.md     text eol=lf
+*.sql    text eol=lf
