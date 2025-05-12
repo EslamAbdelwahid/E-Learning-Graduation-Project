@@ -3,6 +3,7 @@ using AutoMapper;
 using E_Learning.GraduationProject.Core;
 using E_Learning.GraduationProject.Core.Mapping.ConceptResources;
 using E_Learning.GraduationProject.Core.Mapping.ProgrammingLanguages;
+using E_Learning.GraduationProject.Core.Mapping.Tracks;
 using E_Learning.GraduationProject.Core.Service.Contract;
 using E_Learning.GraduationProject.Repository;
 using E_Learning.GraduationProject.Repository.Data;
@@ -39,6 +40,7 @@ namespace E_Learning.GraduationProject.APIs
 
             builder.Services.AddAutoMapper(M => M.AddProfile(new ConceptResourceProfile()));
             builder.Services.AddAutoMapper(M => M.AddProfile(new ProgrammingLanguageProfile()));
+            builder.Services.AddAutoMapper(M => M.AddProfile(new TrackProfile()));
 
             var app = builder.Build();
 
