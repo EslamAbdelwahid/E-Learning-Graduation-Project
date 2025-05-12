@@ -19,7 +19,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         }
 
         // not tested yet
-        [HttpGet("AllResources")]
+        [HttpGet]
         public async Task<ActionResult<IEnumerable<ConceptResourceDto>>> GetAllResources()
         {
             var resources = await _resourceService.GetAllResourcesAsync();

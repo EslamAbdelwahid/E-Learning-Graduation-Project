@@ -16,7 +16,7 @@ namespace E_Learning.GraduationProject.Core.Service.Contract
         Task<ProgrammingLanguageDto?> GetProgrammingLanguageByIdAsync(int languageId);
         Task<ProgrammingLanguageDto?> CreateProgrammingLanguageAsync(ProgrammingLanguageDto model);
         Task<ProgrammingLanguageDto?> UpdateProgrammingLanguageAsync(ProgrammingLanguageDto model);
-        Task<int> DeleteAsync(ProgrammingLanguageDto model);
+        Task<int> DeleteAsync(int id);
 
 
     }

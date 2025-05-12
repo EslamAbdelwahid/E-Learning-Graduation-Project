@@ -18,7 +18,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
             _programmingLanguageService = programmingLanguageService;
         }
 
-        [HttpGet("ProgrammingLanguages")]
+        [HttpGet]
         public async Task<ActionResult<IEnumerable<ProgrammingLanguageDto>>> GetAllProgrammingLanguages()
         {
             var languages = await _programmingLanguageService.GetAllProgrammingLanguageAsync();
@@ -42,6 +42,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         {
             var programmingLanguage = await _programmingLanguageService.CreateProgrammingLanguageAsync(model);
             if (programmingLanguage is null) return BadRequest("Failed to create");
+
             return Ok(programmingLanguage);
 
         }
@@ -61,7 +62,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
 
             if (entity is null) return NotFound();
 
-            var result = await _programmingLanguageService.DeleteAsync(entity);
+            var result = await _programmingLanguageService.DeleteAsync(id.Value);
 
             if (result == 0 ) return BadRequest("Failed to delete");
 

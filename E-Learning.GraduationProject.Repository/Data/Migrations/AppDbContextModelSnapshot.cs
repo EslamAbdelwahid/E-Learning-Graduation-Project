@@ -37,7 +37,7 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<int>("LanguageConceptId")
+                    b.Property<int?>("LanguageConceptId")
                         .HasColumnType("int");
 
                     b.Property<string>("ResourceType")
@@ -159,24 +159,20 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)")
-                        .HasAnnotation("Relational:JsonPropertyName", "description");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("DifficultyLevel")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasAnnotation("Relational:JsonPropertyName", "difficultyLevel");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("EstimatedHours")
-                        .HasColumnType("int")
-                        .HasAnnotation("Relational:JsonPropertyName", "estimatedHours");
+                        .HasColumnType("int");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
                     b.Property<int>("OrderIndex")
-                        .HasColumnType("int")
-                        .HasAnnotation("Relational:JsonPropertyName", "orderIndex");
+                        .HasColumnType("int");
 
                     b.Property<int>("ProgrammingLanguageId")
                         .HasColumnType("int")
@@ -184,8 +180,7 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasAnnotation("Relational:JsonPropertyName", "title");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTimeOffset?>("UpdatedAt")
                         .HasColumnType("datetimeoffset");
@@ -483,9 +478,7 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
                 {
                     b.HasOne("E_Learning.GraduationProject.Core.Entities.LanguageConcept", "LanguageConcept")
                         .WithMany("Resources")
-                        .HasForeignKey("LanguageConceptId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("LanguageConceptId");
 
                     b.Navigation("LanguageConcept");
                 });

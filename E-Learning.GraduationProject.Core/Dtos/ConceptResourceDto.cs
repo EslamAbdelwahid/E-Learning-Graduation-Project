@@ -16,16 +16,17 @@ namespace E_Learning.GraduationProject.Core.Dtos
         public string Title { get; set; }
 
         
-        public int LanguageConceptId { get; set; }
+        public int? LanguageConceptId { get; set; }
 
-        public string ConceptName { get; set; }
+
+        public string? ConceptName { get; set; } //languageConcept Title
 
         public string Url { get; set; }
 
-        public ResourceType ResourceType { get; set; }
+        public string ResourceType { get; set; }
 
         public int TotalDurationMinutes { get; set; }
 
-        public DateTimeOffset CreatedAt { get; set; } 
+        public DateTimeOffset? CreatedAt { get; set; } 
     }
 }

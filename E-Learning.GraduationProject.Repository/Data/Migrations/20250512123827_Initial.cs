@@ -32,26 +32,6 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "SpecializationTracks",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    IconUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    EstimatedCompletionWeeks = table.Column<int>(type: "int", nullable: true),
-                    IsActive = table.Column<bool>(type: "bit", nullable: false),
-                    CreatedAt = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    UpdatedAt = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
-                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_SpecializationTracks", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Student",
                 columns: table => new
                 {
@@ -86,6 +66,26 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Tracks",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IconUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    EstimatedCompletionWeeks = table.Column<int>(type: "int", nullable: true),
+                    IsActive = table.Column<bool>(type: "bit", nullable: false),
+                    CreatedAt = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
+                    UpdatedAt = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Tracks", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "LanguageConcepts",
                 columns: table => new
                 {
@@ -108,33 +108,6 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
                         name: "FK_LanguageConcepts_ProgrammingLanguages_ProgrammingLanguageId",
                         column: x => x.ProgrammingLanguageId,
                         principalTable: "ProgrammingLanguages",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "TrackSteps",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    SpecializationTrackId = table.Column<int>(type: "int", nullable: false),
-                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    OrderIndex = table.Column<int>(type: "int", nullable: false),
-                    EstimatedHours = table.Column<int>(type: "int", nullable: true),
-                    IsRequired = table.Column<bool>(type: "bit", nullable: false),
-                    CreatedAt = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    UpdatedAt = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
-                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_TrackSteps", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_TrackSteps_SpecializationTracks_SpecializationTrackId",
-                        column: x => x.SpecializationTrackId,
-                        principalTable: "SpecializationTracks",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -169,13 +142,40 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "TrackSteps",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    TrackId = table.Column<int>(type: "int", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    OrderIndex = table.Column<int>(type: "int", nullable: false),
+                    EstimatedHours = table.Column<int>(type: "int", nullable: true),
+                    IsRequired = table.Column<bool>(type: "bit", nullable: false),
+                    CreatedAt = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
+                    UpdatedAt = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_TrackSteps", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_TrackSteps_Tracks_TrackId",
+                        column: x => x.TrackId,
+                        principalTable: "Tracks",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "ConceptResources",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LanguageConceptId = table.Column<int>(type: "int", nullable: false),
+                    LanguageConceptId = table.Column<int>(type: "int", nullable: true),
                     Url = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ResourceType = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TotalDurationMinutes = table.Column<int>(type: "int", nullable: false),
@@ -190,8 +190,7 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
                         name: "FK_ConceptResources_LanguageConcepts_LanguageConceptId",
                         column: x => x.LanguageConceptId,
                         principalTable: "LanguageConcepts",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -282,9 +281,9 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
                 column: "TrackStepId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_TrackSteps_SpecializationTrackId",
+                name: "IX_TrackSteps_TrackId",
                 table: "TrackSteps",
-                column: "SpecializationTrackId");
+                column: "TrackId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_UserProgresses_StudentId",
@@ -320,7 +319,7 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
                 name: "ProgrammingLanguages");
 
             migrationBuilder.DropTable(
-                name: "SpecializationTracks");
+                name: "Tracks");
         }
     }
 }
