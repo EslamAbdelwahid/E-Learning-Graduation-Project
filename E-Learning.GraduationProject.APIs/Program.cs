@@ -1,5 +1,6 @@
 
 using AutoMapper;
+using E_Learning.GraduationProject.APIs.Errors;
 using E_Learning.GraduationProject.Core;
 using E_Learning.GraduationProject.Core.Mapping.ConceptResources;
 using E_Learning.GraduationProject.Core.Mapping.ProgrammingLanguages;
@@ -9,6 +10,8 @@ using E_Learning.GraduationProject.Repository;
 using E_Learning.GraduationProject.Repository.Data;
 using E_Learning.GraduationProject.Repository.Data.Context;
 using E_Learning.GraduationProject.Service.Services;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace E_Learning.GraduationProject.APIs
@@ -41,6 +44,22 @@ namespace E_Learning.GraduationProject.APIs
             builder.Services.AddAutoMapper(M => M.AddProfile(new ConceptResourceProfile()));
             builder.Services.AddAutoMapper(M => M.AddProfile(new ProgrammingLanguageProfile()));
             builder.Services.AddAutoMapper(M => M.AddProfile(new TrackProfile()));
+
+
+            // to add validation error response
+            builder.Services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.InvalidModelStateResponseFactory = (actionContext) =>
+                {
+                    var errors = actionContext.ModelState.Where(p => p.Value.Errors.Count() > 0)
+                                            .SelectMany(p => p.Value.Errors)
+                                            .Select(e => e.ErrorMessage)
+                                            .ToArray();
+                    var response = new ApiValidationErrorResponse() { Errors = errors};
+
+                    return new BadRequestObjectResult(response);
+                };
+            });
 
             var app = builder.Build();
 

@@ -31,10 +31,9 @@ namespace E_Learning.GraduationProject.APIs.Controllers
             return Ok(tracksDto);
         }
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetTrackById(int? id)
+        public async Task<IActionResult> GetTrackById(int id)
         {
-            if(id is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
-            var track = await trackService.GetTrackByIdWithSpecAsync(id.Value);
+            var track = await trackService.GetTrackByIdWithSpecAsync(id);
             if (track is null) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
 
             return Ok(mapper.Map<TrackResponseDto>(track));
