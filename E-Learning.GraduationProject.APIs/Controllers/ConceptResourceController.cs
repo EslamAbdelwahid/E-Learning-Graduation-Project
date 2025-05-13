@@ -1,4 +1,5 @@
-﻿using E_Learning.GraduationProject.Core.Dtos.Resources;
+﻿using E_Learning.GraduationProject.APIs.Errors;
+using E_Learning.GraduationProject.Core.Dtos.Resources;
 using E_Learning.GraduationProject.Core.Entities;
 using E_Learning.GraduationProject.Core.Service.Contract;
 using Microsoft.AspNetCore.Http;
@@ -24,7 +25,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         public async Task<ActionResult<IEnumerable<ConceptResourceToReturn>>> GetAllResources()
         {
             var resources = await _resourceService.GetAllResourcesAsync();
-            if (resources is null) return NotFound();
+            if (resources is null) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
 
             return Ok(resources);
         }
@@ -32,10 +33,10 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<ConceptResourceToReturn>> GetResourceById(int? id)
         {
-            if (id is null) return BadRequest();
+            if (id is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
 
             var resource = await _resourceService.GetResourceByIdAsync(id.Value);
-            if (resource is null) return NotFound();
+            if (resource is null) return NotFound(StatusCodes.Status404NotFound);
 
             return Ok(resource);
         }
@@ -43,11 +44,11 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         [HttpGet("{conceptId}/Resources")]
         public async Task<ActionResult<IEnumerable<ConceptResourceToReturn>>> GetAllResourcesForSpecificConcept(int? conceptId)
         {
-            if (conceptId is null) return BadRequest();
+            if (conceptId is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
 
             var resources = await _resourceService.GetAllResourcesForSpecificConceptAsync(conceptId.Value);
 
-            if (resources is null) return NotFound();
+            if (resources is null) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
 
             return Ok(resources);
         }
@@ -57,7 +58,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         {
             var resource = await _resourceService.CreateResourceAsync(model);
 
-            if (resource is null) return BadRequest();
+            if (resource is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
 
             return Ok(resource);
 
@@ -66,11 +67,11 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         [HttpDelete("{resourceId}")]
         public async Task<IActionResult> DeleteResource(int? resourceId)
         {
-            if (resourceId is null) return BadRequest();
+            if (resourceId is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
 
             var result = await _resourceService.DeleteResourceAsync(resourceId.Value);
 
-            if (result == 0) return BadRequest("Failed to Delete");
+            if (result == 0) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
 
             return Ok();
         }
@@ -80,7 +81,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         {
             var resource = await _resourceService.UpdateResourceAsync(model);
 
-            if (resource is null) return BadRequest();
+            if (resource is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
 
             return Ok(resource);
 

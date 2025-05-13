@@ -1,4 +1,5 @@
-﻿using E_Learning.GraduationProject.Core.Dtos.LanguageConcepts;
+﻿using E_Learning.GraduationProject.APIs.Errors;
+using E_Learning.GraduationProject.Core.Dtos.LanguageConcepts;
 using E_Learning.GraduationProject.Core.Service.Contract;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -23,15 +24,15 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         public async Task<IActionResult> GetAllConcepts()
         {
             var result = await _conceptService.GetAllConceptsWithSpecAsync();
-            if (result is null) return NotFound();
+            if (result is null) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
             return Ok(result);
         }
         [HttpGet("{id}")]
         public async Task<IActionResult> GetConceptById(int? id )
         {
-            if (id is null) return BadRequest();
+            if (id is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
             var result = await _conceptService.GetConceptByIdWithSpec(id.Value);
-            if (result is null) return NotFound();
+            if (result is null) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
             return Ok(result);
         }
 
@@ -40,7 +41,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         {
             var result = await _conceptService.CreateConcept(model);
 
-            if (result is null) return BadRequest();
+            if (result is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
 
             return Ok(result);
         }
@@ -50,7 +51,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         {
             var result = await _conceptService.UpdateConcept(model);
 
-            if (result is null) return BadRequest();
+            if (result is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
 
             return Ok(result);
         }
@@ -58,11 +59,11 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteConcept(int?  id)
         {
-            if (id is null) return BadRequest();
+            if (id is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
 
             var result = await _conceptService.DeleteConcept(id.Value);
 
-            if (result == 0 ) return NotFound();
+            if (result == 0 ) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
 
             return Ok();
         }

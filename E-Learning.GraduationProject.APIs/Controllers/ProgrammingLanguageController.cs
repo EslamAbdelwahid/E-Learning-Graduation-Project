@@ -1,4 +1,5 @@
-﻿using E_Learning.GraduationProject.Core.Dtos;
+﻿using E_Learning.GraduationProject.APIs.Errors;
+using E_Learning.GraduationProject.Core.Dtos;
 using E_Learning.GraduationProject.Core.Service.Contract;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -22,7 +23,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         public async Task<ActionResult<IEnumerable<ProgrammingLanguageDto>>> GetAllProgrammingLanguages()
         {
             var languages = await _programmingLanguageService.GetAllProgrammingLanguageWithSpecAsync();
-            if (languages is null) return NotFound();
+            if (languages is null) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
 
             return Ok(languages);
 
@@ -30,9 +31,9 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<ProgrammingLanguageDto>> GetProgrammingLanguageById(int? id)
         {
-            if (id is null) return BadRequest();
+            if (id is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
             var programmingLanguage = await _programmingLanguageService.GetProgrammingLanguageByIdWithSpecAsync(id.Value);
-            if (programmingLanguage is null) return NotFound();
+            if (programmingLanguage is null) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
             return Ok(programmingLanguage);
 
         }
@@ -41,7 +42,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         public async Task<ActionResult<ProgrammingLanguageDto>> CreateProgrammingLanguage(ProgrammingLanguageDto model)
         {
             var programmingLanguage = await _programmingLanguageService.CreateProgrammingLanguageAsync(model);
-            if (programmingLanguage is null) return BadRequest("Failed to create");
+            if (programmingLanguage is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
 
             return Ok(programmingLanguage);
 
@@ -50,17 +51,17 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         public async Task<ActionResult<ProgrammingLanguageDto>> UpdateProgrammingLanguage(ProgrammingLanguageDto model)
         {
             var programmingLanguage = await _programmingLanguageService.UpdateProgrammingLanguageAsync(model);
-            if (programmingLanguage is null) return BadRequest("Failed to update");
+            if (programmingLanguage is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
             return Ok(programmingLanguage);
         }
         [HttpDelete("{id}")]
         public async Task<ActionResult<ProgrammingLanguageDto>> DeleteProgrammingLanguage(int? id)
         {
-            if (id is null) return BadRequest();
+            if (id is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
 
             var result = await _programmingLanguageService.DeleteAsync(id.Value);
 
-            if (result == 0 ) return BadRequest("Failed to delete");
+            if (result == 0 ) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
 
             return Ok();
         }
