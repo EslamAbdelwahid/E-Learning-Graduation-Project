@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using E_Learning.GraduationProject.APIs.Errors;
 using E_Learning.GraduationProject.Core.Dtos.Tracks;
 using E_Learning.GraduationProject.Core.Entities;
 using E_Learning.GraduationProject.Core.Service.Contract;
@@ -24,25 +25,26 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         public async Task<IActionResult> GetAllTracks()
         {
             var tracks = await trackService.GetAllTracksWithSpecAsync();
-            if (tracks is null) return NotFound();
+            if (tracks is null) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
+
             var tracksDto = mapper.Map<IEnumerable<TrackResponseDto>>(tracks);
             return Ok(tracksDto);
         }
         [HttpGet("{id}")]
         public async Task<IActionResult> GetTrackById(int? id)
         {
-            if(id is null) return BadRequest();
+            if(id is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
             var track = await trackService.GetTrackByIdWithSpecAsync(id.Value);
-            if (track is null) return NotFound();
+            if (track is null) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
 
             return Ok(mapper.Map<TrackResponseDto>(track));
         }
         [HttpPost]
         public async Task<IActionResult> CreateTrack(CreateTrackDto trackDto)
         {
-            if(trackDto is null) return BadRequest();
+            if(trackDto is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
             var added = await trackService.CreateTrackAsync(mapper.Map<Track>(trackDto));
-            if (!added) return BadRequest();
+            if (!added) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
             return Ok(trackDto);
         }
 
@@ -50,7 +52,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         public async Task<IActionResult> DeleteTrack(int trackId)
         {
             var res = await trackService.RemoveTrackAsync(trackId);
-            if(res == false) return NotFound();
+            if(res == false) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
             return Ok(true);
         }
     }
