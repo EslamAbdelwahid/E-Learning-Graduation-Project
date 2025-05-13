@@ -13,12 +13,12 @@ using System.Threading.Tasks;
 
 namespace E_Learning.GraduationProject.Service.Services
 {
-    public class ConceptResourceService : IConceptResourceService
+    public class ResourceService : IResourceService
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
-        public ConceptResourceService(
+        public ResourceService(
             IUnitOfWork unitOfWork,
             IMapper mapper
 
@@ -30,17 +30,24 @@ namespace E_Learning.GraduationProject.Service.Services
 
         public async Task<IEnumerable<ConceptResourceToReturn>?> GetAllResourcesAsync()
         {
-            return _mapper.Map<IEnumerable<ConceptResourceToReturn>>(await _unitOfWork.Repository<ConceptResource, int>().GetAllAsync());
+            var resources = await _unitOfWork.Repository<ConceptResource, int>().GetAllAsync();
+
+            if (resources is null) return null;
+
+            return _mapper.Map<IEnumerable<ConceptResourceToReturn>>(resources);
         }
         public async Task<ConceptResourceToReturn?> GetResourceByIdAsync(int resourceId)
         {
-            return _mapper.Map<ConceptResourceToReturn>(await _unitOfWork.Repository<ConceptResource, int>().GetByIdAsync(resourceId));
+            var resource = await _unitOfWork.Repository<ConceptResource, int>().GetByIdAsync(resourceId);
+            if (resource is null) return null;
+            return _mapper.Map<ConceptResourceToReturn>(resource);
         }
 
         public async Task<IEnumerable<ConceptResourceToReturn>?> GetAllResourcesForSpecificConceptAsync(int conceptId)
         {
             var spec = new ConceptResourceSpecifications(conceptId);
             var resources = await _unitOfWork.Repository<ConceptResource, int>().GetAllWithSpecAsync(spec);
+            if (resources is null) return null;
             return _mapper.Map<IEnumerable<ConceptResourceToReturn>>(resources);
         }
 
@@ -62,6 +69,7 @@ namespace E_Learning.GraduationProject.Service.Services
             if (resource is null) return 0; 
 
             _unitOfWork.Repository<ConceptResource, int>().Delete(resource);
+
             return await _unitOfWork.CompleteAsync();
         }
 

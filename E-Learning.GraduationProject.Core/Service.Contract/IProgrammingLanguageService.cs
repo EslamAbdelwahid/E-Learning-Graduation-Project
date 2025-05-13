@@ -12,8 +12,8 @@ namespace E_Learning.GraduationProject.Core.Service.Contract
     public interface IProgrammingLanguageService
     {
         // pagination to do 
-        Task<IEnumerable<ProgrammingLanguageDto>?> GetAllProgrammingLanguageAsync();
-        Task<ProgrammingLanguageDto?> GetProgrammingLanguageByIdAsync(int languageId);
+        Task<IEnumerable<ProgrammingLanguageDto>?> GetAllProgrammingLanguageWithSpecAsync();
+        Task<ProgrammingLanguageDto?> GetProgrammingLanguageByIdWithSpecAsync(int languageId);
         Task<ProgrammingLanguageDto?> CreateProgrammingLanguageAsync(ProgrammingLanguageDto model);
         Task<ProgrammingLanguageDto?> UpdateProgrammingLanguageAsync(ProgrammingLanguageDto model);
         Task<int> DeleteAsync(int id);

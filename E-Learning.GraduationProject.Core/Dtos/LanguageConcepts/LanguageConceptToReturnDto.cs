@@ -1,20 +1,19 @@
 ﻿using E_Learning.GraduationProject.Core.Entities.Enums;
+using E_Learning.GraduationProject.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Text.Json.Serialization;
+using System.Threading.Tasks;
 
-namespace E_Learning.GraduationProject.Core.Entities
+namespace E_Learning.GraduationProject.Core.Dtos.LanguageConcepts
 {
-    public class LanguageConcept : BaseEntity<int>
+    public class LanguageConceptToReturnDto
     {
-        [JsonPropertyName("conceptId")]
-        public override int Id { get; set; }
+        public  int Id { get; set; }
 
-        [JsonPropertyName("languageId")]
-        public int? ProgrammingLanguageId { get; set; }
+        public int ProgrammingLanguageId { get; set; }
 
         public string? Title { get; set; }
 
@@ -24,9 +23,10 @@ namespace E_Learning.GraduationProject.Core.Entities
 
         public int? EstimatedHours { get; set; }
 
-        public DifficultyLevel DifficultyLevel { get; set; }
+        public string DifficultyLevel { get; set; }
 
-        public ProgrammingLanguage? ProgrammingLanguage { get; set; }
+        public string? ProgrammingLanguageName { get; set; }
+        public DateTimeOffset CreatedAt { get; set; } 
 
         public ICollection<ConceptResource>? Resources { get; set; }
 

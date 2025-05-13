@@ -2,6 +2,7 @@
 using AutoMapper;
 using E_Learning.GraduationProject.Core;
 using E_Learning.GraduationProject.Core.Mapping.ConceptResources;
+using E_Learning.GraduationProject.Core.Mapping.LanguageConcepts;
 using E_Learning.GraduationProject.Core.Mapping.ProgrammingLanguages;
 using E_Learning.GraduationProject.Core.Mapping.Tracks;
 using E_Learning.GraduationProject.Core.Service.Contract;
@@ -28,9 +29,10 @@ namespace E_Learning.GraduationProject.APIs
 
 
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-            builder.Services.AddScoped<IConceptResourceService, ConceptResourceService>();
+            builder.Services.AddScoped<IResourceService, ResourceService>();
             builder.Services.AddScoped<IProgrammingLanguageService, ProgrammingLanguageService>();
             builder.Services.AddScoped<ITrackService, TrackService>();  
+            builder.Services.AddScoped<IConceptService, ConceptService>();  
 
             builder.Services.AddDbContext<AppDbContext>(options =>
             {
@@ -41,6 +43,7 @@ namespace E_Learning.GraduationProject.APIs
             builder.Services.AddAutoMapper(M => M.AddProfile(new ConceptResourceProfile()));
             builder.Services.AddAutoMapper(M => M.AddProfile(new ProgrammingLanguageProfile()));
             builder.Services.AddAutoMapper(M => M.AddProfile(new TrackProfile()));
+            builder.Services.AddAutoMapper(M => M.AddProfile(new LanguageConceptProfile()));
 
             var app = builder.Build();
 

@@ -21,7 +21,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProgrammingLanguageDto>>> GetAllProgrammingLanguages()
         {
-            var languages = await _programmingLanguageService.GetAllProgrammingLanguageAsync();
+            var languages = await _programmingLanguageService.GetAllProgrammingLanguageWithSpecAsync();
             if (languages is null) return NotFound();
 
             return Ok(languages);
@@ -31,7 +31,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         public async Task<ActionResult<ProgrammingLanguageDto>> GetProgrammingLanguageById(int? id)
         {
             if (id is null) return BadRequest();
-            var programmingLanguage = await _programmingLanguageService.GetProgrammingLanguageByIdAsync(id.Value);
+            var programmingLanguage = await _programmingLanguageService.GetProgrammingLanguageByIdWithSpecAsync(id.Value);
             if (programmingLanguage is null) return NotFound();
             return Ok(programmingLanguage);
 

@@ -12,6 +12,7 @@ namespace E_Learning.GraduationProject.Core.Entities
         public string Description { get; set; }
 
         public string IconUrl { get; set; }
+
         [JsonPropertyName("DifficultyLevel")]
         public DifficultyLevel Difficulty { get; set; }
 

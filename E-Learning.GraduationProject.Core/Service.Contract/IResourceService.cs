@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace E_Learning.GraduationProject.Core.Service.Contract
 {
-    public interface IConceptResourceService
+    public interface IResourceService
     {
         // pagination ToDo
         Task<IEnumerable<ConceptResourceToReturn>?> GetAllResourcesAsync();

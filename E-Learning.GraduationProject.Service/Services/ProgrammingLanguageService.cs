@@ -4,6 +4,7 @@ using E_Learning.GraduationProject.Core;
 using E_Learning.GraduationProject.Core.Dtos;
 using E_Learning.GraduationProject.Core.Entities;
 using E_Learning.GraduationProject.Core.Service.Contract;
+using E_Learning.GraduationProject.Core.Specifications.ProgrammingLanguages;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using System;
 using System.Collections.Generic;
@@ -29,15 +30,26 @@ namespace E_Learning.GraduationProject.Service.Services
 
 
 
-        public async Task<IEnumerable<ProgrammingLanguageDto>?> GetAllProgrammingLanguageAsync()
+        public async Task<IEnumerable<ProgrammingLanguageDto>?> GetAllProgrammingLanguageWithSpecAsync()
         {
-            var languages = await _unitOfWork.Repository<ProgrammingLanguage, int>().GetAllAsync();
+            var spec = new ProgrammingLanguageSpecifications();
+
+            var languages = await _unitOfWork.Repository<ProgrammingLanguage, int>().GetAllWithSpecAsync(spec);
+
+            if (languages is null) return null; 
+
             return _mapper.Map<IEnumerable<ProgrammingLanguageDto>>(languages);
+
         }
 
-        public async Task<ProgrammingLanguageDto?> GetProgrammingLanguageByIdAsync(int languageId)
+        public async Task<ProgrammingLanguageDto?> GetProgrammingLanguageByIdWithSpecAsync(int languageId)
         {
-            var language = await _unitOfWork.Repository<ProgrammingLanguage, int>().GetByIdAsync(languageId);
+            var spec = new ProgrammingLanguageSpecifications(languageId);
+
+            var language = await _unitOfWork.Repository<ProgrammingLanguage, int>().GetWithSpecAsync(spec);
+
+            if (language is null) return null;
+
             return _mapper.Map<ProgrammingLanguageDto>(language);
         }
 

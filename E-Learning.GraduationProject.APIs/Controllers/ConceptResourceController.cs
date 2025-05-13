@@ -11,9 +11,11 @@ namespace E_Learning.GraduationProject.APIs.Controllers
     [ApiController]
     public class ConceptResourceController : ControllerBase
     {
-        private readonly IConceptResourceService _resourceService;
+        private readonly IResourceService _resourceService;
 
-        public ConceptResourceController(IConceptResourceService resourceService)
+        public ConceptResourceController(
+            IResourceService resourceService
+            )
         {
             _resourceService = resourceService;
         }
