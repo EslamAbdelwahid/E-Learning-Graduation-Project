@@ -1,6 +1,7 @@
 
 using AutoMapper;
 using E_Learning.GraduationProject.APIs.Errors;
+using E_Learning.GraduationProject.APIs.Middlewares;
 using E_Learning.GraduationProject.Core;
 using E_Learning.GraduationProject.Core.Mapping.ConceptResources;
 using E_Learning.GraduationProject.Core.Mapping.ProgrammingLanguages;
@@ -63,6 +64,7 @@ namespace E_Learning.GraduationProject.APIs
 
             var app = builder.Build();
 
+
             // create scope that has all the services
             using var scope = app.Services.CreateScope();
             var services = scope.ServiceProvider;
@@ -86,6 +88,8 @@ namespace E_Learning.GraduationProject.APIs
                 logger.LogError(ex, "There is a problem while applying the migrations ");
 
             }
+
+            app.UseMiddleware<ExceptionMiddleware>(); // Configure user-defined middleware
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
