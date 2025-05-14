@@ -36,17 +36,18 @@ namespace E_Learning.GraduationProject.APIs.Controllers
             if (id is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
 
             var resource = await _resourceService.GetResourceByIdAsync(id.Value);
-            if (resource is null) return NotFound(StatusCodes.Status404NotFound);
+            if (resource is null) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
 
             return Ok(resource);
         }
 
-        [HttpGet("{conceptId}/Resources")]
-        public async Task<ActionResult<IEnumerable<ConceptResourceToReturn>>> GetAllResourcesForSpecificConcept(int? conceptId)
+        //not tested yet
+        [HttpGet("{languageId}/Resources")]
+        public async Task<ActionResult<IEnumerable<ConceptResourceToReturn>>> GetAllResourcesForSpecificLanguage(int? languageId)
         {
-            if (conceptId is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
+            if (languageId is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
 
-            var resources = await _resourceService.GetAllResourcesForSpecificConceptAsync(conceptId.Value);
+            var resources = await _resourceService.GetAllResourcesForSpecificLanguageAsync(languageId.Value);
 
             if (resources is null) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
 
