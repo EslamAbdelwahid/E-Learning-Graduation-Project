@@ -20,40 +20,42 @@ namespace E_Learning.GraduationProject.Service.Services
             this.unitOfWork = unitOfWork;
         }
 
-        public async Task<bool> CreateTrackAsync(Track track)
+        public async Task<Track?> CreateTrackAsync(Track track)
         {
             await unitOfWork.Repository<Track, int>().AddAsync(track);
             var res = await unitOfWork.CompleteAsync();
-            return res > 0 ? true : false;
+            return res > 0 ? track : null;
         }
 
-        public Task<IEnumerable<Track>> GetAllTracksWithSpecAsync()
+        public async Task<IEnumerable<Track>> GetAllTracksWithSpecAsync()
         {
             var spec = new TrackSpecifications();
-            var tracks = unitOfWork.Repository<Track, int>().GetAllWithSpecAsync(spec);
+            var tracks =await unitOfWork.Repository<Track, int>().GetAllWithSpecAsync(spec);
             return tracks;
         }
 
-        public Task<Track> GetTrackByIdWithSpecAsync(int id)
+        public async Task<Track?> GetTrackByIdWithSpecAsync(int id)
         {
           
             var spec = new TrackSpecifications(id);
-            var track = unitOfWork.Repository<Track, int>().GetWithSpecAsync(spec);
+            var track = await unitOfWork.Repository<Track, int>().GetWithSpecAsync(spec);
             return track;
         }
 
-        public async Task<bool> RemoveTrackAsync(int id)
+        public async Task<Track?> RemoveTrackAsync(int id)
         {
             var track = await GetTrackByIdWithSpecAsync(id);
-            if (track is null) return false;
+            if (track is null) return null;
             unitOfWork.Repository<Track, int>().Delete(track);
             int added = await unitOfWork.CompleteAsync();
-            return added > 0 ? true:false;
+            return added > 0 ? track:null;
         }
 
-        public Task<bool> UpdateTrackAsync(int id)
+        public async Task<Track?> UpdateTrackAsync(Track track)
         {
-            throw new NotImplementedException();
+            unitOfWork.Repository<Track, int>().Update(track);
+            int res = await unitOfWork.CompleteAsync();
+            return res > 0 ? track : null;
         }
     }
 }

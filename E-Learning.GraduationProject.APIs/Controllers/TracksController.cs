@@ -22,7 +22,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllTracks()
+        public async Task<ActionResult<IEnumerable<TrackResponseDto>>> GetAllTracks()
         {
             var tracks = await trackService.GetAllTracksWithSpecAsync();
             if (tracks is null) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
@@ -31,7 +31,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
             return Ok(tracksDto);
         }
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetTrackById(int id)
+        public async Task<ActionResult<TrackResponseDto>> GetTrackById(int id)
         {
             var track = await trackService.GetTrackByIdWithSpecAsync(id);
             if (track is null) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
@@ -39,20 +39,31 @@ namespace E_Learning.GraduationProject.APIs.Controllers
             return Ok(mapper.Map<TrackResponseDto>(track));
         }
         [HttpPost]
-        public async Task<IActionResult> CreateTrack(CreateTrackDto trackDto)
+        public async Task<ActionResult<CreateTrackDto>> CreateTrack(CreateTrackDto trackDto)
         {
             if(trackDto is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
-            var added = await trackService.CreateTrackAsync(mapper.Map<Track>(trackDto));
-            if (!added) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
+            var track = await trackService.CreateTrackAsync(mapper.Map<Track>(trackDto));
+            if (track is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
+            return Ok(trackDto);
+        }
+        [HttpPut("{id}")]
+        public async Task<ActionResult<CreateTrackDto>> UpdateTrack(int id, UpdateTrackDto trackDto)
+        {
+            if(id != trackDto.Id)
+            {
+                return BadRequest(new ApiErrorResponse(400, "ID mismatch"));
+            }
+            var track = await trackService.UpdateTrackAsync(mapper.Map<Track>(trackDto));
+            if (track is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
             return Ok(trackDto);
         }
 
         [HttpDelete("{trackId}")]
-        public async Task<IActionResult> DeleteTrack(int trackId)
+        public async Task<ActionResult<TrackResponseDto>> DeleteTrack(int trackId)
         {
-            var res = await trackService.RemoveTrackAsync(trackId);
-            if(res == false) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
-            return Ok(true);
+            var track = await trackService.RemoveTrackAsync(trackId);
+            if(track is null) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
+            return Ok(mapper.Map<TrackResponseDto>(track));
         }
     }
 }

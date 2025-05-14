@@ -10,6 +10,8 @@ using E_Learning.GraduationProject.Core.Mapping.Tracks;
 using Microsoft.AspNetCore.Mvc;
 using E_Learning.GraduationProject.APIs.Errors;
 using E_Learning.GraduationProject.Core.Mapping.LanguageConcepts;
+using E_Learning.GraduationProject.Core.Mapping.TrackSteps;
+using E_Learning.GraduationProject.Core.Mapping.StepResources;
 
 namespace E_Learning.GraduationProject.APIs.Helper
 {
@@ -44,7 +46,7 @@ namespace E_Learning.GraduationProject.APIs.Helper
             services.AddScoped<IProgrammingLanguageService, ProgrammingLanguageService>();
             services.AddScoped<ITrackService, TrackService>();
             services.AddScoped<IConceptService, ConceptService>();
-
+            services.AddScoped<ITrackStepService, TrackStepService>();
 
             return services;
         }
@@ -62,6 +64,8 @@ namespace E_Learning.GraduationProject.APIs.Helper
             services.AddAutoMapper(M => M.AddProfile(new ProgrammingLanguageProfile()));
             services.AddAutoMapper(M => M.AddProfile(new TrackProfile()));
             services.AddAutoMapper(M => M.AddProfile(new LanguageConceptProfile()));
+            services.AddAutoMapper(M => M.AddProfile(new TrackStepProfile()));
+            services.AddAutoMapper(M => M.AddProfile(new StepResourceProfile()));
 
             return services;
         }

@@ -14,8 +14,8 @@ namespace E_Learning.GraduationProject.Core.Mapping.Tracks
         public TrackProfile()
         {
             CreateMap<Track, TrackResponseDto>();
-            CreateMap<TrackStep, TrackStepDto>();
             CreateMap<CreateTrackDto, Track>();
+            CreateMap<UpdateTrackDto, Track>();
         }
     }
 }

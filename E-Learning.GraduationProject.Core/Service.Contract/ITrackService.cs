@@ -12,11 +12,11 @@ namespace E_Learning.GraduationProject.Core.Service.Contract
     {
         Task<IEnumerable<Track>> GetAllTracksWithSpecAsync();
 
-        Task<Track> GetTrackByIdWithSpecAsync(int id);
+        Task<Track?> GetTrackByIdWithSpecAsync(int id);
 
-        Task<bool> CreateTrackAsync(Track track);
-        Task<bool> UpdateTrackAsync(int id);
-        Task<bool> RemoveTrackAsync(int id);
+        Task<Track?> CreateTrackAsync(Track track);
+        Task<Track?> UpdateTrackAsync(Track track);
+        Task<Track?> RemoveTrackAsync(int id);
 
 
     }
