@@ -1,7 +1,11 @@
-﻿namespace E_Learning.GraduationProject.Core.Entities
+﻿using System.Text.Json.Serialization;
+
+namespace E_Learning.GraduationProject.Core.Entities
 {
     public class TrackStep : BaseEntity<int>
     {
+        [JsonPropertyName("TrackStepId")]
+        public override int Id {  get; set; }
         public int TrackId { get; set; }
         public Track Track { get; set; }
 
@@ -13,12 +17,9 @@
 
         public int? EstimatedHours { get; set; }
 
-        public bool IsRequired { get; set; }
-
+        public bool IsRequired { get; set; } = true;
 
         public ICollection<StepResource>? Resources { get; set; }
-
-        public ICollection<PractiseProblem>? Problems { get; set; }
 
     }
 }
