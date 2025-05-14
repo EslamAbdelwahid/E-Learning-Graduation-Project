@@ -10,8 +10,10 @@ using E_Learning.GraduationProject.Core.Mapping.Tracks;
 using Microsoft.AspNetCore.Mvc;
 using E_Learning.GraduationProject.APIs.Errors;
 using E_Learning.GraduationProject.Core.Mapping.LanguageConcepts;
+using E_Learning.GraduationProject.Core.Mapping.PractiseProblems;
 using E_Learning.GraduationProject.Core.Mapping.TrackSteps;
 using E_Learning.GraduationProject.Core.Mapping.StepResources;
+
 
 namespace E_Learning.GraduationProject.APIs.Helper
 {
@@ -42,12 +44,19 @@ namespace E_Learning.GraduationProject.APIs.Helper
         private static IServiceCollection AddUserDefinedService(this IServiceCollection services)
         {
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-            services.AddScoped<IConceptService, ConceptService>();
+            services.AddScoped<IResourceService, ResourceService>();
             services.AddScoped<IProgrammingLanguageService, ProgrammingLanguageService>();
             services.AddScoped<ITrackService, TrackService>();
             services.AddScoped<IConceptService, ConceptService>();
+            services.AddScoped<IPractiseProblemService, PractiseProblemService>();
             services.AddScoped<ITrackStepService, TrackStepService>();
+
+
             services.AddScoped<IStepResourceService, StepResourceService>();
+
+
+
+
             return services;
         }
         private static IServiceCollection AddDbContextService(this IServiceCollection services, IConfiguration configuration)
@@ -64,6 +73,7 @@ namespace E_Learning.GraduationProject.APIs.Helper
             services.AddAutoMapper(M => M.AddProfile(new ProgrammingLanguageProfile()));
             services.AddAutoMapper(M => M.AddProfile(new TrackProfile()));
             services.AddAutoMapper(M => M.AddProfile(new LanguageConceptProfile()));
+            services.AddAutoMapper(M => M.AddProfile(new PractiseProbemProfile()));
             services.AddAutoMapper(M => M.AddProfile(new TrackStepProfile()));
             services.AddAutoMapper(M => M.AddProfile(new StepResourceProfile()));
 

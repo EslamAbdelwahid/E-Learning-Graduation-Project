@@ -1,9 +1,9 @@
 ﻿using E_Learning.GraduationProject.APIs.Errors;
 using E_Learning.GraduationProject.Core.Dtos.LanguageConcepts;
+using E_Learning.GraduationProject.Core.Dtos.Resources;
 using E_Learning.GraduationProject.Core.Service.Contract;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Formatters;
 
 namespace E_Learning.GraduationProject.APIs.Controllers
 {
@@ -21,14 +21,14 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllConcepts()
+        public async Task<ActionResult<IEnumerable<ConceptResourceToReturn>>> GetAllConcepts()
         {
             var result = await _conceptService.GetAllConceptsWithSpecAsync();
             if (result is null) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
             return Ok(result);
         }
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetConceptById(int? id )
+        public async Task<ActionResult<ConceptResourceToReturn>> GetConceptById(int? id )
         {
             if (id is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
             var result = await _conceptService.GetConceptByIdWithSpec(id.Value);
@@ -37,7 +37,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateConcept(LanguageConceptDto model)
+        public async Task<ActionResult<ConceptResourceToReturn>> CreateConcept(LanguageConceptDto model)
         {
             var result = await _conceptService.CreateConcept(model);
 
@@ -47,7 +47,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateConcept(LanguageConceptDto model)
+        public async Task<ActionResult<ConceptResourceToReturn>> UpdateConcept(LanguageConceptDto model)
         {
             var result = await _conceptService.UpdateConcept(model);
 

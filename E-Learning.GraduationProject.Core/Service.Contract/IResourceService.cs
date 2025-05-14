@@ -12,7 +12,7 @@ namespace E_Learning.GraduationProject.Core.Service.Contract
     {
         // pagination ToDo
         Task<IEnumerable<ConceptResourceToReturn>?> GetAllResourcesAsync();
-        Task<IEnumerable<ConceptResourceToReturn>?> GetAllResourcesForSpecificConceptAsync(int conceptId);
+        Task<IEnumerable<ConceptResourceToReturn>?> GetAllResourcesForSpecificLanguageAsync(int languageId);
         Task<ConceptResourceToReturn?> GetResourceByIdAsync(int resourceId);
 
         Task<ConceptResourceToReturn?> CreateResourceAsync(ConceptResourceDto model);

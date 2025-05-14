@@ -9,10 +9,10 @@ namespace E_Learning.GraduationProject.Core.Entities.Enums
 {
     public enum PlatformName
     {
-        [EnumMember(Value = "Leet Code")]
+        [EnumMember(Value = "LeetCode")]
         LeetCode,
 
-        [EnumMember(Value = "Hacker Rank")]
+        [EnumMember(Value = "HackerRank")]
         HackerRank,
 
         [EnumMember(Value = "CodeForces")]
