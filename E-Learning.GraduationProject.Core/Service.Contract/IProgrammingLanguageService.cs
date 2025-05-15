@@ -1,6 +1,8 @@
-﻿using E_Learning.GraduationProject.Core.Dtos;
+﻿using E_Learning.GraduationProject.Core.Dtos.ProgrammingLanguages;
 using E_Learning.GraduationProject.Core.Entities;
+using E_Learning.GraduationProject.Core.Hellper;
 using E_Learning.GraduationProject.Core.Specifications;
+using E_Learning.GraduationProject.Core.Specifications.ProgrammingLanguages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,10 +14,10 @@ namespace E_Learning.GraduationProject.Core.Service.Contract
     public interface IProgrammingLanguageService
     {
         // pagination to do 
-        Task<IEnumerable<ProgrammingLanguageDto>?> GetAllProgrammingLanguageWithSpecAsync();
-        Task<ProgrammingLanguageDto?> GetProgrammingLanguageByIdWithSpecAsync(int languageId);
-        Task<ProgrammingLanguageDto?> CreateProgrammingLanguageAsync(ProgrammingLanguageDto model);
-        Task<ProgrammingLanguageDto?> UpdateProgrammingLanguageAsync(ProgrammingLanguageDto model);
+        Task<PaginationResponseToReturn<ProgrammingLanguageToReturnDto>?> GetAllProgrammingLanguageWithSpecAsync(ProgrammingLanguageParames parames );
+        Task<ProgrammingLanguageToReturnDto?> GetProgrammingLanguageByIdWithSpecAsync(int languageId);
+        Task<ProgrammingLanguageToReturnDto?> CreateProgrammingLanguageAsync(ProgrammingLanguageDto model);
+        Task<ProgrammingLanguageToReturnDto?> UpdateProgrammingLanguageAsync(ProgrammingLanguageDto model);
         Task<int> DeleteAsync(int id);
 
 

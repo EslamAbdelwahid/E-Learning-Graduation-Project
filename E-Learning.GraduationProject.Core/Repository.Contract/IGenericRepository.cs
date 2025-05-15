@@ -15,6 +15,7 @@ namespace E_Learning.GraduationProject.Core.Repository.Contract
         Task<TEntity?> GetByIdAsync(int id);
         Task<IEnumerable<TEntity>> GetAllWithSpecAsync(ISpecifications<TEntity,TKey> spec);
         Task<TEntity> GetWithSpecAsync(ISpecifications<TEntity, TKey> spec);
+        Task<int> GetCountAsync(ISpecifications<TEntity,TKey> spec );
         Task AddAsync(TEntity entity);
         void Update(TEntity entity);
         void Delete(TEntity entity);

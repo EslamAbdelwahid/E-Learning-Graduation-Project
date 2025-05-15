@@ -42,6 +42,10 @@ namespace E_Learning.GraduationProject.Repository.Repository
         {
             return await SpecificationsEvaluator<TEntity, TKey>.GetQuery(_context.Set<TEntity>(), spec).FirstOrDefaultAsync();
         }
+        public async Task<int> GetCountAsync(ISpecifications<TEntity, TKey> spec)
+        {
+            return await SpecificationsEvaluator<TEntity, TKey>.GetQuery( _context.Set<TEntity>() , spec).CountAsync();
+        }
 
         public async Task AddAsync(TEntity entity)
         {

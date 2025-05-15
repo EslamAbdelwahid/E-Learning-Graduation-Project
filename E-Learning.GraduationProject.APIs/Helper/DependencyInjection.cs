@@ -47,7 +47,7 @@ namespace E_Learning.GraduationProject.APIs.Helper
             services.AddScoped<IResourceService, ResourceService>();
             services.AddScoped<IProgrammingLanguageService, ProgrammingLanguageService>();
             services.AddScoped<ITrackService, TrackService>();
-            services.AddScoped<IConceptService, ConceptService>();
+            services.AddScoped<ILanguageConceptService, LanguageConceptService>();
             services.AddScoped<IPractiseProblemService, PractiseProblemService>();
             services.AddScoped<ITrackStepService, TrackStepService>();
 

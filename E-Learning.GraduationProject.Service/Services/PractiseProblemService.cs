@@ -2,6 +2,7 @@
 using E_Learning.GraduationProject.Core;
 using E_Learning.GraduationProject.Core.Dtos.PractiseProblems;
 using E_Learning.GraduationProject.Core.Entities;
+using E_Learning.GraduationProject.Core.Hellper;
 using E_Learning.GraduationProject.Core.Service.Contract;
 using E_Learning.GraduationProject.Core.Specifications.PractiseProblems;
 using Microsoft.AspNetCore.Identity;
@@ -27,12 +28,21 @@ namespace E_Learning.GraduationProject.Service.Services
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<PractiseProblemToReturnDto>?> GetAllPractiseProblemAsync()
+        public async Task<PaginationResponseToReturn<PractiseProblemToReturnDto>?> GetAllPractiseProblemAsync(ParctiseProblemParames parames)
         {
-            var problems = await _unitOfWork.Repository<PractiseProblem, int>().GetAllAsync();
+            var spec = new PractiseProblemSpecifications(parames);
+
+            var problems = await _unitOfWork.Repository<PractiseProblem, int>().GetAllWithSpecAsync(spec);
+
             if (problems is null) return null;
 
-            return _mapper.Map<IEnumerable<PractiseProblemToReturnDto>>(problems);
+            var data =  _mapper.Map<IEnumerable<PractiseProblemToReturnDto>>(problems);
+
+            var countSpec = new PractiseProblemWithCountSpecifications(parames);
+
+            var count = await _unitOfWork.Repository<PractiseProblem, int>().GetCountAsync(countSpec);
+
+            return new PaginationResponseToReturn<PractiseProblemToReturnDto>(parames.PageIndex, parames.PageSize, count, data);
         }
 
         public async Task<PractiseProblemToReturnDto?> GetPractiseProblemByIdAsync(int id)

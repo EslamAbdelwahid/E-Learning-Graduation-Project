@@ -31,6 +31,12 @@ namespace E_Learning.GraduationProject.Repository
             {
                 query = query.OrderByDescending(spec.OrderByDesc);
             }
+            if(spec.IsPagination)
+            {
+                // u should first skip and then take 
+                query = query.Skip(spec.Skip).Take(spec.Take);
+            }
+            
 
             // add includes if exist
             query = spec.Includes.Aggregate(query,(currQuery,includeExpression) => currQuery.Include(includeExpression));

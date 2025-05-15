@@ -10,6 +10,17 @@ namespace E_Learning.GraduationProject.Core.Specifications
 {
     public class BaseSpecification<TEntity, TKey> : ISpecifications<TEntity, TKey> where TEntity : BaseEntity<TKey> 
     {
+        public BaseSpecification(Expression<Func<TEntity, bool>> criteria)
+        {
+            Criteria = criteria;
+        }
+
+        public BaseSpecification()
+        {
+
+        }
+
+
         public Expression<Func<TEntity, bool>> Criteria { get; set; } = null;
 
         public List<Expression<Func<TEntity, object>>> Includes { get; set; } = new List<Expression<Func<TEntity, object>>>();
@@ -18,18 +29,17 @@ namespace E_Learning.GraduationProject.Core.Specifications
 
         public Expression<Func<TEntity, object>> OrderByDesc { get; set; } = null;
 
+        public int Take { get; set; }
+        public int Skip { get; set; }
+        public bool IsPagination { get; set; }
 
-
-        public BaseSpecification(Expression<Func<TEntity, bool>> criteria)
+        public void ApplyPagination(int take , int skip)
         {
-            Criteria = criteria;
+            IsPagination = true;
+            Take = take;
+            Skip = skip;
         }
 
-
-        public BaseSpecification()
-        {
-                
-        }
 
         public void AddOrderBy(Expression<Func<TEntity, object>> expression)
         {

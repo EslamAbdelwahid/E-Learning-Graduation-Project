@@ -18,6 +18,9 @@ namespace E_Learning.GraduationProject.Core.Specifications
 
         public Expression<Func<TEntity, object>> OrderByDesc { get; set; }
 
+        public int Take { get; set; }
+        public int Skip { get; set; }
+        public bool IsPagination { get; set; } // for applying take , leave in Evaluator
 
 
     }

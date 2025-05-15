@@ -2,6 +2,7 @@
 using E_Learning.GraduationProject.Core;
 using E_Learning.GraduationProject.Core.Dtos.LanguageConcepts;
 using E_Learning.GraduationProject.Core.Entities;
+using E_Learning.GraduationProject.Core.Hellper;
 using E_Learning.GraduationProject.Core.Service.Contract;
 using E_Learning.GraduationProject.Core.Specifications.LanguageConcepts;
 using System;
@@ -12,12 +13,12 @@ using System.Threading.Tasks;
 
 namespace E_Learning.GraduationProject.Service.Services
 {
-    public class ConceptService : IConceptService
+    public class LanguageConceptService : ILanguageConceptService
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
-        public ConceptService(
+        public LanguageConceptService(
             IUnitOfWork unitOfWork,
             IMapper mapper
             )
@@ -26,15 +27,21 @@ namespace E_Learning.GraduationProject.Service.Services
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<LanguageConceptToReturnDto>?> GetAllConceptsWithSpecAsync()
+        public async Task<PaginationResponseToReturn<LanguageConceptToReturnDto>?> GetAllConceptsWithSpecAsync(LanguageConceptParames parames)
         {
-            var spec = new LanguageConceptSpecifications();
+            var spec = new LanguageConceptSpecifications(parames);
 
             var concepts = await _unitOfWork.Repository<LanguageConcept, int>().GetAllWithSpecAsync(spec);
 
-            if (concepts is null) return null; 
+            if (concepts is null) return null;
 
-            return _mapper.Map<IEnumerable<LanguageConceptToReturnDto>>(concepts);
+            var data = _mapper.Map<IEnumerable<LanguageConceptToReturnDto>>(concepts);
+
+            var countSpec = new LanguageConceptWithCountSpecifications(parames);
+
+            var count = await _unitOfWork.Repository<LanguageConcept, int>().GetCountAsync(countSpec);
+
+            return new PaginationResponseToReturn<LanguageConceptToReturnDto>(parames.PageIndex,parames.PageSize,count,data);
         }
 
         public async Task<LanguageConceptToReturnDto?> GetConceptByIdWithSpec(int id)

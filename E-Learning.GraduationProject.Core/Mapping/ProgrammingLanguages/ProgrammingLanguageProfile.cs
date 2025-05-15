@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using E_Learning.GraduationProject.Core.Dtos;
+using E_Learning.GraduationProject.Core.Dtos.ProgrammingLanguages;
 using E_Learning.GraduationProject.Core.Entities;
 using System;
 using System.Collections.Generic;
@@ -13,7 +13,8 @@ namespace E_Learning.GraduationProject.Core.Mapping.ProgrammingLanguages
     {
         public ProgrammingLanguageProfile()
         {
-            CreateMap<ProgrammingLanguage, ProgrammingLanguageDto>().ReverseMap();
+            CreateMap<ProgrammingLanguageDto, ProgrammingLanguage>();
+            CreateMap<ProgrammingLanguage, ProgrammingLanguageToReturnDto>();
         }
     }
 }

@@ -2,6 +2,7 @@
 using E_Learning.GraduationProject.Core;
 using E_Learning.GraduationProject.Core.Dtos.Resources;
 using E_Learning.GraduationProject.Core.Entities;
+using E_Learning.GraduationProject.Core.Hellper;
 using E_Learning.GraduationProject.Core.Service.Contract;
 using E_Learning.GraduationProject.Core.Specifications.ConceptResources;
 using E_Learning.GraduationProject.Repository;
@@ -28,14 +29,25 @@ namespace E_Learning.GraduationProject.Service.Services
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<ConceptResourceToReturn>?> GetAllResourcesAsync()
+        public async Task<PaginationResponseToReturn<ConceptResourceToReturn>?> GetAllResourcesAsync(ConceptResourceParames parames)
         {
-            var resources = await _unitOfWork.Repository<ConceptResource, int>().GetAllAsync();
+            var spec = new ConceptResourceSpecifications(parames);
+
+            var resources = await _unitOfWork.Repository<ConceptResource, int>().GetAllWithSpecAsync(spec);
 
             if (resources is null) return null;
 
-            return _mapper.Map<IEnumerable<ConceptResourceToReturn>>(resources);
+            var data = _mapper.Map<IEnumerable<ConceptResourceToReturn>>(resources);
+
+            // to only count the items with specific criteria (we don't need the whole filtration ) it will be OverKill 
+            // + may give u incorrect result depending on the page size
+            var countSpec = new ConceptResourceWithCountSpecifications(parames);
+
+            var count = await _unitOfWork.Repository<ConceptResource, int>().GetCountAsync(countSpec);
+
+            return new PaginationResponseToReturn<ConceptResourceToReturn>(parames.PageIndex, parames.PageSize, count, data);
         }
+
         public async Task<ConceptResourceToReturn?> GetResourceByIdAsync(int resourceId)
         {
             var resource = await _unitOfWork.Repository<ConceptResource, int>().GetByIdAsync(resourceId);
@@ -43,6 +55,7 @@ namespace E_Learning.GraduationProject.Service.Services
             return _mapper.Map<ConceptResourceToReturn>(resource);
         }
 
+        // not done pagination
         public async Task<IEnumerable<ConceptResourceToReturn>?> GetAllResourcesForSpecificLanguageAsync(int languageId)
         {
             var spec = new ConceptResourceSpecifications(languageId);
@@ -66,7 +79,7 @@ namespace E_Learning.GraduationProject.Service.Services
         {
             var resource = await _unitOfWork.Repository<ConceptResource, int>().GetByIdAsync(id);
 
-            if (resource is null) return 0; 
+            if (resource is null) return 0;
 
             _unitOfWork.Repository<ConceptResource, int>().Delete(resource);
 
@@ -83,5 +96,7 @@ namespace E_Learning.GraduationProject.Service.Services
 
             return res > 0 ? _mapper.Map<ConceptResourceToReturn>(entity) : null;
         }
+
+
     }
 }

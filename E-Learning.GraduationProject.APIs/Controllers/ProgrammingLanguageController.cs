@@ -1,6 +1,8 @@
 ﻿using E_Learning.GraduationProject.APIs.Errors;
-using E_Learning.GraduationProject.Core.Dtos;
+using E_Learning.GraduationProject.Core.Dtos.ProgrammingLanguages;
 using E_Learning.GraduationProject.Core.Service.Contract;
+using E_Learning.GraduationProject.Core.Specifications.LanguageConcepts;
+using E_Learning.GraduationProject.Core.Specifications.ProgrammingLanguages;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,9 +22,9 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ProgrammingLanguageDto>>> GetAllProgrammingLanguages()
+        public async Task<ActionResult<IEnumerable<ProgrammingLanguageDto>>> GetAllProgrammingLanguages([FromQuery]ProgrammingLanguageParames parames)
         {
-            var languages = await _programmingLanguageService.GetAllProgrammingLanguageWithSpecAsync();
+            var languages = await _programmingLanguageService.GetAllProgrammingLanguageWithSpecAsync(parames);
             if (languages is null) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
 
             return Ok(languages);

@@ -1,8 +1,9 @@
 ﻿using AutoMapper;
 using AutoMapper.Execution;
 using E_Learning.GraduationProject.Core;
-using E_Learning.GraduationProject.Core.Dtos;
+using E_Learning.GraduationProject.Core.Dtos.ProgrammingLanguages;
 using E_Learning.GraduationProject.Core.Entities;
+using E_Learning.GraduationProject.Core.Hellper;
 using E_Learning.GraduationProject.Core.Service.Contract;
 using E_Learning.GraduationProject.Core.Specifications.ProgrammingLanguages;
 using Microsoft.EntityFrameworkCore.Infrastructure;
@@ -30,19 +31,25 @@ namespace E_Learning.GraduationProject.Service.Services
 
 
 
-        public async Task<IEnumerable<ProgrammingLanguageDto>?> GetAllProgrammingLanguageWithSpecAsync()
+        public async Task<PaginationResponseToReturn<ProgrammingLanguageToReturnDto>?> GetAllProgrammingLanguageWithSpecAsync(ProgrammingLanguageParames parames )
         {
-            var spec = new ProgrammingLanguageSpecifications();
+            var spec = new ProgrammingLanguageSpecifications(parames);
 
             var languages = await _unitOfWork.Repository<ProgrammingLanguage, int>().GetAllWithSpecAsync(spec);
 
-            if (languages is null) return null; 
+            if (languages is null) return null;
 
-            return _mapper.Map<IEnumerable<ProgrammingLanguageDto>>(languages);
+             var data = _mapper.Map<IEnumerable<ProgrammingLanguageToReturnDto>>(languages);
+
+            var countSpec = new ProgrammingLanguageWithCountSpecifications(parames);
+
+            var count = await _unitOfWork.Repository<ProgrammingLanguage, int>().GetCountAsync(countSpec);
+
+            return new PaginationResponseToReturn<ProgrammingLanguageToReturnDto>(parames.PageIndex, parames.PageSize, count, data);
 
         }
 
-        public async Task<ProgrammingLanguageDto?> GetProgrammingLanguageByIdWithSpecAsync(int languageId)
+        public async Task<ProgrammingLanguageToReturnDto?> GetProgrammingLanguageByIdWithSpecAsync(int languageId)
         {
             var spec = new ProgrammingLanguageSpecifications(languageId);
 
@@ -50,10 +57,10 @@ namespace E_Learning.GraduationProject.Service.Services
 
             if (language is null) return null;
 
-            return _mapper.Map<ProgrammingLanguageDto>(language);
+            return _mapper.Map<ProgrammingLanguageToReturnDto>(language);
         }
 
-        public async Task<ProgrammingLanguageDto?> CreateProgrammingLanguageAsync(ProgrammingLanguageDto model)
+        public async Task<ProgrammingLanguageToReturnDto?> CreateProgrammingLanguageAsync(ProgrammingLanguageDto model)
         {
             var entity = _mapper.Map<ProgrammingLanguage>(model);
 
@@ -62,10 +69,10 @@ namespace E_Learning.GraduationProject.Service.Services
             var res  = await _unitOfWork.CompleteAsync();
 
             // this remap add any database generated values (createdAt or PK id) to the Dto 
-            return res > 0 ? _mapper.Map<ProgrammingLanguageDto>(entity) : null;
+            return res > 0 ? _mapper.Map<ProgrammingLanguageToReturnDto>(entity) : null;
         }
 
-        public async Task<ProgrammingLanguageDto?> UpdateProgrammingLanguageAsync(ProgrammingLanguageDto model)
+        public async Task<ProgrammingLanguageToReturnDto?> UpdateProgrammingLanguageAsync(ProgrammingLanguageDto model)
         {
             var entity = _mapper.Map<ProgrammingLanguage>(model);
 
@@ -73,7 +80,7 @@ namespace E_Learning.GraduationProject.Service.Services
 
             var res = await _unitOfWork.CompleteAsync();
 
-            return res > 0 ? _mapper.Map<ProgrammingLanguageDto>(entity) : null;
+            return res > 0 ? _mapper.Map<ProgrammingLanguageToReturnDto>(entity) : null;
         }
 
         public async Task<int> DeleteAsync(int id)

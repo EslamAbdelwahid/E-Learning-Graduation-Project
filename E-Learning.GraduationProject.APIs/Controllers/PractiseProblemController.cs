@@ -1,6 +1,7 @@
 ﻿using E_Learning.GraduationProject.APIs.Errors;
 using E_Learning.GraduationProject.Core.Dtos.PractiseProblems;
 using E_Learning.GraduationProject.Core.Service.Contract;
+using E_Learning.GraduationProject.Core.Specifications.PractiseProblems;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -20,9 +21,9 @@ namespace E_Learning.GraduationProject.APIs.Controllers
             _practiseProblemService = practiseProblemService;
         }
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<PractiseProblemToReturnDto>>> GetAllPractiseProblem()
+        public async Task<ActionResult<IEnumerable<PractiseProblemToReturnDto>>> GetAllPractiseProblem([FromQuery]ParctiseProblemParames parames)
         {
-            var problems = await _practiseProblemService.GetAllPractiseProblemAsync();
+            var problems = await _practiseProblemService.GetAllPractiseProblemAsync(parames);
             if (problems is null) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
             return Ok(problems);
         }

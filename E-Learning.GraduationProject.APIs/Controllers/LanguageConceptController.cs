@@ -2,6 +2,8 @@
 using E_Learning.GraduationProject.Core.Dtos.LanguageConcepts;
 using E_Learning.GraduationProject.Core.Dtos.Resources;
 using E_Learning.GraduationProject.Core.Service.Contract;
+using E_Learning.GraduationProject.Core.Specifications.ConceptResources;
+using E_Learning.GraduationProject.Core.Specifications.LanguageConcepts;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,19 +13,19 @@ namespace E_Learning.GraduationProject.APIs.Controllers
     [ApiController]
     public class LanguageConceptController : ControllerBase
     {
-        private readonly IConceptService _conceptService;
+        private readonly ILanguageConceptService _conceptService;
 
         public LanguageConceptController(
-            IConceptService conceptService
+            ILanguageConceptService conceptService
             )
         {
             _conceptService = conceptService;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ConceptResourceToReturn>>> GetAllConcepts()
+        public async Task<ActionResult<IEnumerable<ConceptResourceToReturn>>> GetAllConcepts([FromQuery] LanguageConceptParames parames )
         {
-            var result = await _conceptService.GetAllConceptsWithSpecAsync();
+            var result = await _conceptService.GetAllConceptsWithSpecAsync(parames);
             if (result is null) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
             return Ok(result);
         }

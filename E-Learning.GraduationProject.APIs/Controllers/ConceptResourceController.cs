@@ -2,6 +2,7 @@
 using E_Learning.GraduationProject.Core.Dtos.Resources;
 using E_Learning.GraduationProject.Core.Entities;
 using E_Learning.GraduationProject.Core.Service.Contract;
+using E_Learning.GraduationProject.Core.Specifications.ConceptResources;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Infrastructure;
@@ -22,9 +23,10 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ConceptResourceToReturn>>> GetAllResources()
+        public async Task<ActionResult<IEnumerable<ConceptResourceToReturn>>> GetAllResources([FromQuery]ConceptResourceParames parames)
         {
-            var resources = await _resourceService.GetAllResourcesAsync();
+            var spec = new ConceptResourceSpecifications(parames);
+            var resources = await _resourceService.GetAllResourcesAsync(parames);
             if (resources is null) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
 
             return Ok(resources);
