@@ -52,6 +52,11 @@ namespace E_Learning.GraduationProject.APIs.Helper
             services.AddScoped<ITrackStepService, TrackStepService>();
 
 
+            services.AddScoped<IStepResourceService, StepResourceService>();
+
+
+
+
             return services;
         }
         private static IServiceCollection AddDbContextService(this IServiceCollection services, IConfiguration configuration)

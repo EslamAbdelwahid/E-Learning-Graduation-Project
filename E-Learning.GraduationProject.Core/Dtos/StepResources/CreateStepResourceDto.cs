@@ -9,6 +9,7 @@ namespace E_Learning.GraduationProject.Core.Dtos.StepResources
 {
     public class CreateStepResourceDto
     {
+        public int TrackStepId {  get; set; }
         public string Title { get; set; }
         public string Url { get; set; }
         public ResourceType ResourceType { get; set; }
