@@ -9,12 +9,11 @@ namespace E_Learning.GraduationProject.Service.Services
 {
     public interface ITrackStepService
     {
-        Task<IEnumerable<TrackStep>> GetAllStepsWithSpecAsync();
-        Task<TrackStep> GetStepByIdWithSpecAsync(int id);
+        Task<IEnumerable<TrackStep>> GetAllStepsForASpecificTrackWithSpecAsync(int trackId);
 
         Task<TrackStep?> CreateTrackStepAsync(TrackStep trackStep);
         Task<TrackStep?> UpdateTrackStepAsync(TrackStep trackStep);
-        Task<TrackStep?> DeleteTrackStepAsync(int id);
-
+        Task<TrackStep?> DeleteTrackStepAsync(int trackId, int stepId);
+        Task<TrackStep> GetStepWithSpecAsync(int trackId, int stepId);
     }
 }

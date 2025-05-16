@@ -30,7 +30,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult<UpdateTrackStepDto>> UpdateTrackStep(int id, UpdateTrackStepDto trackStepDto)
+        public async Task<ActionResult<UpdateTrackStepDto>> UpdateStep(int id, UpdateTrackStepDto trackStepDto)
         {
             if(id != trackStepDto.TrackStepId)
             {
@@ -41,27 +41,26 @@ namespace E_Learning.GraduationProject.APIs.Controllers
             return Ok(trackStepDto);
         }
 
-        [HttpDelete("{id}")]
-        public async Task<ActionResult<TrackStepResponseDto>> UpdateTrackStep(int id)
+        [HttpGet("{trackId}")]
+        public async Task<ActionResult<IEnumerable<TrackStepResponseDto>>> GetAllStepsForSpecificTrack(int trackId)
         {
-            var trackStep = await stepService.DeleteTrackStepAsync(id);
-            if (trackStep is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
-            return Ok(mapper.Map<TrackStepResponseDto>(trackStep));
-        }
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<TrackStepResponseDto>>> GetAllSteps()
-        {
-            var trackSteps = await stepService.GetAllStepsWithSpecAsync();
+            var trackSteps = await stepService.GetAllStepsForASpecificTrackWithSpecAsync(trackId);
             if (trackSteps is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
             return Ok(mapper.Map<IEnumerable<TrackStepResponseDto>>(trackSteps));
         }
-        [HttpGet("{id}")]
-        public async Task<ActionResult<TrackStepResponseDto>> GetStepById(int id)
+        [HttpGet]
+        public async Task<ActionResult<TrackStepResponseDto>> GetStep([FromQuery]int trackId, [FromQuery] int stepId)
         {
-            var trackStep = await stepService.GetStepByIdWithSpecAsync(id);
+            var trackStep = await stepService.GetStepWithSpecAsync(trackId, stepId);
             if (trackStep is null) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
             return Ok(mapper.Map<TrackStepResponseDto>(trackStep));
         }
 
+        public async Task<ActionResult<TrackStepResponseDto>> DeleteStep([FromQuery] int trackId, [FromQuery] int stepId)
+        {
+            var trackStep = await stepService.DeleteTrackStepAsync(trackId, stepId);
+            if (trackStep is null) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
+            return Ok(mapper.Map<TrackStepResponseDto>(trackStep));
+        }
     }
 }

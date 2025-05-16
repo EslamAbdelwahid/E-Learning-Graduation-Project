@@ -13,7 +13,12 @@ namespace E_Learning.GraduationProject.Core.Specifications.TrackSteps
         {
             ApplyIncludes();
         }
-        public TrackStepSpecifications(int trackStepId) : base(ts => ts.Id == trackStepId)
+        public TrackStepSpecifications(int trackId) : base(ts => ts.TrackId == trackId)
+        {
+            ApplyIncludes();
+        }
+        public TrackStepSpecifications(int trackId, int stepId) : base(ts => ts.TrackId == trackId 
+        && ts.Id == stepId)
         {
             ApplyIncludes();
         }
