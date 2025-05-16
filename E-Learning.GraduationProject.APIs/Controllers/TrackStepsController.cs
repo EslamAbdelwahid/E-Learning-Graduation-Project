@@ -55,7 +55,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
             if (trackStep is null) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
             return Ok(mapper.Map<TrackStepResponseDto>(trackStep));
         }
-
+        [HttpDelete]
         public async Task<ActionResult<TrackStepResponseDto>> DeleteStep([FromQuery] int trackId, [FromQuery] int stepId)
         {
             var trackStep = await stepService.DeleteTrackStepAsync(trackId, stepId);
