@@ -10,6 +10,8 @@ namespace E_Learning.GraduationProject.Core.Entities
         public int TrackStepId { get; set; }
         public TrackStep TrackStep { get; set; }
 
+        public int OrderIndex { get; set; }
+
         public string Title { get; set; }
 
         public string Url { get; set; }
