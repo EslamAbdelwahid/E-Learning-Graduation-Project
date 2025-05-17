@@ -15,5 +15,6 @@ namespace E_Learning.GraduationProject.Core.Dtos.StepResources
         public string Url { get; set; }
         public ResourceType ResourceType { get; set; }
         public int TotalDurationMinutes { get; set; }
+        public int OrderIndex { get; set; }
     }
 }

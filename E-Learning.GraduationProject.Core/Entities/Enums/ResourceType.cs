@@ -9,7 +9,8 @@ namespace E_Learning.GraduationProject.Core.Entities.Enums
 {
     public enum ResourceType
     {
-        [EnumMember(Value ="Video")]
-        Video
+        Video,
+        Article,
+        Exercise
     }
 }

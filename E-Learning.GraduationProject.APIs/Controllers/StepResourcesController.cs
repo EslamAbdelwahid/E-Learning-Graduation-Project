@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using E_Learning.GraduationProject.APIs.Errors;
+using E_Learning.GraduationProject.Core;
 using E_Learning.GraduationProject.Core.Dtos.StepResources;
 using E_Learning.GraduationProject.Core.Dtos.TackSteps;
 using E_Learning.GraduationProject.Core.Entities;
@@ -17,11 +18,13 @@ namespace E_Learning.GraduationProject.APIs.Controllers
     {
         private readonly IStepResourceService resourceService;
         private readonly IMapper mapper;
+        private readonly IUnitOfWork unitOfWork;
 
-        public StepResourcesController(IStepResourceService resourceService, IMapper mapper)
+        public StepResourcesController(IStepResourceService resourceService, IMapper mapper, IUnitOfWork unitOfWork)
         {
             this.resourceService = resourceService;
             this.mapper = mapper;
+            this.unitOfWork = unitOfWork;
         }
         [HttpPost]
         public async Task<ActionResult<CreateStepResourceDto>> CreateStepResource(CreateStepResourceDto stepResourceDto)
@@ -44,21 +47,21 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         }
 
         [HttpDelete]
-        public async Task<ActionResult<StepResourceResponseDto>> UpdateStepResource([FromQuery]int stepId, [FromQuery] int resourceId)
+        public async Task<ActionResult<StepResourceResponseDto>> DeleteStepResource([FromQuery]int stepId, [FromQuery] int resourceId)
         {
             var stepResource = await resourceService.DeleteResourceAsync(stepId, resourceId);
             if (stepResource is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
             return Ok(mapper.Map<StepResourceResponseDto>(stepResource));
         }
 
-        [HttpGet("Get All Resources For Step")]
-        public async Task<ActionResult<PaginationResponseToReturn<StepResourceResponseDto>>> GetAllResourcesForSpecificStep(StepResourceSpecParams specParams)
+        [HttpGet("all-resources-for-step")]
+        public async Task<ActionResult<PaginationResponseToReturn<StepResourceResponseDto>>> GetAllResourcesForSpecificStep([FromQuery] StepResourceSpecParams specParams)
         {
-            var resources = await resourceService.GetAllResourcesForSpecificStepWithSpecAsync(specParams);
-            if (resources is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
-            var resourcesDto = mapper.Map<IEnumerable<StepResourceResponseDto>>(resources);
-            var response = new PaginationResponseToReturn<StepResourceResponseDto>(specParams.PageIndex, specParams.PageSize, 0, resourcesDto);
-            return Ok(response);
+            // Using the new service method that handles pagination internally
+            var paginatedResponse = await resourceService.GetPaginatedResourcesForStepAsync(specParams);
+            if (paginatedResponse is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
+
+            return Ok(paginatedResponse);
         }
 
         [HttpGet]

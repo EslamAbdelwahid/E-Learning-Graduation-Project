@@ -13,6 +13,7 @@ using E_Learning.GraduationProject.Core.Mapping.LanguageConcepts;
 using E_Learning.GraduationProject.Core.Mapping.PractiseProblems;
 using E_Learning.GraduationProject.Core.Mapping.TrackSteps;
 using E_Learning.GraduationProject.Core.Mapping.StepResources;
+using System.Text.Json.Serialization;
 
 
 namespace E_Learning.GraduationProject.APIs.Helper
@@ -31,7 +32,12 @@ namespace E_Learning.GraduationProject.APIs.Helper
         }
         private static IServiceCollection AddBuiltInService(this IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers().AddJsonOptions(options =>
+            {
+                // this options allow user to write strings in ResourceType Enum instead of integers
+                options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+            });
+
             return services;
         }
         private static IServiceCollection AddSwaggerService(this IServiceCollection services)

@@ -17,7 +17,7 @@ namespace E_Learning.GraduationProject.Core.Specifications.StepResources
         ) 
         {
             
-            AddOrderBy(sr => sr.OrderIndex.HasValue ? sr.OrderIndex : sr.Title);
+            AddOrderBy(sr => sr.OrderIndex);
             ApplyPagination(specParams.PageSize, (specParams.PageIndex - 1) * specParams.PageSize);
             ApplyIncludes();
         }
