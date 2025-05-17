@@ -16,6 +16,11 @@ namespace E_Learning.GraduationProject.Core.Entities
 
         public string Url { get; set; }
 
+        public string ResourceTypeString
+        {
+            get => ResourceType.ToString();
+            set => ResourceType = Enum.Parse<ResourceType>(value);
+        }
         public ResourceType ResourceType { get; set; }
 
         public int TotalDurationMinutes { get; set; }

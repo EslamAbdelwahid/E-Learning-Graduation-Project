@@ -9,13 +9,20 @@ namespace E_Learning.GraduationProject.Core.Specifications.TrackSteps
 {
     public class TrackStepSpecifications : BaseSpecification<TrackStep, int>
     {
-        public TrackStepSpecifications()
+
+        public TrackStepSpecifications(TrackStepSpecParams specParams) : base
+            (
+            ts => ts.TrackId == specParams.TrackId
+            &&
+            (string.IsNullOrEmpty(specParams.SearchByTitle) || (ts.Title.ToLower().Contains(specParams.SearchByTitle)))
+            )
         {
+            
+
             ApplyIncludes();
-        }
-        public TrackStepSpecifications(int trackId) : base(ts => ts.TrackId == trackId)
-        {
-            ApplyIncludes();
+            ApplyPagination(specParams.PageSize, (specParams.PageIndex - 1) * specParams.PageSize);
+            AddOrderBy(ts => ts.OrderIndex);
+            
         }
         public TrackStepSpecifications(int trackId, int stepId) : base(ts => ts.TrackId == trackId 
         && ts.Id == stepId)

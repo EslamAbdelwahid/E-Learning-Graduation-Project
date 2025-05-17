@@ -11,11 +11,12 @@ namespace E_Learning.GraduationProject.Core.Specifications.StepResources
     {
         public StepResourceWithCountSpecifications(StepResourceSpecParams specParams) : base
         (sr => sr.TrackStepId == specParams.StepId
-        && (string.IsNullOrEmpty(specParams.SearchByTitle) || sr.Title.ToLower().Contains(specParams.SearchByTitle))
-        && (string.IsNullOrEmpty(specParams.SearchByResourceType) || sr.Title.ToLower().Contains(specParams.SearchByResourceType))
+            && (string.IsNullOrEmpty(specParams.SearchByTitle) || sr.Title.ToLower().Contains(specParams.SearchByTitle.ToLower()))
+            && (string.IsNullOrEmpty(specParams.SearchByResourceType) || sr.ResourceTypeString.ToString().ToLower().Contains(specParams.SearchByResourceType.ToLower()))
         )
         {
             
         }
+
     }
 }

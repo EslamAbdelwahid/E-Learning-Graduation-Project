@@ -2,6 +2,8 @@
 using E_Learning.GraduationProject.APIs.Errors;
 using E_Learning.GraduationProject.Core.Dtos.TackSteps;
 using E_Learning.GraduationProject.Core.Entities;
+using E_Learning.GraduationProject.Core.Hellper;
+using E_Learning.GraduationProject.Core.Specifications.TrackSteps;
 using E_Learning.GraduationProject.Service.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -41,14 +43,15 @@ namespace E_Learning.GraduationProject.APIs.Controllers
             return Ok(trackStepDto);
         }
 
-        [HttpGet("{trackId}")]
-        public async Task<ActionResult<IEnumerable<TrackStepResponseDto>>> GetAllStepsForSpecificTrack(int trackId)
+        [HttpGet("all-track-steps-for-track")]
+        public async Task<ActionResult<PaginationResponseToReturn<TrackStepResponseDto>>> GetAllStepsForSpecificTrack([FromQuery] TrackStepSpecParams specParams)
         {
-            var trackSteps = await stepService.GetAllStepsForASpecificTrackWithSpecAsync(trackId);
-            if (trackSteps is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
-            return Ok(mapper.Map<IEnumerable<TrackStepResponseDto>>(trackSteps));
+            var response = await stepService.GetPaginatedTrackStepsForTrackAsync(specParams);
+            if (response is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
+            return Ok(response);
         }
-        [HttpGet]
+
+        [HttpGet("get-step")]
         public async Task<ActionResult<TrackStepResponseDto>> GetStep([FromQuery]int trackId, [FromQuery] int stepId)
         {
             var trackStep = await stepService.GetStepWithSpecAsync(trackId, stepId);

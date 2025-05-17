@@ -57,7 +57,6 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         [HttpGet("all-resources-for-step")]
         public async Task<ActionResult<PaginationResponseToReturn<StepResourceResponseDto>>> GetAllResourcesForSpecificStep([FromQuery] StepResourceSpecParams specParams)
         {
-            // Using the new service method that handles pagination internally
             var paginatedResponse = await resourceService.GetPaginatedResourcesForStepAsync(specParams);
             if (paginatedResponse is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
 

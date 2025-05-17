@@ -15,16 +15,14 @@ namespace E_Learning.GraduationProject.Repository.Data.Configurations
         public void Configure(EntityTypeBuilder<StepResource> builder)
         {
 
-           
 
 
-            builder.Property(SR => SR.ResourceType)
-                  .HasConversion(
-                   //to
-                   RT => RT.ToString(),
-                   //from
-                   RT => (ResourceType)Enum.Parse(typeof(ResourceType),RT)
-                   );
+            // I will store ResourceTypeString Property not enum to make our life easier
+            builder.Property(e => e.ResourceTypeString)
+                   .HasColumnName("ResourceType")
+                   .IsRequired();
+
+            builder.Ignore(e => e.ResourceType);
 
         }
     }
