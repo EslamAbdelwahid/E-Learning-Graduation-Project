@@ -19,33 +19,33 @@ namespace E_Learning.GraduationProject.Core.Specifications.LanguageConcepts
             {
                 switch (parames.Sort)
                 {
-                    case "TitleAscending":
+                    case "Title_Asc":
                         AddOrderBy(LC => LC.Title);
                         break;
-                    case "TitleDescending":
+                    case "Title_Desc":
                         AddOrderByDesc(LC => LC.Title);
                         break;
-                    case "EstimatedHoursAscending":
+                    case "Estimated_Hours_Asc":
                         AddOrderBy(LC => LC.EstimatedHours);
                         break;
-                    case "EstimatedHoursDescending":
+                    case "Estimated_Hours_Desc":
                         AddOrderByDesc(LC => LC.EstimatedHours);
                         break;
-                    case "OrderIndexAscending":
+                    case "Order_Index_Asc":
                         AddOrderBy(LC => LC.OrderIndex);
                         break;
-                    case "OrderIndexDescending":
+                    case "Order_Index_Desc": 
                         AddOrderByDesc(LC => LC.OrderIndex);
                         break;
                     default:
-                        AddOrderBy(LC => LC.Title);
+                        AddOrderBy(LC => LC.OrderIndex);
                         break;
                 }
                
             }
-            else // title
+            else // OrderIndex 
             {
-                AddOrderBy(LC => LC.Title);
+                AddOrderBy(LC => LC.OrderIndex);
             }
 
             // pagination

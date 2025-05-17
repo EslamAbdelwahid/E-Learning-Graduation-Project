@@ -4,6 +4,7 @@ using E_Learning.GraduationProject.Repository.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace E_Learning.GraduationProject.Repository.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250517065707_AddOrderIndexIntoStepResource")]
+    partial class AddOrderIndexIntoStepResource
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -62,7 +65,7 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
 
                     b.HasIndex("LanguageConceptId");
 
-                    b.ToTable("ConceptResources", (string)null);
+                    b.ToTable("ConceptResources");
                 });
 
             modelBuilder.Entity("E_Learning.GraduationProject.Core.Entities.Identity.Student", b =>
@@ -143,7 +146,7 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Student", (string)null);
+                    b.ToTable("Student");
                 });
 
             modelBuilder.Entity("E_Learning.GraduationProject.Core.Entities.LanguageConcept", b =>
@@ -188,7 +191,7 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
 
                     b.HasIndex("ProgrammingLanguageId");
 
-                    b.ToTable("LanguageConcepts", (string)null);
+                    b.ToTable("LanguageConcepts");
                 });
 
             modelBuilder.Entity("E_Learning.GraduationProject.Core.Entities.PractiseProblem", b =>
@@ -248,7 +251,7 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
 
                     b.HasIndex("LanguageConceptId");
 
-                    b.ToTable("PractiseProblems", (string)null);
+                    b.ToTable("PractiseProblems");
                 });
 
             modelBuilder.Entity("E_Learning.GraduationProject.Core.Entities.ProgrammingLanguage", b =>
@@ -291,7 +294,7 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ProgrammingLanguages", (string)null);
+                    b.ToTable("ProgrammingLanguages");
                 });
 
             modelBuilder.Entity("E_Learning.GraduationProject.Core.Entities.StepResource", b =>
@@ -337,7 +340,7 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
 
                     b.HasIndex("TrackStepId");
 
-                    b.ToTable("StepResources", (string)null);
+                    b.ToTable("StepResources");
                 });
 
             modelBuilder.Entity("E_Learning.GraduationProject.Core.Entities.StudentProgress", b =>
@@ -386,7 +389,7 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
 
                     b.HasIndex("StudentId");
 
-                    b.ToTable("UserProgresses", (string)null);
+                    b.ToTable("UserProgresses");
                 });
 
             modelBuilder.Entity("E_Learning.GraduationProject.Core.Entities.Track", b =>
@@ -426,7 +429,7 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Tracks", (string)null);
+                    b.ToTable("Tracks");
                 });
 
             modelBuilder.Entity("E_Learning.GraduationProject.Core.Entities.TrackStep", b =>
@@ -470,7 +473,7 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
 
                     b.HasIndex("TrackId");
 
-                    b.ToTable("TrackSteps", (string)null);
+                    b.ToTable("TrackSteps");
                 });
 
             modelBuilder.Entity("E_Learning.GraduationProject.Core.Entities.ConceptResource", b =>

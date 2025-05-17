@@ -22,10 +22,10 @@ namespace E_Learning.GraduationProject.Core.Specifications.ProgrammingLanguages
             {
                 switch (parames.Sort)
                 {
-                    case "NameAscending":
+                    case "Name_Asc":
                         AddOrderBy(PL => PL.Name);
                         break;
-                    case "NameDescending":
+                    case "Name_Desc":
                         AddOrderByDesc(PL => PL.Name);
                         break;
                     default:

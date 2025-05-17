@@ -21,16 +21,16 @@ namespace E_Learning.GraduationProject.Core.Specifications.ConceptResources
             {
                 switch (parames.Sort)
                 {
-                    case "DurationAscending":
+                    case "Duration_Asc":
                         AddOrderBy(CR => CR.TotalDurationMinutes);
                         break;
-                    case "DurationDescending":
+                    case "Duration_Desc":
                         AddOrderByDesc(CR => CR.TotalDurationMinutes);
                         break;
-                    case "TitleAscending":
+                    case "Title_Asc":
                         AddOrderBy(CR => CR.Title);
                         break;
-                    case "TitleDescending":
+                    case "Title_Desc":
                         AddOrderByDesc(CR => CR.Title);
                         break;
                     default:

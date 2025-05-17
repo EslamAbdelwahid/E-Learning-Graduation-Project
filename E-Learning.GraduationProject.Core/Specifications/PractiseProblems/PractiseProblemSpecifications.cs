@@ -27,16 +27,16 @@ namespace E_Learning.GraduationProject.Core.Specifications.PractiseProblems
             {
                 switch (parames.Sort)
                 {
-                    case "TitleAscending":
+                    case "Title_Asc":
                         AddOrderBy(PP => PP.Title);
                         break;
-                    case "TitleDescending":
+                    case "Title_Desc":
                         AddOrderByDesc(PP => PP.Title);
                         break;
-                    case "OrderIndexAscending":
+                    case "Order_Index_Asc":
                         AddOrderBy(PP => PP.OrderIndex);
                         break;
-                    case "OrderIndexDescending":
+                    case "Order_Index_Desc":
                         AddOrderByDesc(PP => PP.OrderIndex);
                         break;
 
