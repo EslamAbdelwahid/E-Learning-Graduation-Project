@@ -9,11 +9,24 @@ namespace E_Learning.GraduationProject.Core.Specifications.StepResources
 {
     public class StepResourceSpecifications : BaseSpecification<StepResource, int>
     {
-        public StepResourceSpecifications()
+
+        public StepResourceSpecifications(StepResourceSpecParams specParams) : base
+        (sr => sr.TrackStepId == specParams.StepId
+        && (string.IsNullOrEmpty(specParams.SearchByTitle) || sr.Title.ToLower().Contains(specParams.SearchByTitle))
+        && (string.IsNullOrEmpty(specParams.SearchByResourceType) || sr.Title.ToLower().Contains(specParams.SearchByResourceType))
+        ) 
         {
+            
+            AddOrderBy(sr => sr.OrderIndex.HasValue ? sr.OrderIndex : sr.Title);
+            ApplyPagination(specParams.PageSize, (specParams.PageIndex - 1) * specParams.PageSize);
             ApplyIncludes();
         }
-        public StepResourceSpecifications(int resourceId):base(sr => sr.Id == resourceId) 
+        public StepResourceSpecifications(int stepId, int resourceId) : base
+        (
+        sr => sr.TrackStepId == stepId 
+        &&
+        sr.Id == resourceId
+        )
         {
             ApplyIncludes();
         }

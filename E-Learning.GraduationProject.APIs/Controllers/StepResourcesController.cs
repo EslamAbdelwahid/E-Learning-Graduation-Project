@@ -3,7 +3,9 @@ using E_Learning.GraduationProject.APIs.Errors;
 using E_Learning.GraduationProject.Core.Dtos.StepResources;
 using E_Learning.GraduationProject.Core.Dtos.TackSteps;
 using E_Learning.GraduationProject.Core.Entities;
+using E_Learning.GraduationProject.Core.Hellper;
 using E_Learning.GraduationProject.Core.Service.Contract;
+using E_Learning.GraduationProject.Core.Specifications.StepResources;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -41,25 +43,28 @@ namespace E_Learning.GraduationProject.APIs.Controllers
             return Ok(stepResourceDto);
         }
 
-        [HttpDelete("{id}")]
-        public async Task<ActionResult<StepResourceResponseDto>> UpdateStepResource(int id)
+        [HttpDelete]
+        public async Task<ActionResult<StepResourceResponseDto>> UpdateStepResource([FromQuery]int stepId, [FromQuery] int resourceId)
         {
-            var stepResource = await resourceService.DeleteResourceAsync(id);
+            var stepResource = await resourceService.DeleteResourceAsync(stepId, resourceId);
             if (stepResource is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
             return Ok(mapper.Map<StepResourceResponseDto>(stepResource));
         }
 
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<StepResourceResponseDto>>> GetAllResources()
+        [HttpGet("Get All Resources For Step")]
+        public async Task<ActionResult<PaginationResponseToReturn<StepResourceResponseDto>>> GetAllResourcesForSpecificStep(StepResourceSpecParams specParams)
         {
-            var resources = await resourceService.GetAllResourcesWithSpecAsync();
+            var resources = await resourceService.GetAllResourcesForSpecificStepWithSpecAsync(specParams);
             if (resources is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
-            return Ok(mapper.Map<IEnumerable<StepResourceResponseDto>>(resources));
+            var resourcesDto = mapper.Map<IEnumerable<StepResourceResponseDto>>(resources);
+            var response = new PaginationResponseToReturn<StepResourceResponseDto>(specParams.PageIndex, specParams.PageSize, 0, resourcesDto);
+            return Ok(response);
         }
-        [HttpGet("{id}")]
-        public async Task<ActionResult<StepResourceResponseDto>> GetResourceById(int id)
+
+        [HttpGet]
+        public async Task<ActionResult<StepResourceResponseDto>> GetResource([FromQuery] int stepId,[FromQuery] int resourceId)
         {
-            var stepResource = await resourceService.GetResourcesByIdWithSpecAsync(id);
+            var stepResource = await resourceService.GetResourcesWithSpecAsync(stepId, resourceId);
             if (stepResource is null) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
             return Ok(mapper.Map<StepResourceResponseDto>(stepResource));
         }

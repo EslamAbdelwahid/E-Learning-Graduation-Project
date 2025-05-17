@@ -30,25 +30,25 @@ namespace E_Learning.GraduationProject.Service.Services
             int res = await unitOfWork.CompleteAsync();
             return res > 0 ? resource : null;
         }
-        public async Task<StepResource?> DeleteResourceAsync(int id)
+        public async Task<StepResource?> DeleteResourceAsync(int stepId, int resourceId)
         {
-            var resource = await GetResourcesByIdWithSpecAsync(id);
+            var resource = await GetResourcesWithSpecAsync(stepId, resourceId);
             if (resource is null) return null;
             unitOfWork.Repository<StepResource, int>().Delete(resource);
             int res = await unitOfWork.CompleteAsync();
             return res > 0 ? resource : null;
         }
 
-        public async Task<IEnumerable<StepResource>> GetAllResourcesWithSpecAsync()
+        public async Task<IEnumerable<StepResource>> GetAllResourcesForSpecificStepWithSpecAsync(StepResourceSpecParams specParams)
         {
-            var spec = new StepResourceSpecifications();
+            var spec = new StepResourceSpecifications(specParams);
             var resources = await unitOfWork.Repository<StepResource, int>().GetAllWithSpecAsync(spec);
             return resources;
         }
 
-        public async Task<StepResource?> GetResourcesByIdWithSpecAsync(int id)
+        public async Task<StepResource?> GetResourcesWithSpecAsync(int stepId, int resourceId)
         {
-            var spec = new StepResourceSpecifications(id);
+            var spec = new StepResourceSpecifications(stepId, resourceId);
             var resource = await unitOfWork.Repository<StepResource, int>().GetWithSpecAsync(spec);
             return resource;
         }

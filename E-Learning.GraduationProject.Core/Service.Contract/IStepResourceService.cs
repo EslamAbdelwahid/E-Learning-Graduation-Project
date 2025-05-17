@@ -1,4 +1,5 @@
 ﻿using E_Learning.GraduationProject.Core.Entities;
+using E_Learning.GraduationProject.Core.Specifications.StepResources;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,11 +10,11 @@ namespace E_Learning.GraduationProject.Core.Service.Contract
 {
     public interface IStepResourceService
     {
-        Task<IEnumerable<StepResource>> GetAllResourcesWithSpecAsync();
-        Task<StepResource?> GetResourcesByIdWithSpecAsync(int id);
+        Task<IEnumerable<StepResource>> GetAllResourcesForSpecificStepWithSpecAsync(StepResourceSpecParams specParams);
+        Task<StepResource?> GetResourcesWithSpecAsync(int stepId, int resourceId);
         Task<StepResource?> CreateResourceAsync(StepResource resource);
         Task<StepResource?> UpdateResourceAsync(StepResource resource);
-        Task<StepResource?> DeleteResourceAsync(int id);
+        Task<StepResource?> DeleteResourceAsync(int stepId, int resourceId);
 
     }
 }
