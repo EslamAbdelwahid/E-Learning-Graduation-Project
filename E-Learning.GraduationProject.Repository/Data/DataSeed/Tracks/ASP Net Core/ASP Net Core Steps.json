@@ -1,0 +1,58 @@
+[
+  {
+    "trackId": 2,
+    "title": "Introduction to C#",
+    "description": "Learn the basics of C# programming including variables, data types, control structures, functions, and object-oriented concepts.",
+    "orderIndex": 1,
+    "estimatedHours": 15,
+    "isRequired": true
+  },
+  {
+    "trackId": 2,
+    "title": "Working with SQL Server",
+    "description": "Understand relational databases, write SQL queries, and work with tables, views, stored procedures, and constraints.",
+    "orderIndex": 2,
+    "estimatedHours": 12,
+    "isRequired": true
+  },
+  {
+    "trackId": 2,
+    "title": "Advanced C# Concepts",
+    "description": "Dive into delegates, events, generics, reflection, async/await, and advanced OOP topics in C#.",
+    "orderIndex": 3,
+    "estimatedHours": 18,
+    "isRequired": true
+  },
+  {
+    "trackId": 2,
+    "title": "LINQ Fundamentals",
+    "description": "Use Language Integrated Query (LINQ) to query collections and databases using method and query syntax.",
+    "orderIndex": 4,
+    "estimatedHours": 10,
+    "isRequired": true
+  },
+  {
+    "trackId": 2,
+    "title": "Entity Framework Core",
+    "description": "Learn how to use EF Core for ORM-based database operations, migrations, and model configuration.",
+    "orderIndex": 5,
+    "estimatedHours": 14,
+    "isRequired": true
+  },
+  {
+    "trackId": 2,
+    "title": "ASP.NET Core MVC",
+    "description": "Build web applications using the MVC pattern, controllers, views, models, and Razor syntax.",
+    "orderIndex": 6,
+    "estimatedHours": 16,
+    "isRequired": true
+  },
+  {
+    "trackId": 2,
+    "title": "Building RESTful APIs",
+    "description": "Create and consume RESTful Web APIs using ASP.NET Core, routing, controllers, and middleware.",
+    "orderIndex": 7,
+    "estimatedHours": 15,
+    "isRequired": true
+  }
+]

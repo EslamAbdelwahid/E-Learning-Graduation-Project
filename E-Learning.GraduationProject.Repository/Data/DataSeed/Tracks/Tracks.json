@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Frontend Development (Angular)",
+    "description": "Learn to build dynamic web applications using Angular, including components, services, routing, and state management.",
+    "iconUrl": "/Images/Tracks/angular.jpg",
+    "estimatedCompletionWeeks": 12,
+    "isActive": true
+  },
+  {
+    "name": "Backend Development (ASP.NET Core MVC & API)",
+    "description": "Master building robust backend systems with ASP.NET Core MVC for web apps and RESTful APIs using C# and Entity Framework Core.",
+    "iconUrl": "/Images/Tracks/dotnetcore.jpg",
+    "estimatedCompletionWeeks": 16,
+    "isActive": true
+  },
+  {
+    "name": "Data Science",
+    "description": "Analyze data, build models, and visualize insights using Python and industry-standard tools.",
+    "iconUrl": "/Images/Tracks/datascience.jpg",
+    "estimatedCompletionWeeks": 14,
+    "isActive": true
+  },
+  {
+    "name": "Machine Learning & AI",
+    "description": "Learn algorithms, model training, evaluation, and deployment using Python and ML frameworks.",
+    "iconUrl": "/Images/Tracks/AI.jpg",
+    "estimatedCompletionWeeks": 24,
+    "isActive": true
+  },
+  {
+    "name": "UI/UX Design",
+    "description": "Design intuitive and visually appealing user experiences using Figma, Adobe XD, and design principles.",
+    "iconUrl": "/Images/Tracks/UI-UX.jpg",
+    "estimatedCompletionWeeks": 4,
+    "isActive": true
+  }
+]
