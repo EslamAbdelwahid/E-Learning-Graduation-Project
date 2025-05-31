@@ -10,7 +10,7 @@ namespace E_Learning.GraduationProject.Core.Entities
 {
     public class StudentProgress : BaseEntity<int>
     {
-        public string StudentId { get; set; }
+        public int StudentId { get; set; }
 
         public Student Student { get; set; }
 
@@ -27,8 +27,6 @@ namespace E_Learning.GraduationProject.Core.Entities
         public int? TimeSpent { get; set; }
 
         public int CurrentPositionSeconds { get; set; }
-
-
 
     }
 }

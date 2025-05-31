@@ -1,5 +1,6 @@
 ﻿using E_Learning.GraduationProject.Core.Entities;
 using E_Learning.GraduationProject.Core.Entities.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace E_Learning.GraduationProject.Repository.Data.Context
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<ApplicationUser>
     {
 
         public AppDbContext(DbContextOptions options):base(options)
@@ -24,7 +25,8 @@ namespace E_Learning.GraduationProject.Repository.Data.Context
             base.OnModelCreating(modelBuilder);
         }
 
-        public DbSet<StudentProgress> UserProgresses { get; set; }
+        public DbSet<Student> Students { get; set; }
+        public DbSet<StudentProgress> StudentProgresses { get; set; }
         public DbSet<ProgrammingLanguage> ProgrammingLanguages { get; set; }
         public DbSet<LanguageConcept> LanguageConcepts { get; set; }
         public DbSet<ConceptResource> ConceptResources { get; set; }

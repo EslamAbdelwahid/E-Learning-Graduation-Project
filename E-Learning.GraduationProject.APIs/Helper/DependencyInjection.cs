@@ -14,6 +14,8 @@ using E_Learning.GraduationProject.Core.Mapping.PractiseProblems;
 using E_Learning.GraduationProject.Core.Mapping.TrackSteps;
 using E_Learning.GraduationProject.Core.Mapping.StepResources;
 using System.Text.Json.Serialization;
+using E_Learning.GraduationProject.Core.Entities.Identity;
+using Microsoft.AspNetCore.Identity;
 
 
 namespace E_Learning.GraduationProject.APIs.Helper
@@ -71,6 +73,11 @@ namespace E_Learning.GraduationProject.APIs.Helper
             {
                 options.UseSqlServer(configuration.GetConnectionString("Default"));
             });
+
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppDbContext>()
+                .AddDefaultTokenProviders();    
+
             return services;
         }
         private static IServiceCollection AddAutoMapperService(this IServiceCollection services)

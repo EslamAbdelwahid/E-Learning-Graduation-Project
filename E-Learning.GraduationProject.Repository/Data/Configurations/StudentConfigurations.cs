@@ -9,14 +9,14 @@ using System.Threading.Tasks;
 
 namespace E_Learning.GraduationProject.Repository.Data.Configurations
 {
-    public class UserProgressConfigurations : IEntityTypeConfiguration<StudentProgress>
+    public class StudentConfigurations : IEntityTypeConfiguration<Student>
     {
-        public void Configure(EntityTypeBuilder<StudentProgress> builder)
+        public void Configure(EntityTypeBuilder<Student> builder)
         {
-            builder.HasOne(sp => sp.Student)
-                .WithMany(s => s.studentProgresses)
-                .HasForeignKey(sp => sp.StudentId)
-                .OnDelete(DeleteBehavior.Cascade);
+            builder.HasOne(s => s.User)
+                .WithOne(a => a.Student)
+                .HasForeignKey<Student>(s => s.UserId);
+
         }
     }
 }
