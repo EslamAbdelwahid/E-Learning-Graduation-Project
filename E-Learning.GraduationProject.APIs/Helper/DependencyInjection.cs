@@ -16,6 +16,7 @@ using E_Learning.GraduationProject.Core.Mapping.StepResources;
 using System.Text.Json.Serialization;
 using E_Learning.GraduationProject.Core.Entities.Identity;
 using Microsoft.AspNetCore.Identity;
+using E_Learning.GraduationProject.Core.Mapping.Auth;
 
 
 namespace E_Learning.GraduationProject.APIs.Helper
@@ -58,7 +59,7 @@ namespace E_Learning.GraduationProject.APIs.Helper
             services.AddScoped<ILanguageConceptService, LanguageConceptService>();
             services.AddScoped<IPractiseProblemService, PractiseProblemService>();
             services.AddScoped<ITrackStepService, TrackStepService>();
-
+            services.AddScoped<IAuthService, AuthService>();
 
             services.AddScoped<IStepResourceService, StepResourceService>();
 
@@ -89,7 +90,7 @@ namespace E_Learning.GraduationProject.APIs.Helper
             services.AddAutoMapper(M => M.AddProfile(new PractiseProbemProfile()));
             services.AddAutoMapper(M => M.AddProfile(new TrackStepProfile()));
             services.AddAutoMapper(M => M.AddProfile(new StepResourceProfile()));
-
+            services.AddAutoMapper(M => M.AddProfile(new AuthProfile()));
             return services;
         }
         private static IServiceCollection ConfigureInvalidModelStateRespnoseService(this IServiceCollection services)
