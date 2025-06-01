@@ -81,6 +81,15 @@ namespace E_Learning.GraduationProject.APIs.Helper
 
             return services;
         }
+        private static IServiceCollection AddIdentityService(this IServiceCollection services)
+        {
+            // allow Dependency injection for all identity services
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppDbContext>()
+                .AddDefaultTokenProviders();
+
+            return services;
+        }
         private static IServiceCollection AddAutoMapperService(this IServiceCollection services)
         {
             services.AddAutoMapper(M => M.AddProfile(new ConceptResourceProfile()));

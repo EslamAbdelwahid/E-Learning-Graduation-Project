@@ -16,11 +16,18 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         {
             this.authService = authService;
         }
-        [HttpPost]
-        public async Task<IActionResult> Register([FromQuery] RegisterDto registerDto)
+        [HttpPost("Register")]
+        public async Task<IActionResult> Register(RegisterDto registerDto)
         {
             var res = await authService.RegisterAsync(registerDto);
-            if (res is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
+            if (res is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest, "Invalild SignUp"));
+            return Ok(res);
+        }
+        [HttpPost("LogIn")]
+        public async Task<IActionResult> LogIn( LogInDto logInDto)
+        {
+            var res = await authService.LogInAsync(logInDto);
+            if (res is null) return  Unauthorized(new ApiErrorResponse(StatusCodes.Status401Unauthorized));
             return Ok(res);
         }
     }

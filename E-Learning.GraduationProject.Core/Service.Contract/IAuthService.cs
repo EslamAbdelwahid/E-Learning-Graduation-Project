@@ -10,5 +10,6 @@ namespace E_Learning.GraduationProject.Core.Service.Contract
     public interface IAuthService
     {
         Task<AppUserDto> RegisterAsync(RegisterDto registerDto);
+        Task<AppUserDto> LogInAsync(LogInDto logInDto);
     }
 }

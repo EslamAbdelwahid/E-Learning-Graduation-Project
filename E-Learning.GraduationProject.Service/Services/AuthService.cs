@@ -16,13 +16,34 @@ namespace E_Learning.GraduationProject.Service.Services
     {
         private readonly UserManager<ApplicationUser> userManager;
         private readonly IMapper mapper;
+        private readonly SignInManager<ApplicationUser> signInManager;
 
-        public AuthService(UserManager<ApplicationUser> userManager,
-            IMapper mapper)
+        public AuthService(
+            UserManager<ApplicationUser> userManager,
+            IMapper mapper,
+            SignInManager<ApplicationUser> signInManager)
         {
             this.userManager = userManager;
             this.mapper = mapper;
+            this.signInManager = signInManager;
         }
+        
+        public async Task<AppUserDto> LogInAsync(LogInDto logInDto)
+        {
+            var user = await userManager.FindByEmailAsync(logInDto.Email);
+            if (user is null) return null;
+            var res = await signInManager.CheckPasswordSignInAsync(user, logInDto.Password, false);
+            if (!res.Succeeded) return null;
+
+            var userDto = new AppUserDto()
+            {
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                Email = user.Email,
+            };
+            return userDto;
+        }
+
         public async Task<AppUserDto> RegisterAsync(RegisterDto registerDto)
         {
             bool emailExist = await CheckEmailExistAsync(registerDto.Email);
@@ -34,6 +55,7 @@ namespace E_Learning.GraduationProject.Service.Services
                 UserName = registerDto.Email.Split("@")[0],
                 FirstName = registerDto.FirstName,
                 LastName = registerDto.LastName,
+                PhoneNumber = registerDto.PhoneNumber,
                 Address = address
             };
             var result = await userManager.CreateAsync(user, registerDto.Password);
@@ -47,6 +69,7 @@ namespace E_Learning.GraduationProject.Service.Services
             };
             return appUserDto;
         }
+        
         private async Task<bool> CheckEmailExistAsync(string email)
         {
             return await userManager.FindByEmailAsync(email) is not null;
