@@ -17,6 +17,9 @@ using System.Text.Json.Serialization;
 using E_Learning.GraduationProject.Core.Entities.Identity;
 using Microsoft.AspNetCore.Identity;
 using E_Learning.GraduationProject.Core.Mapping.Auth;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 
 namespace E_Learning.GraduationProject.APIs.Helper
@@ -31,6 +34,7 @@ namespace E_Learning.GraduationProject.APIs.Helper
             services.AddDbContextService(configuration);
             services.AddAutoMapperService();
             services.ConfigureInvalidModelStateRespnoseService();
+            services.AddAuthenticationService(configuration);
             return services;
         }
         private static IServiceCollection AddBuiltInService(this IServiceCollection services)
@@ -60,6 +64,7 @@ namespace E_Learning.GraduationProject.APIs.Helper
             services.AddScoped<IPractiseProblemService, PractiseProblemService>();
             services.AddScoped<ITrackStepService, TrackStepService>();
             services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<ITokenService, TokenService>();
 
             services.AddScoped<IStepResourceService, StepResourceService>();
 
@@ -90,6 +95,7 @@ namespace E_Learning.GraduationProject.APIs.Helper
 
             return services;
         }
+
         private static IServiceCollection AddAutoMapperService(this IServiceCollection services)
         {
             services.AddAutoMapper(M => M.AddProfile(new ConceptResourceProfile()));
@@ -118,6 +124,39 @@ namespace E_Learning.GraduationProject.APIs.Helper
                     return new BadRequestObjectResult(response);
                 };
             });
+            return services;
+        }
+
+        private static IServiceCollection AddAuthenticationService(this IServiceCollection services, IConfiguration configuration)
+        {
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(options =>
+            {
+                // Configure how incoming JWT tokens are validated.
+                options.TokenValidationParameters = new TokenValidationParameters()
+                {
+                    ValidateIssuer = true,
+
+                    ValidIssuer = configuration["JWT:Issuer"],
+
+                    ValidateAudience = true,
+
+                    ValidAudience = configuration["JWT:Audience"],
+
+                    ValidateLifetime = true,
+
+                    ValidateIssuerSigningKey = true,
+
+                    IssuerSigningKey = new SymmetricSecurityKey(
+
+                        Encoding.UTF8.GetBytes(configuration["JWT:SecretKey"])
+                    )
+                };
+            });
+
             return services;
         }
     }

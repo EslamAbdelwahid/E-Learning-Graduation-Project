@@ -10,6 +10,7 @@ namespace E_Learning.GraduationProject.Core.Dtos.Auth
     public class RegisterDto
     {
         [Required(ErrorMessage = "Email is Required!")]
+        [EmailAddress]
         public string Email { get; set; }
         [Required(ErrorMessage = "First Name is Required!")]
         public string FirstName { get; set; }
@@ -18,9 +19,11 @@ namespace E_Learning.GraduationProject.Core.Dtos.Auth
         public string LastName { get; set; }
 
         [Required(ErrorMessage = "Password is Required!")]
+
         public string Password { get; set; }
 
         [Required(ErrorMessage = "PhoneNumber is Required!")]
+        [Phone]
         public string PhoneNumber { get; set; }
         [Required(ErrorMessage = "Addresss is Required!")]
         public AddressDto AddressDto { get; set; }

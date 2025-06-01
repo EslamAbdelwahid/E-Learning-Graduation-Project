@@ -44,7 +44,7 @@ namespace E_Learning.GraduationProject.APIs.Helper
 
             app.UseHttpsRedirection();
 
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
 

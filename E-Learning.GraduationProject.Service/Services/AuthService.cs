@@ -17,15 +17,18 @@ namespace E_Learning.GraduationProject.Service.Services
         private readonly UserManager<ApplicationUser> userManager;
         private readonly IMapper mapper;
         private readonly SignInManager<ApplicationUser> signInManager;
+        private readonly ITokenService tokenService;
 
         public AuthService(
             UserManager<ApplicationUser> userManager,
             IMapper mapper,
-            SignInManager<ApplicationUser> signInManager)
+            SignInManager<ApplicationUser> signInManager,
+            ITokenService tokenService)
         {
             this.userManager = userManager;
             this.mapper = mapper;
             this.signInManager = signInManager;
+            this.tokenService = tokenService;
         }
         
         public async Task<AppUserDto> LogInAsync(LogInDto logInDto)
@@ -35,11 +38,14 @@ namespace E_Learning.GraduationProject.Service.Services
             var res = await signInManager.CheckPasswordSignInAsync(user, logInDto.Password, false);
             if (!res.Succeeded) return null;
 
+            var token = await tokenService.CreateTokenAsync(user);    
+
             var userDto = new AppUserDto()
             {
                 FirstName = user.FirstName,
                 LastName = user.LastName,
                 Email = user.Email,
+                Token = token
             };
             return userDto;
         }
