@@ -1,12 +1,14 @@
 ﻿using AutoMapper;
 using E_Learning.GraduationProject.Core.Dtos.Auth;
 using E_Learning.GraduationProject.Core.Entities.Identity;
+using E_Learning.GraduationProject.Core.Hellper;
 using E_Learning.GraduationProject.Core.Service.Contract;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,17 +20,20 @@ namespace E_Learning.GraduationProject.Service.Services
         private readonly IMapper mapper;
         private readonly SignInManager<ApplicationUser> signInManager;
         private readonly ITokenService tokenService;
+        private readonly IEmailService emailService;
 
         public AuthService(
             UserManager<ApplicationUser> userManager,
             IMapper mapper,
             SignInManager<ApplicationUser> signInManager,
-            ITokenService tokenService)
+            ITokenService tokenService,
+            IEmailService emailService)
         {
             this.userManager = userManager;
             this.mapper = mapper;
             this.signInManager = signInManager;
             this.tokenService = tokenService;
+            this.emailService = emailService;
         }
         
         public async Task<AppUserDto> LogInAsync(LogInDto logInDto)
@@ -75,7 +80,62 @@ namespace E_Learning.GraduationProject.Service.Services
             };
             return appUserDto;
         }
-        
+
+        public async Task<bool> ResetPasswordAsync(string email, string token, string newPassword)
+        {
+            var user = await userManager.FindByEmailAsync(email);
+            if (user == null) return false;
+
+            var decodedToken = Uri.UnescapeDataString(token);
+
+            var result = await userManager.ResetPasswordAsync(user, decodedToken, newPassword);
+
+            if (!result.Succeeded)
+            {
+                foreach (var error in result.Errors)
+                {
+                    Console.WriteLine($"Token Error: {error.Code} - {error.Description}");
+                }
+            }
+
+            return result.Succeeded;
+        }
+
+        public async Task<bool> SendPasswordResetEmailAsync(string userEmail)
+        {
+            bool userExists = await CheckEmailExistAsync(userEmail);
+            if (userExists == false) return true;
+
+            var user = await userManager.FindByEmailAsync(userEmail);
+            if (user == null) return true;
+
+            // Generate token and create URL
+            var resetToken = await userManager.GeneratePasswordResetTokenAsync(user);
+            var encodedToken = WebUtility.UrlEncode(resetToken);
+            var resetUrl = $"https://localhost:7297/api/auth/ResetPasswordForm?email={userEmail}&token={encodedToken}";
+
+            var email = new Email()
+            {
+                To = userEmail,
+                Subject = "Reset Password",
+                Body = $"Click here to reset your password: {resetUrl}"
+            };
+
+            await emailService.SendEmailAsync(email);
+            return true;
+        }
+        public async Task<bool> IsTokenValidAsync(string email, string token)
+        {
+            var user = await userManager.FindByEmailAsync(email);
+            if (user == null) return false;
+
+            var decodedToken = WebUtility.UrlDecode(token);
+            return await userManager.VerifyUserTokenAsync(
+                user,
+                TokenOptions.DefaultProvider,
+                "ResetPassword",
+                decodedToken);
+        }
         private async Task<bool> CheckEmailExistAsync(string email)
         {
             return await userManager.FindByEmailAsync(email) is not null;

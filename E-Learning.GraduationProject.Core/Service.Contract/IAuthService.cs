@@ -11,5 +11,9 @@ namespace E_Learning.GraduationProject.Core.Service.Contract
     {
         Task<AppUserDto> RegisterAsync(RegisterDto registerDto);
         Task<AppUserDto> LogInAsync(LogInDto logInDto);
+        Task<bool> SendPasswordResetEmailAsync(string email);
+        Task<bool> ResetPasswordAsync(string email, string token, string newPassword);
+        Task<bool> IsTokenValidAsync(string email, string token);
+
     }
 }

@@ -65,6 +65,7 @@ namespace E_Learning.GraduationProject.APIs.Helper
             services.AddScoped<ITrackStepService, TrackStepService>();
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<ITokenService, TokenService>();
+            services.AddTransient<IEmailService, EmailService>();
 
             services.AddScoped<IStepResourceService, StepResourceService>();
 

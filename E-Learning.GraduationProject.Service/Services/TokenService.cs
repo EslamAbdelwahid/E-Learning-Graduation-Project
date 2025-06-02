@@ -41,7 +41,7 @@ namespace E_Learning.GraduationProject.Service.Services
 
             var authKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JWT:SecretKey"]));
 
-
+            
             var token = new JwtSecurityToken(
                 issuer: configuration["JWT:Issuer"],
                 audience: configuration["JWT:Audience"],
