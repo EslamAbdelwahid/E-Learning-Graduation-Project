@@ -34,7 +34,8 @@ namespace E_Learning.GraduationProject.Service.Services
             {
                 UseDefaultCredentials = false,
                 Credentials = new NetworkCredential(fromEmail, fromPassword),
-                EnableSsl = true
+                EnableSsl = true,
+                DeliveryMethod = SmtpDeliveryMethod.Network
             };
 
             var mailMessage = new MailMessage(
