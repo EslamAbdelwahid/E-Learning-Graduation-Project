@@ -20,6 +20,7 @@ using E_Learning.GraduationProject.Core.Mapping.Auth;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using E_Learning.GraduationProject.Core.Repository.Contract;
 
 
 namespace E_Learning.GraduationProject.APIs.Helper
@@ -66,7 +67,7 @@ namespace E_Learning.GraduationProject.APIs.Helper
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<ITokenService, TokenService>();
             services.AddTransient<IEmailService, EmailService>();
-
+            services.AddScoped<IUserService, UserService>();
             services.AddScoped<IStepResourceService, StepResourceService>();
 
 
