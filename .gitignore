@@ -25,3 +25,8 @@ Thumbs.db
 *.sql
 *.sqlite
 *.tmp
+
+# Ignore sensitive configuration files
+appsettings.Development.json
+appsettings.Production.json
+*.secret.json
