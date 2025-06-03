@@ -62,5 +62,11 @@ namespace E_Learning.GraduationProject.APIs.Controllers
             var isValid = await authService.IsTokenValidAsync(email, token);
             return Ok(new { isValid });
         }
+
+        [HttpPost("Logout")]
+        public IActionResult Logout()
+        {
+            return Ok(new { message = "Logout successful. Please remove the token from your storage." });
+        }
     }
 }
