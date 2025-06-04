@@ -20,7 +20,7 @@ using E_Learning.GraduationProject.Core.Mapping.Auth;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using E_Learning.GraduationProject.Core.Repository.Contract;
+using E_Learning.GraduationProject.Core.Mapping.Roles;
 
 
 namespace E_Learning.GraduationProject.APIs.Helper
@@ -69,7 +69,7 @@ namespace E_Learning.GraduationProject.APIs.Helper
             services.AddTransient<IEmailService, EmailService>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IStepResourceService, StepResourceService>();
-
+            services.AddScoped<IRoleService, RoleService>();
 
 
 
@@ -108,6 +108,7 @@ namespace E_Learning.GraduationProject.APIs.Helper
             services.AddAutoMapper(M => M.AddProfile(new TrackStepProfile()));
             services.AddAutoMapper(M => M.AddProfile(new StepResourceProfile()));
             services.AddAutoMapper(M => M.AddProfile(new AuthProfile()));
+            services.AddAutoMapper(M => M.AddProfile(new RolesProfile()));
             return services;
         }
         private static IServiceCollection ConfigureInvalidModelStateRespnoseService(this IServiceCollection services)

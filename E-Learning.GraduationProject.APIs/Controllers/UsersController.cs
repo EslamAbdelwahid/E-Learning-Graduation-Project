@@ -1,6 +1,6 @@
 ﻿using E_Learning.GraduationProject.APIs.Errors;
 using E_Learning.GraduationProject.Core.Dtos.Users;
-using E_Learning.GraduationProject.Core.Repository.Contract;
+using E_Learning.GraduationProject.Core.Service.Contract;
 using E_Learning.GraduationProject.Service.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;

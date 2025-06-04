@@ -1,6 +1,6 @@
 ﻿using E_Learning.GraduationProject.Core.Dtos.Users;
 using E_Learning.GraduationProject.Core.Entities.Identity;
-using E_Learning.GraduationProject.Core.Repository.Contract;
+using E_Learning.GraduationProject.Core.Service.Contract;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
