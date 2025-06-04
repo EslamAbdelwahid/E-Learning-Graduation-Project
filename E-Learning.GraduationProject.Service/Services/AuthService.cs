@@ -36,23 +36,25 @@ namespace E_Learning.GraduationProject.Service.Services
             this.emailService = emailService;
         }
         
-        public async Task<AppUserDto> LogInAsync(LogInDto logInDto)
+        public async Task<LoginResponseDto> LogInAsync(LogInDto logInDto)
         {
             var user = await userManager.FindByEmailAsync(logInDto.Email);
             if (user is null) return null;
             var res = await signInManager.CheckPasswordSignInAsync(user, logInDto.Password, false);
             if (!res.Succeeded) return null;
 
-            var token = await tokenService.CreateTokenAsync(user);    
-
-            var userDto = new AppUserDto()
+            var token = await tokenService.CreateTokenAsync(user);
+            var roles = await userManager.GetRolesAsync(user);
+            var responseDto = new LoginResponseDto()
             {
+                Id = user.Id,
                 FirstName = user.FirstName,
                 LastName = user.LastName,
                 Email = user.Email,
-                Token = token
+                Token = token,
+                Roles = roles.ToList()
             };
-            return userDto;
+            return responseDto;
         }
 
         public async Task<AppUserDto> RegisterAsync(RegisterDto registerDto)
@@ -71,6 +73,8 @@ namespace E_Learning.GraduationProject.Service.Services
             };
             var result = await userManager.CreateAsync(user, registerDto.Password);
             if (result.Succeeded == false) return null;
+
+            await userManager.AddToRoleAsync(user, "Student");
 
             var appUserDto = new AppUserDto()
             {

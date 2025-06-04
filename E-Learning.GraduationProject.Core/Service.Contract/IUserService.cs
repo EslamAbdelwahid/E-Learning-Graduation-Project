@@ -13,5 +13,6 @@ namespace E_Learning.GraduationProject.Core.Service.Contract
         Task<UserDto?> GetUserByIdAsync(string id);
         Task<bool> UpdateUserAsync(string id, UpdateUserDto dto);
         Task<bool> DeleteUserAsync(string id);
+        Task<bool> AssignRoleToUserAsync(string userId, string roleName);
     }
 }

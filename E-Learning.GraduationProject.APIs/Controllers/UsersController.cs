@@ -1,4 +1,5 @@
 ﻿using E_Learning.GraduationProject.APIs.Errors;
+using E_Learning.GraduationProject.Core.Dtos.Roles;
 using E_Learning.GraduationProject.Core.Dtos.Users;
 using E_Learning.GraduationProject.Core.Service.Contract;
 using E_Learning.GraduationProject.Service.Services;
@@ -66,6 +67,14 @@ namespace E_Learning.GraduationProject.APIs.Controllers
             }
 
             return Ok(new { Message = "User Deleted successfully." });
+        }
+
+        [HttpPost("{userId}/AssignRole")]
+        public async Task<IActionResult> AssignRoleToUser(string userId, [FromBody] AssignRoleDto dto)
+        {
+            var res = await userService.AssignRoleToUserAsync(userId, dto.RoleName);
+            if (!res) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest, "Can't Assign this Role."));
+            return Ok(new { Message = "Role Assigned Successfully." });
         }
     }
 }

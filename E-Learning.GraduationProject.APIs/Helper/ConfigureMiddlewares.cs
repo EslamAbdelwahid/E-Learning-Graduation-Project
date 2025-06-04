@@ -1,6 +1,10 @@
 ﻿using E_Learning.GraduationProject.APIs.Middlewares;
+using E_Learning.GraduationProject.Core.Entities.Identity;
+using E_Learning.GraduationProject.Repository.Data;
 using E_Learning.GraduationProject.Repository.Data.Context;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace E_Learning.GraduationProject.APIs.Helper
 {
@@ -19,16 +23,26 @@ namespace E_Learning.GraduationProject.APIs.Helper
             // log the exception
             var loggerFactory = services.GetRequiredService<ILoggerFactory>();
 
+            var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
+
+            var configuration = services.GetRequiredService<IConfiguration>();
+
+            var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+            var logger = loggerFactory.CreateLogger<Program>();
+
             try
             {
                 await context.Database.MigrateAsync();
-                //await E_LearningDbContextSeed.SeedAsync(context);
 
+                await E_LearningDbContextSeed.SeedRolesAsync(roleManager);
+
+                await E_LearningDbContextSeed.SeedUsersAsync(userManager, configuration);
+
+                logger.LogInformation("Database migration and seeding completed successfully");
             }
             catch (Exception ex)
             {
-                var logger = loggerFactory.CreateLogger<Program>();
-
+                
                 logger.LogError(ex, "There is a problem while applying the migrations ");
 
             }
