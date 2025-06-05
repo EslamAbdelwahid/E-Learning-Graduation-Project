@@ -2,6 +2,7 @@
 using E_Learning.GraduationProject.Core.Dtos.Auth;
 using E_Learning.GraduationProject.Core.Service.Contract;
 using E_Learning.GraduationProject.Service.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -64,6 +65,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         }
 
         [HttpPost("Logout")]
+        [Authorize]
         public IActionResult Logout()
         {
             return Ok(new { message = "Logout successful. Please remove the token from your storage." });
