@@ -12,16 +12,14 @@ public class TokenService : ITokenService
 {
     private readonly IConfiguration _configuration;
     private readonly UserManager<ApplicationUser> _userManager;
-    private readonly IMemoryCache _cache; // For token blacklisting
+
 
     public TokenService(
         IConfiguration configuration,
-        UserManager<ApplicationUser> userManager,
-        IMemoryCache cache)
+        UserManager<ApplicationUser> userManager)
     {
         _configuration = configuration;
         _userManager = userManager;
-        _cache = cache;
     }
 
     public async Task<string> CreateTokenAsync(ApplicationUser user)
