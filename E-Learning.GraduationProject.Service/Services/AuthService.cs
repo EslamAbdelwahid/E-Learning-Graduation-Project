@@ -38,11 +38,13 @@ namespace E_Learning.GraduationProject.Service.Services
         
         public async Task<AppUserDto> LogInAsync(LogInDto logInDto)
         {
+            // check if there exist such an email
             var user = await userManager.FindByEmailAsync(logInDto.Email);
             if (user is null) return null;
+            // check password
             var res = await signInManager.CheckPasswordSignInAsync(user, logInDto.Password, false);
             if (!res.Succeeded) return null;
-
+            
             var token = await tokenService.CreateTokenAsync(user);    
 
             var userDto = new AppUserDto()

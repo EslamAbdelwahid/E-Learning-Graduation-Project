@@ -23,6 +23,8 @@ namespace E_Learning.GraduationProject.Service.Services
 
         public async Task SendEmailAsync(Email email)
         {
+
+            // getting mail settings from appsettings
             var mailSettings = _config.GetSection("MailSettings");
 
             var fromEmail = mailSettings["Email"];
@@ -30,14 +32,16 @@ namespace E_Learning.GraduationProject.Service.Services
             var host = mailSettings["Host"];
             var port = int.Parse(mailSettings["Port"]);
 
-            var smtpClient = new SmtpClient(host, port)
+            //	Configures SMTP client 
+            using var smtpClient = new SmtpClient(host, port)
             {
-                UseDefaultCredentials = false,
+                UseDefaultCredentials = false, // provide my own email and password not my computer's Windows login to authenticate
                 Credentials = new NetworkCredential(fromEmail, fromPassword),
-                EnableSsl = true,
-                DeliveryMethod = SmtpDeliveryMethod.Network
+                EnableSsl = true,  
+                DeliveryMethod = SmtpDeliveryMethod.Network   
             };
 
+            // creating mail message
             var mailMessage = new MailMessage(
                 from: fromEmail,
                 to: email.To,

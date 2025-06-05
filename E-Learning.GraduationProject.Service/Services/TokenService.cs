@@ -46,7 +46,7 @@ namespace E_Learning.GraduationProject.Service.Services
             var token = new JwtSecurityToken(
                 issuer: configuration["JWT:Issuer"],
                 audience: configuration["JWT:Audience"],
-                expires: DateTime.Now.AddDays(double.Parse(configuration["JWT:ExpirationInDays"])),
+                expires: DateTime.Now.AddDays(double.Parse(configuration["JWT:ExpirationInDays"])), 
                 claims: authClaims,
                 signingCredentials: new SigningCredentials(authKey, SecurityAlgorithms.HmacSha256Signature)
                 );

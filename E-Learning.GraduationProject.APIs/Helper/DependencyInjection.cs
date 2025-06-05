@@ -141,17 +141,14 @@ namespace E_Learning.GraduationProject.APIs.Helper
                 options.TokenValidationParameters = new TokenValidationParameters()
                 {
                     ValidateIssuer = true,
-
                     ValidIssuer = configuration["JWT:Issuer"],
 
                     ValidateAudience = true,
-
                     ValidAudience = configuration["JWT:Audience"],
 
                     ValidateLifetime = true,
 
                     ValidateIssuerSigningKey = true,
-
                     IssuerSigningKey = new SymmetricSecurityKey(
 
                         Encoding.UTF8.GetBytes(configuration["JWT:SecretKey"])

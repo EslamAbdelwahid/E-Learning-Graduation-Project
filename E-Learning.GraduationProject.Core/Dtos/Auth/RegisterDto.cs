@@ -25,7 +25,7 @@ namespace E_Learning.GraduationProject.Core.Dtos.Auth
         [Required(ErrorMessage = "PhoneNumber is Required!")]
         [Phone]
         public string PhoneNumber { get; set; }
-        [Required(ErrorMessage = "Addresss is Required!")]
+        [Required(ErrorMessage = "Address is Required!")]
         public AddressDto AddressDto { get; set; }
     }
 }
