@@ -1,6 +1,6 @@
 ﻿using E_Learning.GraduationProject.Core.Dtos.Users;
 using E_Learning.GraduationProject.Core.Entities.Identity;
-using E_Learning.GraduationProject.Core.Repository.Contract;
+using E_Learning.GraduationProject.Core.Service.Contract;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -89,6 +89,14 @@ namespace E_Learning.GraduationProject.Service.Services
 
             var result = await _userManager.DeleteAsync(user);
             return result.Succeeded;
+        }
+
+        public async Task<bool> AssignRoleToUserAsync(string userId, string roleName)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user is null || string.IsNullOrEmpty(roleName)) return false;
+            var res = await _userManager.AddToRoleAsync(user, roleName);
+            return res.Succeeded;
         }
     }
 }

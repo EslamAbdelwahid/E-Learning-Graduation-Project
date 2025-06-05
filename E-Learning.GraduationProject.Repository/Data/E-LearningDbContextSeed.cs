@@ -1,5 +1,8 @@
 ﻿using E_Learning.GraduationProject.Core.Entities;
+using E_Learning.GraduationProject.Core.Entities.Identity;
 using E_Learning.GraduationProject.Repository.Data.Context;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +14,62 @@ namespace E_Learning.GraduationProject.Repository.Data
 {
     public static class E_LearningDbContextSeed
     {
+
+        public static async Task SeedRolesAsync(RoleManager<IdentityRole> roleManager)
+        {
+            string[] roles = { "Admin", "Student", "Instructor" };
+            foreach(var role in roles)
+            {
+                if(! await roleManager.RoleExistsAsync(role))
+                {
+                   await roleManager.CreateAsync(new IdentityRole(role));
+                }
+            }
+            
+        }
+        public static async Task SeedUsersAsync(
+    UserManager<ApplicationUser> userManager,
+    IConfiguration configuration)
+        {
+            if (!userManager.Users.Any())
+            {
+                var seededUsersSection = configuration.GetSection("SeededUsers");
+
+                foreach (var userSection in seededUsersSection.GetChildren())
+                {
+                    var user = new ApplicationUser
+                    {
+                        UserName = userSection["Username"],
+                        Email = userSection["Email"],
+                        FirstName = userSection["FirstName"],
+                        LastName = userSection["LastName"],
+                        Address = new Address
+                        {
+                            Street = userSection["Address:Street"],
+                            City = userSection["Address:City"],
+                            Country = userSection["Address:Country"]
+                        },
+                        EmailConfirmed = true
+                    };
+
+                    var password = userSection["Password"];
+                    var result = await userManager.CreateAsync(user, password);
+
+                    if (result.Succeeded)
+                    {
+                        var roles = userSection.GetSection("Roles").GetChildren()
+                            .Select(x => x.Value).ToArray();
+                        await userManager.AddToRolesAsync(user, roles);
+                    }
+                    else
+                    {
+                        var errors = string.Join(", ", result.Errors.Select(e => e.Description));
+                        throw new Exception($"Failed to create user {userSection["Username"]}: {errors}");
+                    }
+                }
+            }
+        }
+
         public static async Task SeedAsync(AppDbContext _context)
         {
 
@@ -40,7 +99,7 @@ namespace E_Learning.GraduationProject.Repository.Data
                 //Deserialize
                 var concepts = JsonSerializer.Deserialize<List<LanguageConcept>>(conceptData);
 
-                if(concepts is not null && concepts.Count() > 0 )
+                if (concepts is not null && concepts.Count() > 0)
                 {
                     await _context.LanguageConcepts.AddRangeAsync(concepts);
                     await _context.SaveChangesAsync();
