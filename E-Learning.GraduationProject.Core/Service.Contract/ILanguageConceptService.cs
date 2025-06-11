@@ -15,7 +15,7 @@ namespace E_Learning.GraduationProject.Core.Service.Contract
         Task<PaginationResponseToReturn<LanguageConceptToReturnDto>?> GetAllConceptsWithSpecAsync(LanguageConceptParames parames);
         Task<LanguageConceptToReturnDto?> GetConceptByIdWithSpec(int id);
         Task<LanguageConceptToReturnDto?> CreateConcept(LanguageConceptDto model);
-        Task<LanguageConceptToReturnDto?> UpdateConcept(LanguageConceptDto model);
+        Task<LanguageConceptToReturnDto?> UpdateConcept(int id , LanguageConceptDto model);
         Task<int> DeleteConcept(int id);
 
     }

@@ -147,5 +147,6 @@ namespace E_Learning.GraduationProject.Service.Services
         {
             return await userManager.FindByEmailAsync(email) is not null;
         }
+
     }
 }

@@ -43,6 +43,7 @@ namespace E_Learning.GraduationProject.Repository.Data
                         Email = userSection["Email"],
                         FirstName = userSection["FirstName"],
                         LastName = userSection["LastName"],
+                        PhoneNumber = userSection["Phone"],
                         Address = new Address
                         {
                             Street = userSection["Address:Street"],

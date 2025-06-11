@@ -14,7 +14,7 @@ namespace E_Learning.GraduationProject.Core.Service.Contract
         Task<PaginationResponseToReturn<PractiseProblemToReturnDto>?> GetAllPractiseProblemAsync(ParctiseProblemParames parames);
         Task<PractiseProblemToReturnDto?> GetPractiseProblemByIdAsync(int id );
         Task<PractiseProblemToReturnDto?> CreatePractiseProblemAsync(PractiseProblemDto model);
-        Task<PractiseProblemToReturnDto?> UpdatePractiseProblemAsync(PractiseProblemDto model);
+        Task<PractiseProblemToReturnDto?> UpdatePractiseProblemAsync(int id , PractiseProblemDto model);
         Task<int> DeletePractiseProblemAsync(int id);
 
     }

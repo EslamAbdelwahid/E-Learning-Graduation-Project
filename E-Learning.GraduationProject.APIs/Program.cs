@@ -25,10 +25,25 @@ namespace E_Learning.GraduationProject.APIs
             // Add services to the container.
             builder.Services.AddDependency(builder.Configuration);
 
+            // test endpoints using ngrok
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll", builder =>
+                {
+                    builder.AllowAnyOrigin()
+                           .AllowAnyHeader()
+                           .AllowAnyMethod();
+                });
+            });
+
 
             var app = builder.Build();
 
             await app.AddMiddlewaresAsync();
+
+           
+
+            app.UseCors("AllowAll");
 
             app.Run();
         }

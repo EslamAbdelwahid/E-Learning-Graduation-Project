@@ -49,11 +49,11 @@ namespace E_Learning.GraduationProject.APIs.Controllers
 
             return Ok(problem);
         }
-        [HttpPut]
-        public async Task<ActionResult<PractiseProblemToReturnDto>> UpdatePractiseProblem(PractiseProblemDto model)
+        [HttpPut("{id}")]
+        public async Task<ActionResult<PractiseProblemToReturnDto>> UpdatePractiseProblem(int? id , PractiseProblemDto model)
         {
-
-            var problem = await _practiseProblemService.UpdatePractiseProblemAsync(model);
+            if (id is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
+            var problem = await _practiseProblemService.UpdatePractiseProblemAsync(id.Value, model);
 
             if (problem is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest, "Failed to update"));
 

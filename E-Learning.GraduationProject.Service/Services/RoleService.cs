@@ -19,7 +19,8 @@ namespace E_Learning.GraduationProject.Service.Services
 
         public RoleService(
             RoleManager<IdentityRole> roleManager,
-            IMapper mapper)
+            IMapper mapper
+            )
         {
             this._roleManager = roleManager;
             this._mapper = mapper;
@@ -28,7 +29,7 @@ namespace E_Learning.GraduationProject.Service.Services
         {
             var role = new IdentityRole(dto.Name);
             var res = await _roleManager.CreateAsync(role);
-            if (!res.Succeeded) throw new Exception("Falid to create the role");
+            if (!res.Succeeded) throw new Exception("failed to create the role");
             return _mapper.Map<RoleDto>(role);
         }
 
@@ -48,6 +49,8 @@ namespace E_Learning.GraduationProject.Service.Services
         {
             var role = await _roleManager.FindByIdAsync(id);
             if (role is null) return false;
+
+           
             role.Name = dto.Name;
             var res = await _roleManager.UpdateAsync(role);
             return res.Succeeded;

@@ -19,7 +19,7 @@ namespace E_Learning.GraduationProject.Core.Service.Contract
 
         Task<ConceptResourceToReturn?> CreateResourceAsync(ConceptResourceDto model);
 
-        Task<ConceptResourceToReturn?> UpdateResourceAsync(ConceptResourceDto model);
+        Task<ConceptResourceToReturn?> UpdateResourceAsync(int id ,  ConceptResourceDto model);
 
         Task<int> DeleteResourceAsync(int id);
 

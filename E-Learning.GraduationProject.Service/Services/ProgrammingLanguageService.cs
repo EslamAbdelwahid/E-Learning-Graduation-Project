@@ -72,9 +72,12 @@ namespace E_Learning.GraduationProject.Service.Services
             return res > 0 ? _mapper.Map<ProgrammingLanguageToReturnDto>(entity) : null;
         }
 
-        public async Task<ProgrammingLanguageToReturnDto?> UpdateProgrammingLanguageAsync(ProgrammingLanguageDto model)
+        public async Task<ProgrammingLanguageToReturnDto?> UpdateProgrammingLanguageAsync(int id , ProgrammingLanguageDto model)
         {
-            var entity = _mapper.Map<ProgrammingLanguage>(model);
+            var lang = await _unitOfWork.Repository<ProgrammingLanguage , int>().GetByIdAsync(id);
+            if (lang == null) return null;
+
+            var entity = _mapper.Map(model, lang);
 
             _unitOfWork.Repository<ProgrammingLanguage, int>().Update(entity);
 

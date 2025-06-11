@@ -48,10 +48,11 @@ namespace E_Learning.GraduationProject.APIs.Controllers
             return Ok(result);
         }
 
-        [HttpPut]
-        public async Task<ActionResult<ConceptResourceToReturn>> UpdateConcept(LanguageConceptDto model)
+        [HttpPut("{id}")]
+        public async Task<ActionResult<ConceptResourceToReturn>> UpdateConcept(int? id , LanguageConceptDto model)
         {
-            var result = await _conceptService.UpdateConcept(model);
+            if (id is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
+            var result = await _conceptService.UpdateConcept(id.Value , model);
 
             if (result is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
 

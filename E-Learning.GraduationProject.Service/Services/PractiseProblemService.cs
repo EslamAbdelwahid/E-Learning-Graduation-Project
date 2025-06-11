@@ -2,6 +2,7 @@
 using E_Learning.GraduationProject.Core;
 using E_Learning.GraduationProject.Core.Dtos.PractiseProblems;
 using E_Learning.GraduationProject.Core.Entities;
+using E_Learning.GraduationProject.Core.Entities.Instructors;
 using E_Learning.GraduationProject.Core.Hellper;
 using E_Learning.GraduationProject.Core.Service.Contract;
 using E_Learning.GraduationProject.Core.Specifications.PractiseProblems;
@@ -70,9 +71,12 @@ namespace E_Learning.GraduationProject.Service.Services
             return await _unitOfWork.CompleteAsync();
         }
 
-        public async Task<PractiseProblemToReturnDto?> UpdatePractiseProblemAsync(PractiseProblemDto model)
+        public async Task<PractiseProblemToReturnDto?> UpdatePractiseProblemAsync(int id , PractiseProblemDto model)
         {
-            var entity = _mapper.Map<PractiseProblem>(model);
+            var problem = await _unitOfWork.Repository<PractiseProblem, int>().GetByIdAsync(id);
+            if (problem == null) return null;
+
+            var entity = _mapper.Map(model, problem);
 
             _unitOfWork.Repository<PractiseProblem, int>().Update(entity);
             var result = await _unitOfWork.CompleteAsync();

@@ -8,6 +8,7 @@ namespace E_Learning.GraduationProject.Core.Dtos.Roles
 {
     public class UpdateRoleDto
     {
+        public string RoleId { get; set; }
         public string Name { get; set; } = string.Empty;
     }
 }

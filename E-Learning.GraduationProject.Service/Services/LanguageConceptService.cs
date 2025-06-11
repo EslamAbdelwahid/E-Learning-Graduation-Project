@@ -77,9 +77,13 @@ namespace E_Learning.GraduationProject.Service.Services
 
         }
 
-        public async Task<LanguageConceptToReturnDto?> UpdateConcept(LanguageConceptDto model)
+        public async Task<LanguageConceptToReturnDto?> UpdateConcept(int id , LanguageConceptDto model)
         {
-            var entity = _mapper.Map<LanguageConcept>(model);
+            var languageConcept = await _unitOfWork.Repository<LanguageConcept, int>().GetByIdAsync(id);
+            if (languageConcept == null) return null;
+
+            var entity = _mapper.Map(model, languageConcept);
+           
 
             _unitOfWork.Repository<LanguageConcept, int>().Update(entity);
 

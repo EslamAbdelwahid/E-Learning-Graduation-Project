@@ -86,9 +86,12 @@ namespace E_Learning.GraduationProject.Service.Services
             return await _unitOfWork.CompleteAsync();
         }
 
-        public async Task<ConceptResourceToReturn?> UpdateResourceAsync(ConceptResourceDto model)
+        public async Task<ConceptResourceToReturn?> UpdateResourceAsync(int id , ConceptResourceDto model)
         {
-            var entity = _mapper.Map<ConceptResource>(model);
+            var resource = await _unitOfWork.Repository<ConceptResource, int>().GetByIdAsync(id);
+            if (resource == null) return null;
+
+            var entity = _mapper.Map(model, resource);
 
             _unitOfWork.Repository<ConceptResource, int>().Update(entity);
 

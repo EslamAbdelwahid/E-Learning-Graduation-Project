@@ -1,4 +1,5 @@
 ﻿using E_Learning.GraduationProject.Core.Entities.Enums;
+using E_Learning.GraduationProject.Core.Entities.Instructors;
 using System.Text.Json.Serialization;
 
 namespace E_Learning.GraduationProject.Core.Entities
@@ -19,6 +20,8 @@ namespace E_Learning.GraduationProject.Core.Entities
         public bool IsActive { get; set; }
 
         public ICollection<LanguageConcept> Concepts { get; set; }
+
+        public ICollection<Course> Courses { get; set; }
 
     }
 }

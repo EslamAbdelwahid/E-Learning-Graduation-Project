@@ -1,4 +1,5 @@
-﻿using System;
+﻿using E_Learning.GraduationProject.Core.Entities.Instructors;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,8 @@ namespace E_Learning.GraduationProject.Core.Entities
         public int? EstimatedCompletionWeeks { get; set; }
         public bool IsActive { get; set; }
         public ICollection<TrackStep>? TrackSteps { get; set; }
+        public ICollection<Course>? Courses { get; set; } 
+
 
     }
 }

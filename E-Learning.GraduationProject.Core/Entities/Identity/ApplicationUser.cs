@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using E_Learning.GraduationProject.Core.Entities.Instructors;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,7 @@ namespace E_Learning.GraduationProject.Core.Entities.Identity
 
         // Navigation properties
         public Student? Student { get; set; }
+        public Instructor? Instructor { get; set; }
 
     }
 }

@@ -79,10 +79,11 @@ namespace E_Learning.GraduationProject.APIs.Controllers
             return Ok();
         }
 
-        [HttpPut]
-        public async Task<ActionResult<ConceptResourceToReturn>> UpdateResource(ConceptResourceDto model)
+        [HttpPut("{id}")]
+        public async Task<ActionResult<ConceptResourceToReturn>> UpdateResource(int? id , ConceptResourceDto model)
         {
-            var resource = await _resourceService.UpdateResourceAsync(model);
+            if (id is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
+            var resource = await _resourceService.UpdateResourceAsync(id.Value,  model);
 
             if (resource is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
 

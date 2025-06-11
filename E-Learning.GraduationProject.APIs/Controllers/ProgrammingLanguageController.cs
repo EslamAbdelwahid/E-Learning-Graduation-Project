@@ -1,10 +1,12 @@
 ﻿using E_Learning.GraduationProject.APIs.Errors;
 using E_Learning.GraduationProject.Core.Dtos.ProgrammingLanguages;
+using E_Learning.GraduationProject.Core.Hellper;
 using E_Learning.GraduationProject.Core.Service.Contract;
 using E_Learning.GraduationProject.Core.Specifications.LanguageConcepts;
 using E_Learning.GraduationProject.Core.Specifications.ProgrammingLanguages;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace E_Learning.GraduationProject.APIs.Controllers
 {
@@ -21,8 +23,8 @@ namespace E_Learning.GraduationProject.APIs.Controllers
             _programmingLanguageService = programmingLanguageService;
         }
 
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<ProgrammingLanguageDto>>> GetAllProgrammingLanguages([FromQuery]ProgrammingLanguageParames parames)
+        [HttpGet]   
+        public async Task<ActionResult<PaginationResponseToReturn<ProgrammingLanguageToReturnDto>>> GetAllProgrammingLanguages([FromQuery]ProgrammingLanguageParames parames)
         {
             var languages = await _programmingLanguageService.GetAllProgrammingLanguageWithSpecAsync(parames);
             if (languages is null) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
@@ -49,15 +51,16 @@ namespace E_Learning.GraduationProject.APIs.Controllers
             return Ok(programmingLanguage);
 
         }
-        [HttpPut]
-        public async Task<ActionResult<ProgrammingLanguageDto>> UpdateProgrammingLanguage(ProgrammingLanguageDto model)
+        [HttpPut("{id}")]
+        public async Task<ActionResult<ProgrammingLanguageDto>> UpdateProgrammingLanguage(int? id , ProgrammingLanguageDto model)
         {
-            var programmingLanguage = await _programmingLanguageService.UpdateProgrammingLanguageAsync(model);
+            if (id is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
+            var programmingLanguage = await _programmingLanguageService.UpdateProgrammingLanguageAsync(id.Value,  model);
             if (programmingLanguage is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
             return Ok(programmingLanguage);
         }
         [HttpDelete("{id}")]
-        public async Task<ActionResult<ProgrammingLanguageDto>> DeleteProgrammingLanguage(int? id)
+        public async Task<ActionResult> DeleteProgrammingLanguage(int? id)
         {
             if (id is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
 

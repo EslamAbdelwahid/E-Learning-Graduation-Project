@@ -21,6 +21,11 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using E_Learning.GraduationProject.Core.Mapping.Roles;
+using E_Learning.GraduationProject.Core.Mapping.Instructors;
+using E_Learning.GraduationProject.Core.Mapping.Students;
+using E_Learning.GraduationProject.Core.Mapping.StudentProgresses;
+using E_Learning.GraduationProject.Core.Mapping.Addresses;
+using E_Learning.GraduationProject.Core.Mapping.Courses;
 
 
 namespace E_Learning.GraduationProject.APIs.Helper
@@ -70,6 +75,9 @@ namespace E_Learning.GraduationProject.APIs.Helper
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IStepResourceService, StepResourceService>();
             services.AddScoped<IRoleService, RoleService>();
+            services.AddScoped<IInstructorService, InstructorService>();
+            services.AddScoped<ICourseService, CourseService>();
+            
 
 
 
@@ -109,6 +117,11 @@ namespace E_Learning.GraduationProject.APIs.Helper
             services.AddAutoMapper(M => M.AddProfile(new StepResourceProfile()));
             services.AddAutoMapper(M => M.AddProfile(new AuthProfile()));
             services.AddAutoMapper(M => M.AddProfile(new RolesProfile()));
+            services.AddAutoMapper(M => M.AddProfile(new InstructorProfile()));
+            services.AddAutoMapper(M => M.AddProfile(new AddressProfile()));
+            services.AddAutoMapper(M => M.AddProfile(new StudentProfile()));
+            services.AddAutoMapper(M => M.AddProfile(new StudentProgressProfile()));
+            services.AddAutoMapper(M => M.AddProfile(new CourseProfile()));
             return services;
         }
         private static IServiceCollection ConfigureInvalidModelStateRespnoseService(this IServiceCollection services)
@@ -159,5 +172,6 @@ namespace E_Learning.GraduationProject.APIs.Helper
 
             return services;
         }
+        
     }
 }

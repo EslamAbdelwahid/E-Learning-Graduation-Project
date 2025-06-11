@@ -17,7 +17,7 @@ namespace E_Learning.GraduationProject.Core.Service.Contract
         Task<PaginationResponseToReturn<ProgrammingLanguageToReturnDto>?> GetAllProgrammingLanguageWithSpecAsync(ProgrammingLanguageParames parames );
         Task<ProgrammingLanguageToReturnDto?> GetProgrammingLanguageByIdWithSpecAsync(int languageId);
         Task<ProgrammingLanguageToReturnDto?> CreateProgrammingLanguageAsync(ProgrammingLanguageDto model);
-        Task<ProgrammingLanguageToReturnDto?> UpdateProgrammingLanguageAsync(ProgrammingLanguageDto model);
+        Task<ProgrammingLanguageToReturnDto?> UpdateProgrammingLanguageAsync(int id , ProgrammingLanguageDto model);
         Task<int> DeleteAsync(int id);
 
 

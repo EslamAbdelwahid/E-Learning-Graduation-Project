@@ -19,6 +19,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> CreateRole([FromBody] CreateRoleDto dto)
         {
             if (dto == null || string.IsNullOrWhiteSpace(dto.Name))
@@ -32,6 +33,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetAllRoles()
         {
             var roles = await _roleService.GetAllRolesAsync();
@@ -39,6 +41,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         }
 
         [HttpGet("name/{name}")]
+        [Authorize]
         public async Task<IActionResult> GetRoleByName(string name)
         {
             var role = await _roleService.GetRoleByNameAsync(name);
@@ -49,6 +52,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> UpdateRole(string id, [FromBody] UpdateRoleDto dto)
         {
             if (dto == null || string.IsNullOrWhiteSpace(dto.Name))
@@ -62,6 +66,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteRole(string id)
         {
             var res = await _roleService.DeleteRoleAsync(id);
