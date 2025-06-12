@@ -107,9 +107,55 @@ namespace E_Learning.GraduationProject.Repository.Data
                 }
 
             }
+        }
 
+        public static async Task SeedTracksAsync(AppDbContext _context)
+        {
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true // This makes it ignore case mismatches
+            };
 
+            if (!_context.Tracks.Any())
+            {
+                var tracksData = await File.ReadAllTextAsync(@"..\E-Learning.GraduationProject.Repository\Data\DataSeed\Tracks\Tracks.json");
+
+                var tracks = JsonSerializer.Deserialize<List<Track>>(tracksData, options);
+
+                if (tracks != null && tracks.Count > 0)
+                {
+                    await _context.Tracks.AddRangeAsync(tracks);
+                    await _context.SaveChangesAsync();
+                }
+            }
+
+            if (!_context.TrackSteps.Any())
+            {
+                var tracksStepsData = await File.ReadAllTextAsync(@"..\E-Learning.GraduationProject.Repository\Data\DataSeed\Tracks\AllTracksSteps.json");
+
+                var trackSteps = JsonSerializer.Deserialize<List<TrackStep>>(tracksStepsData, options);
+
+                if (trackSteps != null && trackSteps.Count > 0)
+                {
+                    await _context.TrackSteps.AddRangeAsync(trackSteps);
+                    await _context.SaveChangesAsync();
+                }
+            }
+
+            if (!_context.StepResources.Any())
+            {
+                var stepResourcesData = await File.ReadAllTextAsync(@"..\E-Learning.GraduationProject.Repository\Data\DataSeed\Tracks\AllResources.json");
+
+                var stepResources = JsonSerializer.Deserialize<List<StepResource>>(stepResourcesData, options);
+
+                if (stepResources != null && stepResources.Count > 0)
+                {
+                    await _context.StepResources.AddRangeAsync(stepResources);
+                    await _context.SaveChangesAsync();
+                }
+            }
 
         }
+
     }
 }

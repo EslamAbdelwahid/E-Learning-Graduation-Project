@@ -1,0 +1,92 @@
+[
+  {
+    "TrackStepId": 2,
+    "OrderIndex": 1,
+    "Title": "1 SQL introduction, DB Design, ERD, File Based System, DB system",
+    "Url": "https://www.youtube.com/watch?v=nUiuyejbemc&list=PLoRh0POuk1Rw-BZU-DPI6cA_c5W9_2uF_&index=1",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 198
+  },
+  {
+    "TrackStepId": 2,
+    "OrderIndex": 2,
+    "Title": "2 SQL Mapping, DB Schema, SQL statements, Creating DB",
+    "Url": "https://www.youtube.com/watch?v=k0SHOJhtsgI&list=PLoRh0POuk1Rw-BZU-DPI6cA_c5W9_2uF_&index=2",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 239
+  },
+  {
+    "TrackStepId": 2,
+    "OrderIndex": 3,
+    "Title": "3 SQL Joins, Normalization",
+    "Url": "https://www.youtube.com/watch?v=1sm_J_OU7yc&list=PLoRh0POuk1Rw-BZU-DPI6cA_c5W9_2uF_&index=3",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 188
+  },
+  {
+    "TrackStepId": 2,
+    "OrderIndex": 4,
+    "Title": "4 SQL, Aggregate Function, Grouping, Union, Subqueries, EERD",
+    "Url": "https://www.youtube.com/watch?v=Y9ObhL6XTgM&list=PLoRh0POuk1Rw-BZU-DPI6cA_c5W9_2uF_&index=4",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 179
+  },
+  {
+    "TrackStepId": 2,
+    "OrderIndex": 5,
+    "Title": "5 SQL, DB Engine, SQL Services, Ranking Function, Transact SQL",
+    "Url": "https://www.youtube.com/watch?v=gNH4SO1G_mI&list=PLoRh0POuk1Rw-BZU-DPI6cA_c5W9_2uF_&index=5",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 186
+  },
+  {
+    "TrackStepId": 2,
+    "OrderIndex": 6,
+    "Title": "6 SQL, Database Constraints, Rules Create DB",
+    "Url": "https://www.youtube.com/watch?v=gWuuUuypo9Q&list=PLoRh0POuk1Rw-BZU-DPI6cA_c5W9_2uF_&index=6",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 187
+  },
+  {
+    "TrackStepId": 2,
+    "OrderIndex": 7,
+    "Title": "7 SQL, Variables, If, While, functions",
+    "Url": "https://www.youtube.com/watch?v=zEcMl16097c&list=PLoRh0POuk1Rw-BZU-DPI6cA_c5W9_2uF_&index=7",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 193
+  },
+  {
+    "TrackStepId": 2,
+    "OrderIndex": 8,
+    "Title": "8 SQL, View, Index, Merge Statement, Pivot tables",
+    "Url": "https://www.youtube.com/watch?v=gWToleQTX84&list=PLoRh0POuk1Rw-BZU-DPI6cA_c5W9_2uF_&index=8",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 210
+  },
+  {
+    "TrackStepId": 2,
+    "OrderIndex": 9,
+    "Title": "9 Database Sorted Procedures, Triggers, XML",
+    "Url": "https://www.youtube.com/watch?v=v9LPfmaA-sw&list=PLoRh0POuk1Rw-BZU-DPI6cA_c5W9_2uF_&index=9",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 213
+  },
+  {
+    "TrackStepId": 2,
+    "OrderIndex": 10,
+    "Title": "10 Database Backup & Restores, Mirroring, Jobs, SQL CLR",
+    "Url": "https://www.youtube.com/watch?v=fXOtjdhdOq8&list=PLoRh0POuk1Rw-BZU-DPI6cA_c5W9_2uF_&index=10",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 199
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "TrackStepId": 5,
+    "OrderIndex": 1,
+    "Title": "كورس Entity Framework 6.0 - Part 1 - منحة ITI",
+    "Url": "https://www.youtube.com/watch?v=rNfYrgoERjk&list=PLesfn4TAj57WisNpNGLPCS1donYYAEQSI&index=1&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 97
+  },
+  {
+    "TrackStepId": 5,
+    "OrderIndex": 2,
+    "Title": "كورس Entity Framework 6.0 - Part 2 - منحة ITI",
+    "Url": "https://www.youtube.com/watch?v=y_SQLhW9YkM&list=PLesfn4TAj57WisNpNGLPCS1donYYAEQSI&index=2&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 90
+  },
+  {
+    "TrackStepId": 5,
+    "OrderIndex": 3,
+    "Title": "كورس Entity Framework 6.0 - Part 3 - منحة ITI",
+    "Url": "https://www.youtube.com/watch?v=LfGvywjeSwc&list=PLesfn4TAj57WisNpNGLPCS1donYYAEQSI&index=3&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 88
+  },
+  {
+    "TrackStepId": 5,
+    "OrderIndex": 4,
+    "Title": "كورس Entity Framework 6.0 - Part 4 - منحة ITI",
+    "Url": "https://www.youtube.com/watch?v=x_mo-I1oUfw&list=PLesfn4TAj57WisNpNGLPCS1donYYAEQSI&index=4&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 98
+  },
+  {
+    "TrackStepId": 5,
+    "OrderIndex": 5,
+    "Title": "كورس Entity Framework 6.0 - Part 5 - منحة ITI",
+    "Url": "https://www.youtube.com/watch?v=a6_aMJzRFrA&list=PLesfn4TAj57WisNpNGLPCS1donYYAEQSI&index=5&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 107
+  },
+  {
+    "TrackStepId": 5,
+    "OrderIndex": 6,
+    "Title": "كورس Entity Framework 6.0 - Part 6 - منحة ITI",
+    "Url": "https://www.youtube.com/watch?v=mXEsUQ9OB_U&list=PLesfn4TAj57WisNpNGLPCS1donYYAEQSI&index=6&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 91
+  },
+  {
+    "TrackStepId": 5,
+    "OrderIndex": 7,
+    "Title": "كورس Entity Framework 6.0 - Part 7 - منحة ITI",
+    "Url": "https://www.youtube.com/watch?v=Eab4xBzpfO8&list=PLesfn4TAj57WisNpNGLPCS1donYYAEQSI&index=7&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 89
+  },
+  {
+    "TrackStepId": 5,
+    "OrderIndex": 8,
+    "Title": "كورس Entity Framework 6.0 - Part 8 - منحة ITI",
+    "Url": "https://www.youtube.com/watch?v=fNnSkxdq5gQ&list=PLesfn4TAj57WisNpNGLPCS1donYYAEQSI&index=8&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 76
+  },
+  {
+    "TrackStepId": 5,
+    "OrderIndex": 9,
+    "Title": "كورس Entity Framework 6.0 - Part 9 - منحة ITI",
+    "Url": "https://www.youtube.com/watch?v=l8vPkbBK6UY&list=PLesfn4TAj57WisNpNGLPCS1donYYAEQSI&index=9&pp=iAQB0gcJCY0JAYcqIYzv",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 103
+  },
+  {
+    "TrackStepId": 5,
+    "OrderIndex": 10,
+    "Title": "كورس Entity Framework 6.0 - Part 10 - منحة ITI",
+    "Url": "https://www.youtube.com/watch?v=VRkKYm3XAAo&list=PLesfn4TAj57WisNpNGLPCS1donYYAEQSI&index=10&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 80
+  },
+  {
+    "TrackStepId": 5,
+    "OrderIndex": 11,
+    "Title": "كورس Entity Framework 6.0 - Part 11 - منحة ITI",
+    "Url": "https://www.youtube.com/watch?v=aXkaFtJGeh0&list=PLesfn4TAj57WisNpNGLPCS1donYYAEQSI&index=11&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 80
+  },
+  {
+    "TrackStepId": 5,
+    "OrderIndex": 12,
+    "Title": "كورس Entity Framework 6.0 - Part 12 - منحة ITI",
+    "Url": "https://www.youtube.com/watch?v=FkhlvCPum4U&list=PLesfn4TAj57WisNpNGLPCS1donYYAEQSI&index=12&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 121
+  }
+]

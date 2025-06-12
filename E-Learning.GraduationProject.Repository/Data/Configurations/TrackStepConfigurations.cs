@@ -13,8 +13,12 @@ namespace E_Learning.GraduationProject.Repository.Data.Configurations
     {
         public void Configure(EntityTypeBuilder<TrackStep> builder)
         {
-           
 
+            builder
+            .HasOne(ts => ts.Track)         
+            .WithMany(t => t.TrackSteps)     
+            .HasForeignKey(ts => ts.TrackId) 
+            .OnDelete(DeleteBehavior.Cascade); 
 
         }
     }
