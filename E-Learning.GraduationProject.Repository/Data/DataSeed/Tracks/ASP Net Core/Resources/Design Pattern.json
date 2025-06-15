@@ -1,0 +1,29 @@
+[
+  {
+    "TrackStepId": 6,
+    "OrderIndex": 15,
+    "Title": "Design Patterns: 1 - Introduction [بالعربي]",
+    "Url": "https://youtu.be/aSDdHSW6_bU?si=J0Cx17ftcIqRtG6M",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 11
+  },
+  {
+    "TrackStepId": 6,
+    "OrderIndex": 16,
+    "Title": "Design Patterns: 2 - Singleton [بالعربي]",
+    "Url": "https://youtu.be/MfA48pQsXsg?si=Zmp4ZheM3JtA_DcD",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 16
+  },
+  {
+    "TrackStepId": 6,
+    "OrderIndex": 17,
+    "Title": "Design Patterns: 14 - Builder [بالعربي]",
+    "Url": "https://youtu.be/51Ap3s__P_Q?si=gL8tMkfwZoH0bdwq",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 12
+  }
+]

@@ -9,6 +9,7 @@ namespace E_Learning.GraduationProject.Core.Entities
         public int TrackId { get; set; }
         public Track Track { get; set; }
 
+        [JsonPropertyName("title")]
         public string Title { get; set; }
 
         public string? Description { get; set; }

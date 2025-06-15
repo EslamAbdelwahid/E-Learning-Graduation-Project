@@ -54,6 +54,8 @@ namespace E_Learning.GraduationProject.APIs.Helper
             {
                 // this options allow user to write strings in ResourceType Enum instead of integers
                 options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+                options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
+                options.JsonSerializerOptions.WriteIndented = false; 
             });
 
             return services;

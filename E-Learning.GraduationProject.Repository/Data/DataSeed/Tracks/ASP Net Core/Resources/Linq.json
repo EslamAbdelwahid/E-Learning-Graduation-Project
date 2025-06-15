@@ -1,0 +1,42 @@
+[
+  {
+
+    "TrackStepId": 4,
+    "OrderIndex": 1,
+    "Title": "Introduction to LINQ – Understanding var, Anonymous Types, and Extension Methods",
+    "Url": "https://youtu.be/Y5JiJ1aKWZQ?si=7G7z9F-8nnHB_yTP",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 97
+  },
+  {
+
+    "TrackStepId": 4,
+    "OrderIndex": 2,
+    "Title": "LINQ Execution Behavior – Deferred vs. Immediate Execution Using Where Operators",
+    "Url": "https://youtu.be/minZdivVAbQ?si=DgPVxjSZRzzqWpQp",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 54
+  },
+  {
+
+    "TrackStepId": 4,
+    "OrderIndex": 3,
+    "Title": "LINQ Query Methods Part 1 – Filtering, Transformation, Ordering, Element, and Aggregation Operators",
+    "Url": "https://youtu.be/4d9qLAj4IB8?si=v-eh1nrl0qkPXtpq",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 93
+  },
+  {
+
+    "TrackStepId": 4,
+    "OrderIndex": 4,
+    "Title": "LINQ Query Methods Part 2 – Generator Operators, SelectMany, Casting, Set Operations, Quantifiers, Zip, and Grouping",
+    "Url": "https://youtu.be/qg6JMUBLnbY?si=Vn0kKVpCZ7DnLKm-",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 71
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 1,
+    "Title": "ASP.NET Core for Beginners: 01 - Introduction",
+    "Url": "https://www.youtube.com/watch?v=UQBnbGyDIMQ&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=1&t=684s&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 40
+  },
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 2,
+    "Title": "ASP.NET Core for Beginners: 02 - Project Anatomy",
+    "Url": "https://www.youtube.com/watch?v=ydAQhbeIFFU&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=2&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 43
+  },
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 3,
+    "Title": "ASP.NET Core for Beginners: 03 - Dependency Injection",
+    "Url": "https://www.youtube.com/watch?v=6j3Nzr84dqo&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=3&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 34
+  },
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 4,
+    "Title": "ASP.NET Core for Beginners: 04 - Basic CRUD Operations",
+    "Url": "https://www.youtube.com/watch?v=DUTLyppLnUQ&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=4&pp=iAQB0gcJCY0JAYcqIYzv",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 44
+  },
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 5,
+    "Title": "ASP.NET Core for Beginners: 05 - Middlewares",
+    "Url": "https://www.youtube.com/watch?v=WG_wlBkeAWA&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=5&pp=iAQB0gcJCY0JAYcqIYzv",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 32
+  },
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 6,
+    "Title": "ASP.NET Core for Beginners: 06 - Action Filters",
+    "Url": "https://www.youtube.com/watch?v=XvLXsKRe2hY&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=6&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 40
+  },
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 7,
+    "Title": "ASP.NET Core for Beginners: 07 - Configurations - Part 1",
+    "Url": "https://www.youtube.com/watch?v=1AQiVSymki8&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=7&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 34
+  },
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 8,
+    "Title": "ASP.NET Core for Beginners: 08 - Configurations - Part 2",
+    "Url": "https://www.youtube.com/watch?v=U67XfmvhNZY&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=8&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 33
+  },
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 9,
+    "Title": "ASP.NET Core for Beginners: 09 - Logging",
+    "Url": "https://www.youtube.com/watch?v=JbcywFUa1mo&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=9&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 42
+  },
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 10,
+    "Title": "ASP.NET Core for Beginners: 10 - Model Binding",
+    "Url": "https://www.youtube.com/watch?v=zNKhOifcUeA&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=10&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 34
+  },
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 11,
+    "Title": "ASP.NET Core for Beginners: 11 - Authentication (Basic)",
+    "Url": "https://www.youtube.com/watch?v=-KyTOEiMfQQ&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=11&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 42
+  },
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 12,
+    "Title": "ASP.NET Core for Beginners: 12 - Authentication (Bearer)",
+    "Url": "https://www.youtube.com/watch?v=H781NNEfSD0&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=12&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 45
+  },
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 13,
+    "Title": "ASP.NET Core for Beginners: 13 - Permission-Based Authorization",
+    "Url": "https://www.youtube.com/watch?v=ilBYLmo_4ic&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=13&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 34
+  },
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 14,
+    "Title": "ASP.NET Core for Beginners: 14 - Role-Based and Policy-Based Authorization",
+    "Url": "https://www.youtube.com/watch?v=R5ewmNpBB74&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=14&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 48
+  }
+]

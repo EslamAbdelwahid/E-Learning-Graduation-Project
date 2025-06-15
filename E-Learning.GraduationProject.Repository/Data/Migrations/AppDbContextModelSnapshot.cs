@@ -574,17 +574,20 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasAnnotation("Relational:JsonPropertyName", "description");
 
                     b.Property<int?>("EstimatedCompletionWeeks")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasAnnotation("Relational:JsonPropertyName", "estimatedCompletionWeeks");
 
                     b.Property<string>("IconUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
+                        .HasColumnType("bit")
+                        .HasAnnotation("Relational:JsonPropertyName", "isActive");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -630,7 +633,8 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasAnnotation("Relational:JsonPropertyName", "title");
 
                     b.Property<int>("TrackId")
                         .HasColumnType("int");

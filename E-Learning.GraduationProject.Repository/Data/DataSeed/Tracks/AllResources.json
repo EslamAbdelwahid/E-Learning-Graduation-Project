@@ -1,0 +1,393 @@
+[
+  {
+    "TrackStepId": 2,
+    "OrderIndex": 1,
+    "Title": "1 SQL introduction, DB Design, ERD, File Based System, DB system",
+    "Url": "https://www.youtube.com/watch?v=nUiuyejbemc&list=PLoRh0POuk1Rw-BZU-DPI6cA_c5W9_2uF_&index=1",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 198
+  },
+  {
+    "TrackStepId": 2,
+    "OrderIndex": 2,
+    "Title": "2 SQL Mapping, DB Schema, SQL statements, Creating DB",
+    "Url": "https://www.youtube.com/watch?v=k0SHOJhtsgI&list=PLoRh0POuk1Rw-BZU-DPI6cA_c5W9_2uF_&index=2",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 239
+  },
+  {
+    "TrackStepId": 2,
+    "OrderIndex": 3,
+    "Title": "3 SQL Joins, Normalization",
+    "Url": "https://www.youtube.com/watch?v=1sm_J_OU7yc&list=PLoRh0POuk1Rw-BZU-DPI6cA_c5W9_2uF_&index=3",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 188
+  },
+  {
+    "TrackStepId": 2,
+    "OrderIndex": 4,
+    "Title": "4 SQL, Aggregate Function, Grouping, Union, Subqueries, EERD",
+    "Url": "https://www.youtube.com/watch?v=Y9ObhL6XTgM&list=PLoRh0POuk1Rw-BZU-DPI6cA_c5W9_2uF_&index=4",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 179
+  },
+  {
+    "TrackStepId": 2,
+    "OrderIndex": 5,
+    "Title": "5 SQL, DB Engine, SQL Services, Ranking Function, Transact SQL",
+    "Url": "https://www.youtube.com/watch?v=gNH4SO1G_mI&list=PLoRh0POuk1Rw-BZU-DPI6cA_c5W9_2uF_&index=5",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 186
+  },
+  {
+    "TrackStepId": 2,
+    "OrderIndex": 6,
+    "Title": "6 SQL, Database Constraints, Rules Create DB",
+    "Url": "https://www.youtube.com/watch?v=gWuuUuypo9Q&list=PLoRh0POuk1Rw-BZU-DPI6cA_c5W9_2uF_&index=6",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 187
+  },
+  {
+    "TrackStepId": 2,
+    "OrderIndex": 7,
+    "Title": "7 SQL, Variables, If, While, functions",
+    "Url": "https://www.youtube.com/watch?v=zEcMl16097c&list=PLoRh0POuk1Rw-BZU-DPI6cA_c5W9_2uF_&index=7",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 193
+  },
+  {
+    "TrackStepId": 2,
+    "OrderIndex": 8,
+    "Title": "8 SQL, View, Index, Merge Statement, Pivot tables",
+    "Url": "https://www.youtube.com/watch?v=gWToleQTX84&list=PLoRh0POuk1Rw-BZU-DPI6cA_c5W9_2uF_&index=8",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 210
+  },
+  {
+    "TrackStepId": 2,
+    "OrderIndex": 9,
+    "Title": "9 Database Sorted Procedures, Triggers, XML",
+    "Url": "https://www.youtube.com/watch?v=v9LPfmaA-sw&list=PLoRh0POuk1Rw-BZU-DPI6cA_c5W9_2uF_&index=9",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 213
+  },
+  {
+    "TrackStepId": 2,
+    "OrderIndex": 10,
+    "Title": "10 Database Backup & Restores, Mirroring, Jobs, SQL CLR",
+    "Url": "https://www.youtube.com/watch?v=fXOtjdhdOq8&list=PLoRh0POuk1Rw-BZU-DPI6cA_c5W9_2uF_&index=10",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 199
+  },
+    {
+
+    "TrackStepId": 4,
+    "OrderIndex": 1,
+    "Title": "Introduction to LINQ – Understanding var, Anonymous Types, and Extension Methods",
+    "Url": "https://youtu.be/Y5JiJ1aKWZQ?si=7G7z9F-8nnHB_yTP",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 97
+  },
+  {
+
+    "TrackStepId": 4,
+    "OrderIndex": 2,
+    "Title": "LINQ Execution Behavior – Deferred vs. Immediate Execution Using Where Operators",
+    "Url": "https://youtu.be/minZdivVAbQ?si=DgPVxjSZRzzqWpQp",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 54
+  },
+  {
+
+    "TrackStepId": 4,
+    "OrderIndex": 3,
+    "Title": "LINQ Query Methods Part 1 – Filtering, Transformation, Ordering, Element, and Aggregation Operators",
+    "Url": "https://youtu.be/4d9qLAj4IB8?si=v-eh1nrl0qkPXtpq",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 93
+  },
+  {
+
+    "TrackStepId": 4,
+    "OrderIndex": 4,
+    "Title": "LINQ Query Methods Part 2 – Generator Operators, SelectMany, Casting, Set Operations, Quantifiers, Zip, and Grouping",
+    "Url": "https://youtu.be/qg6JMUBLnbY?si=Vn0kKVpCZ7DnLKm-",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 71
+  },
+    {
+    "TrackStepId": 5,
+    "OrderIndex": 1,
+    "Title": "كورس Entity Framework 6.0 - Part 1 - منحة ITI",
+    "Url": "https://www.youtube.com/watch?v=rNfYrgoERjk&list=PLesfn4TAj57WisNpNGLPCS1donYYAEQSI&index=1&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 97
+  },
+  {
+    "TrackStepId": 5,
+    "OrderIndex": 2,
+    "Title": "كورس Entity Framework 6.0 - Part 2 - منحة ITI",
+    "Url": "https://www.youtube.com/watch?v=y_SQLhW9YkM&list=PLesfn4TAj57WisNpNGLPCS1donYYAEQSI&index=2&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 90
+  },
+  {
+    "TrackStepId": 5,
+    "OrderIndex": 3,
+    "Title": "كورس Entity Framework 6.0 - Part 3 - منحة ITI",
+    "Url": "https://www.youtube.com/watch?v=LfGvywjeSwc&list=PLesfn4TAj57WisNpNGLPCS1donYYAEQSI&index=3&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 88
+  },
+  {
+    "TrackStepId": 5,
+    "OrderIndex": 4,
+    "Title": "كورس Entity Framework 6.0 - Part 4 - منحة ITI",
+    "Url": "https://www.youtube.com/watch?v=x_mo-I1oUfw&list=PLesfn4TAj57WisNpNGLPCS1donYYAEQSI&index=4&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 98
+  },
+  {
+    "TrackStepId": 5,
+    "OrderIndex": 5,
+    "Title": "كورس Entity Framework 6.0 - Part 5 - منحة ITI",
+    "Url": "https://www.youtube.com/watch?v=a6_aMJzRFrA&list=PLesfn4TAj57WisNpNGLPCS1donYYAEQSI&index=5&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 107
+  },
+  {
+    "TrackStepId": 5,
+    "OrderIndex": 6,
+    "Title": "كورس Entity Framework 6.0 - Part 6 - منحة ITI",
+    "Url": "https://www.youtube.com/watch?v=mXEsUQ9OB_U&list=PLesfn4TAj57WisNpNGLPCS1donYYAEQSI&index=6&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 91
+  },
+  {
+    "TrackStepId": 5,
+    "OrderIndex": 7,
+    "Title": "كورس Entity Framework 6.0 - Part 7 - منحة ITI",
+    "Url": "https://www.youtube.com/watch?v=Eab4xBzpfO8&list=PLesfn4TAj57WisNpNGLPCS1donYYAEQSI&index=7&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 89
+  },
+  {
+    "TrackStepId": 5,
+    "OrderIndex": 8,
+    "Title": "كورس Entity Framework 6.0 - Part 8 - منحة ITI",
+    "Url": "https://www.youtube.com/watch?v=fNnSkxdq5gQ&list=PLesfn4TAj57WisNpNGLPCS1donYYAEQSI&index=8&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 76
+  },
+  {
+    "TrackStepId": 5,
+    "OrderIndex": 9,
+    "Title": "كورس Entity Framework 6.0 - Part 9 - منحة ITI",
+    "Url": "https://www.youtube.com/watch?v=l8vPkbBK6UY&list=PLesfn4TAj57WisNpNGLPCS1donYYAEQSI&index=9&pp=iAQB0gcJCY0JAYcqIYzv",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 103
+  },
+  {
+    "TrackStepId": 5,
+    "OrderIndex": 10,
+    "Title": "كورس Entity Framework 6.0 - Part 10 - منحة ITI",
+    "Url": "https://www.youtube.com/watch?v=VRkKYm3XAAo&list=PLesfn4TAj57WisNpNGLPCS1donYYAEQSI&index=10&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 80
+  },
+  {
+    "TrackStepId": 5,
+    "OrderIndex": 11,
+    "Title": "كورس Entity Framework 6.0 - Part 11 - منحة ITI",
+    "Url": "https://www.youtube.com/watch?v=aXkaFtJGeh0&list=PLesfn4TAj57WisNpNGLPCS1donYYAEQSI&index=11&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 80
+  },
+  {
+    "TrackStepId": 5,
+    "OrderIndex": 12,
+    "Title": "كورس Entity Framework 6.0 - Part 12 - منحة ITI",
+    "Url": "https://www.youtube.com/watch?v=FkhlvCPum4U&list=PLesfn4TAj57WisNpNGLPCS1donYYAEQSI&index=12&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 121
+  },
+    {
+    "TrackStepId": 6,
+    "OrderIndex": 15,
+    "Title": "Design Patterns: 1 - Introduction [بالعربي]",
+    "Url": "https://youtu.be/aSDdHSW6_bU?si=J0Cx17ftcIqRtG6M",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 11
+  },
+  {
+    "TrackStepId": 6,
+    "OrderIndex": 16,
+    "Title": "Design Patterns: 2 - Singleton [بالعربي]",
+    "Url": "https://youtu.be/MfA48pQsXsg?si=Zmp4ZheM3JtA_DcD",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 16
+  },
+  {
+    "TrackStepId": 6,
+    "OrderIndex": 17,
+    "Title": "Design Patterns: 14 - Builder [بالعربي]",
+    "Url": "https://youtu.be/51Ap3s__P_Q?si=gL8tMkfwZoH0bdwq",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 12
+  },
+    {
+    "TrackStepId": 7,
+    "OrderIndex": 1,
+    "Title": "ASP.NET Core for Beginners: 01 - Introduction",
+    "Url": "https://www.youtube.com/watch?v=UQBnbGyDIMQ&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=1&t=684s&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 40
+  },
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 2,
+    "Title": "ASP.NET Core for Beginners: 02 - Project Anatomy",
+    "Url": "https://www.youtube.com/watch?v=ydAQhbeIFFU&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=2&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 43
+  },
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 3,
+    "Title": "ASP.NET Core for Beginners: 03 - Dependency Injection",
+    "Url": "https://www.youtube.com/watch?v=6j3Nzr84dqo&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=3&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 34
+  },
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 4,
+    "Title": "ASP.NET Core for Beginners: 04 - Basic CRUD Operations",
+    "Url": "https://www.youtube.com/watch?v=DUTLyppLnUQ&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=4&pp=iAQB0gcJCY0JAYcqIYzv",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 44
+  },
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 5,
+    "Title": "ASP.NET Core for Beginners: 05 - Middlewares",
+    "Url": "https://www.youtube.com/watch?v=WG_wlBkeAWA&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=5&pp=iAQB0gcJCY0JAYcqIYzv",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 32
+  },
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 6,
+    "Title": "ASP.NET Core for Beginners: 06 - Action Filters",
+    "Url": "https://www.youtube.com/watch?v=XvLXsKRe2hY&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=6&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 40
+  },
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 7,
+    "Title": "ASP.NET Core for Beginners: 07 - Configurations - Part 1",
+    "Url": "https://www.youtube.com/watch?v=1AQiVSymki8&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=7&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 34
+  },
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 8,
+    "Title": "ASP.NET Core for Beginners: 08 - Configurations - Part 2",
+    "Url": "https://www.youtube.com/watch?v=U67XfmvhNZY&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=8&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 33
+  },
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 9,
+    "Title": "ASP.NET Core for Beginners: 09 - Logging",
+    "Url": "https://www.youtube.com/watch?v=JbcywFUa1mo&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=9&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 42
+  },
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 10,
+    "Title": "ASP.NET Core for Beginners: 10 - Model Binding",
+    "Url": "https://www.youtube.com/watch?v=zNKhOifcUeA&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=10&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 34
+  },
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 11,
+    "Title": "ASP.NET Core for Beginners: 11 - Authentication (Basic)",
+    "Url": "https://www.youtube.com/watch?v=-KyTOEiMfQQ&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=11&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 42
+  },
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 12,
+    "Title": "ASP.NET Core for Beginners: 12 - Authentication (Bearer)",
+    "Url": "https://www.youtube.com/watch?v=H781NNEfSD0&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=12&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 45
+  },
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 13,
+    "Title": "ASP.NET Core for Beginners: 13 - Permission-Based Authorization",
+    "Url": "https://www.youtube.com/watch?v=ilBYLmo_4ic&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=13&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 34
+  },
+  {
+    "TrackStepId": 7,
+    "OrderIndex": 14,
+    "Title": "ASP.NET Core for Beginners: 14 - Role-Based and Policy-Based Authorization",
+    "Url": "https://www.youtube.com/watch?v=R5ewmNpBB74&list=PLsV97AQt78NQ8E7cEqovH0zLYRJgJahGh&index=14&pp=iAQB",
+    "ResourceTypeString": "Video",
+    "ResourceType": 0,
+    "TotalDurationMinutes": 48
+  }
+]
