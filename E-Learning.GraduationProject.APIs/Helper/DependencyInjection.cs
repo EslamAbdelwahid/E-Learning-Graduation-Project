@@ -26,6 +26,10 @@ using E_Learning.GraduationProject.Core.Mapping.Students;
 using E_Learning.GraduationProject.Core.Mapping.StudentProgresses;
 using E_Learning.GraduationProject.Core.Mapping.Addresses;
 using E_Learning.GraduationProject.Core.Mapping.Courses;
+using E_Learning.GraduationProject.Core.Repository.Contract;
+using E_Learning.GraduationProject.Repository.Repository;
+using StackExchange.Redis;
+using E_Learning.GraduationProject.Core.Mapping.Baskets;
 
 
 namespace E_Learning.GraduationProject.APIs.Helper
@@ -41,6 +45,7 @@ namespace E_Learning.GraduationProject.APIs.Helper
             services.AddAutoMapperService();
             services.ConfigureInvalidModelStateRespnoseService();
             services.AddAuthenticationService(configuration);
+            services.AddRedisService(configuration);
             return services;
         }
         private static IServiceCollection AddBuiltInService(this IServiceCollection services)
@@ -77,6 +82,8 @@ namespace E_Learning.GraduationProject.APIs.Helper
             services.AddScoped<IRoleService, RoleService>();
             services.AddScoped<IInstructorService, InstructorService>();
             services.AddScoped<ICourseService, CourseService>();
+            services.AddScoped<IBasketService, BasketService>();
+            services.AddScoped<IBasketRepository, BasketRepository>();
             
 
 
@@ -122,6 +129,7 @@ namespace E_Learning.GraduationProject.APIs.Helper
             services.AddAutoMapper(M => M.AddProfile(new StudentProfile()));
             services.AddAutoMapper(M => M.AddProfile(new StudentProgressProfile()));
             services.AddAutoMapper(M => M.AddProfile(new CourseProfile()));
+            services.AddAutoMapper(M => M.AddProfile(new BasketProfile()));
             return services;
         }
         private static IServiceCollection ConfigureInvalidModelStateRespnoseService(this IServiceCollection services)
@@ -172,6 +180,20 @@ namespace E_Learning.GraduationProject.APIs.Helper
 
             return services;
         }
-        
+
+
+        private static IServiceCollection AddRedisService(this IServiceCollection services, IConfiguration configuration)
+        {
+
+            services.AddSingleton<IConnectionMultiplexer>((serviceProvider) =>
+            {
+                var connection = configuration.GetConnectionString("Redis");
+
+                return ConnectionMultiplexer.Connect(connection);
+            });
+            return services;
+        }
+
+
     }
 }
