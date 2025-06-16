@@ -1,5 +1,7 @@
 ﻿using E_Learning.GraduationProject.Core.Entities;
 using E_Learning.GraduationProject.Core.Entities.Identity;
+using E_Learning.GraduationProject.Core.Entities.Instructors;
+using E_Learning.GraduationProject.Core.Entities.Orders;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -34,6 +36,9 @@ namespace E_Learning.GraduationProject.Repository.Data.Context
         public DbSet<Track> Tracks { get; set; }
         public DbSet<TrackStep> TrackSteps { get; set; }
         public DbSet<StepResource> StepResources { get; set; }
+        public DbSet<Instructor> Instructors { get; set; }
+        public DbSet<Course> Courses { get; set; }
+        public DbSet<Order> Orders { get; set; }
         
 
 

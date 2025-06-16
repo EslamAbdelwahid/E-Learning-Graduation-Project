@@ -30,6 +30,7 @@ using E_Learning.GraduationProject.Core.Repository.Contract;
 using E_Learning.GraduationProject.Repository.Repository;
 using StackExchange.Redis;
 using E_Learning.GraduationProject.Core.Mapping.Baskets;
+using E_Learning.GraduationProject.Core.Mapping.Orders;
 
 
 namespace E_Learning.GraduationProject.APIs.Helper
@@ -87,6 +88,8 @@ namespace E_Learning.GraduationProject.APIs.Helper
             services.AddScoped<IBasketService, BasketService>();
             services.AddScoped<IBasketRepository, BasketRepository>();
             services.AddScoped<ICacheService, CacheService>();
+            services.AddScoped<IPaymentService, PaymentService>();
+            services.AddScoped<IOrderService, OrderService>();
             
 
 
@@ -133,6 +136,7 @@ namespace E_Learning.GraduationProject.APIs.Helper
             services.AddAutoMapper(M => M.AddProfile(new StudentProgressProfile()));
             services.AddAutoMapper(M => M.AddProfile(new CourseProfile()));
             services.AddAutoMapper(M => M.AddProfile(new BasketProfile()));
+            services.AddAutoMapper(M => M.AddProfile(new OrderProfile()));
             return services;
         }
         private static IServiceCollection ConfigureInvalidModelStateRespnoseService(this IServiceCollection services)

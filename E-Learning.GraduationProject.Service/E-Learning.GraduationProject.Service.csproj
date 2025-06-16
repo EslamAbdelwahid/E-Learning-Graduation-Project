@@ -8,11 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\E-Learning.GraduationProject.Repository\E-Learning.GraduationProject.Repository.csproj" />
+    <Compile Remove="Services\Auth\**" />
+    <EmbeddedResource Remove="Services\Auth\**" />
+    <None Remove="Services\Auth\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Services\Auth\" />
+    <ProjectReference Include="..\E-Learning.GraduationProject.Repository\E-Learning.GraduationProject.Repository.csproj" />
   </ItemGroup>
 
   <ItemGroup>

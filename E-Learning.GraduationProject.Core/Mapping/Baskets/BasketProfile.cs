@@ -17,10 +17,12 @@ namespace E_Learning.GraduationProject.Core.Mapping.Baskets
             //basket
             CreateMap<BasketDto, Basket>();
             CreateMap<Basket, BasketToReturnDto>();
+            CreateMap<BasketToReturnDto, BasketDto>();
 
             //item
             CreateMap<BasketItemDto, BasketItem>();
             CreateMap<BasketItem, BasketItemToReturnDto>();
+            CreateMap<BasketItemToReturnDto, BasketItemDto>();
 
         }
     }
