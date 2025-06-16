@@ -1,4 +1,5 @@
-﻿using E_Learning.GraduationProject.APIs.Errors;
+﻿using E_Learning.GraduationProject.APIs.Attributes;
+using E_Learning.GraduationProject.APIs.Errors;
 using E_Learning.GraduationProject.Core.Dtos.ProgrammingLanguages;
 using E_Learning.GraduationProject.Core.Hellper;
 using E_Learning.GraduationProject.Core.Service.Contract;
@@ -23,7 +24,8 @@ namespace E_Learning.GraduationProject.APIs.Controllers
             _programmingLanguageService = programmingLanguageService;
         }
 
-        [HttpGet]   
+        [HttpGet]
+        [Cached(300)] // 5 min
         public async Task<ActionResult<PaginationResponseToReturn<ProgrammingLanguageToReturnDto>>> GetAllProgrammingLanguages([FromQuery]ProgrammingLanguageParames parames)
         {
             var languages = await _programmingLanguageService.GetAllProgrammingLanguageWithSpecAsync(parames);

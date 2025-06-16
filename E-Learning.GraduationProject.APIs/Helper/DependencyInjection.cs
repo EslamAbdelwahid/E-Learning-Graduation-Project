@@ -86,6 +86,7 @@ namespace E_Learning.GraduationProject.APIs.Helper
             services.AddScoped<ICourseService, CourseService>();
             services.AddScoped<IBasketService, BasketService>();
             services.AddScoped<IBasketRepository, BasketRepository>();
+            services.AddScoped<ICacheService, CacheService>();
             
 
 

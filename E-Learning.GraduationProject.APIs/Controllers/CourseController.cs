@@ -1,4 +1,5 @@
-﻿using E_Learning.GraduationProject.APIs.Errors;
+﻿using E_Learning.GraduationProject.APIs.Attributes;
+using E_Learning.GraduationProject.APIs.Errors;
 using E_Learning.GraduationProject.Core.Dtos.Courses;
 using E_Learning.GraduationProject.Core.Dtos.Instructors;
 using E_Learning.GraduationProject.Core.Hellper;
@@ -25,6 +26,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         }
 
         [HttpGet]
+        [Cached(300)] // 5 min
         public async Task<ActionResult<PaginationResponseToReturn<CourseToReturnDto>>> GetAllCourses([FromQuery] CourseParams specParams)
         {
             var Courses = await _courseService.GetAllCoursesAsync(specParams);
