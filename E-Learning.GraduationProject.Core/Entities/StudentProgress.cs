@@ -19,17 +19,14 @@ namespace E_Learning.GraduationProject.Core.Entities
 
         public int EntityId { get; set; }
         public EntityType EntityType { get; set; }
-
-
         public ProgressStatus Status { get; set; } = ProgressStatus.NotStarted;
 
-        public DateTime LastWatchedDate { get; set; }
 
         public DateTime? CompletionDate { get; set; }
 
-        public int? TimeSpent { get; set; } //total minutes spent
-
-        public int CurrentPositionSeconds { get; set; }
+        public int ProgressPercentage { get; set; } = 0;
+        public bool IsCompleted { get; set; } = false;
+        public DateTime EnrolledAt { get; set; } = DateTime.UtcNow;
 
     }
 }

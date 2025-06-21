@@ -90,7 +90,7 @@ namespace E_Learning.GraduationProject.APIs.Helper
             services.AddScoped<ICacheService, CacheService>();
             services.AddScoped<IPaymentService, PaymentService>();
             services.AddScoped<IOrderService, OrderService>();
-            
+            services.AddScoped<IStudentService, StudentService>();
 
 
 
