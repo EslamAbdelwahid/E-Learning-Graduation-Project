@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
+using E_Learning.GraduationProject.Core;
 using E_Learning.GraduationProject.Core.Dtos.Auth;
+using E_Learning.GraduationProject.Core.Entities;
 using E_Learning.GraduationProject.Core.Entities.Identity;
 using E_Learning.GraduationProject.Core.Hellper;
 using E_Learning.GraduationProject.Core.Service.Contract;
@@ -21,19 +23,22 @@ namespace E_Learning.GraduationProject.Service.Services
         private readonly SignInManager<ApplicationUser> signInManager;
         private readonly ITokenService tokenService;
         private readonly IEmailService emailService;
+        private readonly IUnitOfWork unitOfWork;
 
         public AuthService(
             UserManager<ApplicationUser> userManager,
             IMapper mapper,
             SignInManager<ApplicationUser> signInManager,
             ITokenService tokenService,
-            IEmailService emailService)
+            IEmailService emailService,
+            IUnitOfWork unitOfWork)
         {
             this.userManager = userManager;
             this.mapper = mapper;
             this.signInManager = signInManager;
             this.tokenService = tokenService;
             this.emailService = emailService;
+            this.unitOfWork = unitOfWork;
         }
         
         public async Task<LoginResponseDto> LogInAsync(LogInDto logInDto)
@@ -76,6 +81,13 @@ namespace E_Learning.GraduationProject.Service.Services
             };
             var result = await userManager.CreateAsync(user, registerDto.Password);
             if (result.Succeeded == false) return null;
+            var student = new Student()
+            {
+                UserId = user.Id
+            };
+
+            await unitOfWork.Repository<Student, int>().AddAsync(student);
+            await unitOfWork.CompleteAsync();
 
             await userManager.AddToRoleAsync(user, "Student");
 
