@@ -12,11 +12,8 @@ namespace E_Learning.GraduationProject.Core.Entities.Enums
         [EnumMember(Value = "pending")]
         Pending,
 
-        [EnumMember(Value = "processing")]
-        Processing,
-
-        [EnumMember(Value = "completed")]
-        Completed,
+        [EnumMember(Value = "Payment Received")]
+        PaymentReceived,
 
         [EnumMember(Value = "failed")]
         Failed,
@@ -27,7 +24,6 @@ namespace E_Learning.GraduationProject.Core.Entities.Enums
         [EnumMember(Value = "cancelled")]
         Cancelled,
 
-        [EnumMember(Value = "on_hold")]
-        OnHold
+       
     }
 }

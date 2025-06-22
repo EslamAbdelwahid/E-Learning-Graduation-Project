@@ -1,8 +1,12 @@
 ﻿using AutoMapper;
 using E_Learning.GraduationProject.Core;
 using E_Learning.GraduationProject.Core.Dtos.Baskets;
+using E_Learning.GraduationProject.Core.Dtos.Orders;
+using E_Learning.GraduationProject.Core.Entities.Enums;
 using E_Learning.GraduationProject.Core.Entities.Instructors;
+using E_Learning.GraduationProject.Core.Entities.Orders;
 using E_Learning.GraduationProject.Core.Service.Contract;
+using E_Learning.GraduationProject.Core.Specifications.Orders;
 using Microsoft.Extensions.Configuration;
 using Stripe;
 using System;
@@ -56,7 +60,7 @@ namespace E_Learning.GraduationProject.Service.Services
 
             // calculate Total
             var total = basket.Items.Sum(I => I.Price);
-           
+
 
             var service = new PaymentIntentService();
 
@@ -67,7 +71,11 @@ namespace E_Learning.GraduationProject.Service.Services
                 {
                     Amount = (long)(total * 100),
                     PaymentMethodTypes = new List<string>() { "card" },
-                    Currency = "usd"
+                    Currency = "usd",
+                    Metadata = new Dictionary<string, string>
+                    {
+                        { "basket_id", basketId }
+                    }
                 };
 
                 // create payment using stripe
@@ -82,7 +90,7 @@ namespace E_Learning.GraduationProject.Service.Services
 
                 var options = new PaymentIntentUpdateOptions()
                 {
-                    Amount = (long)(total  * 100),
+                    Amount = (long)(total * 100),
                 };
 
                 // update payment using stripe
@@ -94,12 +102,55 @@ namespace E_Learning.GraduationProject.Service.Services
             }
 
             //update basket
-            var entity =  _mapper.Map<BasketDto>(basket);
+            var entity = _mapper.Map<BasketDto>(basket);
             basket = await _basketService.CreateOrUpdateBasketAsync(entity);
 
             if (basket is null) return null;
 
             return basket;
         }
+
+        public async Task<OrderToReturnDto> HandlePaymentIntentSucceeded(string paymentIntentId)
+        {
+
+            var spec = new OrderPaymentIntentSpecifications(paymentIntentId);
+
+            var order = await _unitOfWork.Repository<Order, int>().GetWithSpecAsync(spec);
+
+            if (order is null) throw new InvalidOperationException($"No order found for payment intent: {paymentIntentId}");
+
+            order.Status = OrderStatus.PaymentReceived;
+
+            _unitOfWork.Repository<Order, int>().Update(order);
+
+            var res = await _unitOfWork.CompleteAsync();
+
+
+            return res > 0 ? _mapper.Map<OrderToReturnDto>(order) :
+                throw new Exception("Failed to update the order status after payment");
+
+        }
+
+        public async Task<OrderToReturnDto> HandlePaymentIntentFailed(string paymentIntentId)
+        {
+            var spec = new OrderPaymentIntentSpecifications(paymentIntentId);
+
+            var order = await _unitOfWork.Repository<Order, int>().GetWithSpecAsync(spec);
+
+            if (order is null) throw new InvalidOperationException("Failed to update the order status after payment failure");
+
+
+            order.Status = OrderStatus.Failed;
+
+            _unitOfWork.Repository<Order, int>().Update(order);
+
+            var res = await _unitOfWork.CompleteAsync();
+
+
+            return res > 0 ? _mapper.Map<OrderToReturnDto>(order) :
+                throw new InvalidOperationException("Failed to update the order status after payment failure");
+        }
+
+
     }
 }
