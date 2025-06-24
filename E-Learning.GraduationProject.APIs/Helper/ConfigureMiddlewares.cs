@@ -39,7 +39,7 @@ namespace E_Learning.GraduationProject.APIs.Helper
                 await E_LearningDbContextSeed.SeedUsersAsync(userManager, configuration);
 
                 // seeding data
-                //await E_LearningDbContextSeed.SeedAsync(context);
+                await E_LearningDbContextSeed.SeedProgrammingLanguagesAsync(context);
                 await E_LearningDbContextSeed.SeedTracksAsync(context);
 
                 logger.LogInformation("Database migration and seeding completed successfully");

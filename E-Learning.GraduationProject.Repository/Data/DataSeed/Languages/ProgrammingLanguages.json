@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Python",
+    "description": "An interpreted, high-level, general-purpose programming language known for its readability and versatility. Dominant in Data Science, AI, and scripting.",
+    "iconUrl": "/Images/Languages/python-original.png",
+    "DifficultyLevel": "Basic",
+    "isActive": true
+  },
+  {
+    "name": "C#",
+    "description": "A general-purpose, object-oriented language developed by Microsoft. Used for backend development (APIs, desktop apps) and game development with Unity.",
+    "iconUrl": "/Images/Languages/csharp-original.png",
+    "DifficultyLevel": "Basic",
+    "isActive": true
+  },
+  {
+    "name": "JavaScript",
+    "description": "The core language of the web. Enables interactive frontend development and can be used on the server (Node.js). Supports both OOP and functional paradigms.",
+    "iconUrl": "/Images/Languages/javascript-original.png",
+    "DifficultyLevel": "Basic",
+    "isActive": true
+  },
+  {
+    "name": "HTML",
+    "description": "HyperText Markup Language. The standard for creating web pages and structuring content (text, images, links) in browsers.",
+    "iconUrl": "/Images/Languages/html5-original.png",
+    "DifficultyLevel": "Basic",
+    "isActive": true
+  },
+  {
+    "name": "CSS",
+    "description": "Cascading Style Sheets. Controls the visual presentation (layout, colors, fonts) of HTML elements on web pages.",
+    "iconUrl": "/Images/Languages/css3-original.png",
+    "DifficultyLevel": "Basic",
+    "isActive": true
+  },
+  {
+    "name": "R",
+    "description": "A language for statistical computing and graphics. Popular in academia and data analysis for its robust visualization libraries.",
+    "iconUrl": "/Images/Languages/r-original.png",
+    "DifficultyLevel": "Intermediate",
+    "isActive": true
+  }
+]

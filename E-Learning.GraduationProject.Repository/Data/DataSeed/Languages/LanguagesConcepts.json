@@ -1,0 +1,215 @@
+[
+  {
+    "title": "Data Types and Variables",
+    "difficultyLevel": "Basic",
+    "orderIndex": 1,
+    "estimatedHours": 2,
+    "description": "Understand Python's data types (int, float, str, bool, list, tuple, dict, set) and dynamic typing. Learn variable assignment, type hints, and immutability concepts.",
+    "languageId": 3
+  },
+  {
+    "title": "Loops and Control Flow",
+    "difficultyLevel": "Basic",
+    "orderIndex": 2,
+    "estimatedHours": 2,
+    "description": "Master for/while loops, if/elif/else statements, and match/case (Python 3.10+). Cover loop control (break, continue, else) and Pythonic iteration techniques.",
+    "languageId": 3
+  },
+  {
+    "title": "Lists and Arrays",
+    "difficultyLevel": "Basic",
+    "orderIndex": 3,
+    "estimatedHours": 3,
+    "description": "Manipulate lists (slicing, methods) and NumPy arrays. Compare lists vs. arrays for data processing.",
+    "languageId": 3
+  },
+  {
+    "title": "Functions",
+    "difficultyLevel": "Intermediate",
+    "orderIndex": 4,
+    "estimatedHours": 3,
+    "description": "Define functions (parameters, return values), use lambda expressions, and apply decorators (@ syntax) for metaprogramming.",
+    "languageId": 3
+  },
+  {
+    "title": "Object-Oriented Programming",
+    "difficultyLevel": "Advanced",
+    "orderIndex": 5,
+    "estimatedHours": 5,
+    "description": "Implement classes, inheritance (single/multiple), polymorphism, and magic methods (__init__, __str__). Understand method resolution order (MRO).",
+    "languageId": 3
+  },
+
+  {
+    "title": "Data Types and Variables",
+    "difficultyLevel": "Basic",
+    "orderIndex": 1,
+    "estimatedHours": 3,
+    "description": "Learn C# type system (value/reference types), nullable types (int?), var keyword, and constants (const vs. readonly).",
+    "languageId": 4
+  },
+  {
+    "title": "Control Structures",
+    "difficultyLevel": "Basic",
+    "orderIndex": 2,
+    "estimatedHours": 3,
+    "description": "Master if/else, switch expressions (C# 8+), pattern matching, and loops (for, foreach, while, do-while).",
+    "languageId": 4
+  },
+  {
+    "title": "Collections",
+    "difficultyLevel": "Intermediate",
+    "orderIndex": 3,
+    "estimatedHours": 4,
+    "description": "Work with arrays, Lists<T>, Dictionaries, and LINQ queries (Where, Select, Aggregate). Compare IEnumerable vs. IQueryable.",
+    "languageId": 4
+  },
+  {
+    "title": "OOP in C#",
+    "difficultyLevel": "Advanced",
+    "orderIndex": 4,
+    "estimatedHours": 6,
+    "description": "Implement classes, interfaces, abstract classes, inheritance, polymorphism, and C# specifics (properties, indexers, events).",
+    "languageId": 4
+  },
+
+  {
+    "title": "Database Fundamentals",
+    "difficultyLevel": "Basic",
+    "orderIndex": 1,
+    "estimatedHours": 3,
+    "description": "Understand tables, schemas, primary/foreign keys, and basic data types (INT, VARCHAR, DATETIME).",
+    "languageId": 8
+  },
+  {
+    "title": "CRUD Operations",
+    "difficultyLevel": "Basic",
+    "orderIndex": 2,
+    "estimatedHours": 3,
+    "description": "Write INSERT, UPDATE, DELETE, and SELECT statements. Filter data with WHERE clauses.",
+    "languageId": 8
+  },
+  {
+    "title": "Joins and Relationships",
+    "difficultyLevel": "Intermediate",
+    "orderIndex": 3,
+    "estimatedHours": 4,
+    "description": "Master INNER/LEFT/RIGHT/FULL JOINs, self-joins, and relational database design principles.",
+    "languageId": 8
+  },
+  {
+    "title": "Stored Procedures",
+    "difficultyLevel": "Advanced",
+    "orderIndex": 4,
+    "estimatedHours": 5,
+    "description": "Create and optimize stored procedures with parameters, error handling (TRY/CATCH), and transaction control.",
+    "languageId": 8
+  },
+  {
+    "title": "Variables and Data Types",
+    "difficultyLevel": "Basic",
+    "orderIndex": 1,
+    "estimatedHours": 2,
+    "description": "Learn `let`, `const`, `var`, primitive types (string, number, boolean), and dynamic typing. Understand `null` vs. `undefined`.",
+    "languageId": 5
+  },
+  {
+    "title": "Functions and Scope",
+    "difficultyLevel": "Basic",
+    "orderIndex": 2,
+    "estimatedHours": 3,
+    "description": "Declare functions (arrow vs. traditional), handle closures, and master scope (global, block, lexical).",
+    "languageId": 5
+  },
+  {
+    "title": "DOM Manipulation",
+    "difficultyLevel": "Intermediate",
+    "orderIndex": 3,
+    "estimatedHours": 4,
+    "description": "Select/modify HTML elements, handle events (click, submit), and dynamically update the DOM.",
+    "languageId": 5
+  },
+  {
+    "title": "Async JS (Promises, Async/Await)",
+    "difficultyLevel": "Advanced",
+    "orderIndex": 4,
+    "estimatedHours": 5,
+    "description": "Manage asynchronous operations with callbacks, promises, and async/await. Handle APIs with `fetch`.",
+    "languageId": 5
+  },
+
+  {
+    "title": "HTML Structure",
+    "difficultyLevel": "Basic",
+    "orderIndex": 1,
+    "estimatedHours": 2,
+    "description": "Master document structure (`<!DOCTYPE>`, `<html>`, `<head>`, `<body>`), semantic tags (`<header>`, `<article>`), and metadata.",
+    "languageId": 6
+  },
+  {
+    "title": "Forms and Inputs",
+    "difficultyLevel": "Basic",
+    "orderIndex": 2,
+    "estimatedHours": 3,
+    "description": "Create forms (`<form>`, `<input>` types), validate inputs, and use accessibility attributes (`aria-*`).",
+    "languageId": 6
+  },
+  {
+    "title": "Multimedia and Embedding",
+    "difficultyLevel": "Intermediate",
+    "orderIndex": 3,
+    "estimatedHours": 2,
+    "description": "Embed images (`<img>`), videos (`<video>`), and third-party content (iframes, SVG).",
+    "languageId": 6
+  },
+
+  {
+    "title": "Selectors and Box Model",
+    "difficultyLevel": "Basic",
+    "orderIndex": 1,
+    "estimatedHours": 3,
+    "description": "Use CSS selectors (class, ID, pseudo-classes) and understand margin/padding/border (box model).",
+    "languageId": 7
+  },
+  {
+    "title": "Flexbox and Grid",
+    "difficultyLevel": "Intermediate",
+    "orderIndex": 2,
+    "estimatedHours": 4,
+    "description": "Build layouts with Flexbox (alignment, wrapping) and CSS Grid (tracks, areas).",
+    "languageId": 7
+  },
+  {
+    "title": "Responsive Design (Media Queries)",
+    "difficultyLevel": "Advanced",
+    "orderIndex": 3,
+    "estimatedHours": 3,
+    "description": "Implement mobile-first designs using media queries and relative units (rem, vw).",
+    "languageId": 7
+  },
+
+  {
+    "title": "R Basics and Vectors",
+    "difficultyLevel": "Basic",
+    "orderIndex": 1,
+    "estimatedHours": 3,
+    "description": "Learn R syntax, atomic vectors (numeric, character), and vectorized operations.",
+    "languageId": 9
+  },
+  {
+    "title": "Data Frames and dplyr",
+    "difficultyLevel": "Intermediate",
+    "orderIndex": 2,
+    "estimatedHours": 4,
+    "description": "Manipulate data frames with `dplyr` (filter, mutate, group_by). Import/export CSV/Excel files.",
+    "languageId": 9
+  },
+  {
+    "title": "Statistical Modeling",
+    "difficultyLevel": "Advanced",
+    "orderIndex": 3,
+    "estimatedHours": 5,
+    "description": "Run linear/logistic regression, hypothesis tests (t-test, ANOVA), and interpret results.",
+    "languageId": 9
+  }
+]

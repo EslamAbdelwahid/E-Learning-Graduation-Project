@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace E_Learning.GraduationProject.Repository.Data
@@ -18,14 +19,14 @@ namespace E_Learning.GraduationProject.Repository.Data
         public static async Task SeedRolesAsync(RoleManager<IdentityRole> roleManager)
         {
             string[] roles = { "Admin", "Student", "Instructor" };
-            foreach(var role in roles)
+            foreach (var role in roles)
             {
-                if(! await roleManager.RoleExistsAsync(role))
+                if (!await roleManager.RoleExistsAsync(role))
                 {
-                   await roleManager.CreateAsync(new IdentityRole(role));
+                    await roleManager.CreateAsync(new IdentityRole(role));
                 }
             }
-            
+
         }
         public static async Task SeedUsersAsync(
     UserManager<ApplicationUser> userManager,
@@ -71,17 +72,22 @@ namespace E_Learning.GraduationProject.Repository.Data
             }
         }
 
-        public static async Task SeedAsync(AppDbContext _context)
+        public static async Task SeedProgrammingLanguagesAsync(AppDbContext _context)
         {
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true, // This makes it ignore case mismatches
+                Converters = { new JsonStringEnumConverter() }
+            };
 
             // Programming Languages
             if (_context.ProgrammingLanguages.Count() == 0)// check if table is empty (not seeded before)
             {
                 // read file 
-                var languageData = File.ReadAllText(@"..\E-Learning.GraduationProject.Repository\Data\DataSeed\ProgrammingLanguages.json"); // default directory at (API) so we took step back 
+                var languageData = File.ReadAllText(@"..\E-Learning.GraduationProject.Repository\Data\DataSeed\Languages\ProgrammingLanguages.json"); // default directory at (API) so we took step back 
 
                 //Deserialize convert json into List<T> (ProgrammingLanguage)
-                var languages = JsonSerializer.Deserialize<List<ProgrammingLanguage>>(languageData);
+                var languages = JsonSerializer.Deserialize<List<ProgrammingLanguage>>(languageData, options);
 
                 if (languages is not null && languages.Count() > 0)
                 {
@@ -95,14 +101,31 @@ namespace E_Learning.GraduationProject.Repository.Data
             if (_context.LanguageConcepts.Count() == 0)
             {
                 //Read the file 
-                var conceptData = File.ReadAllText(@"..\E-Learning.GraduationProject.Repository\Data\DataSeed\LanguagesConcepts.json");
+                var conceptData = File.ReadAllText(@"..\E-Learning.GraduationProject.Repository\Data\DataSeed\Languages\LanguagesConcepts.json");
 
                 //Deserialize
-                var concepts = JsonSerializer.Deserialize<List<LanguageConcept>>(conceptData);
+                var concepts = JsonSerializer.Deserialize<List<LanguageConcept>>(conceptData, options);
 
                 if (concepts is not null && concepts.Count() > 0)
                 {
                     await _context.LanguageConcepts.AddRangeAsync(concepts);
+                    await _context.SaveChangesAsync();
+                }
+
+            }
+
+            // Concept Resource
+            if (_context.ConceptResources.Count() == 0)
+            {
+                //Read the file 
+                var conceptData = File.ReadAllText(@"..\E-Learning.GraduationProject.Repository\Data\DataSeed\Languages\Resources.json");
+
+                //Deserialize
+                var concepts = JsonSerializer.Deserialize<List<ConceptResource>>(conceptData, options);
+
+                if (concepts is not null && concepts.Count() > 0)
+                {
+                    await _context.ConceptResources.AddRangeAsync(concepts);
                     await _context.SaveChangesAsync();
                 }
 
@@ -156,6 +179,8 @@ namespace E_Learning.GraduationProject.Repository.Data
             }
 
         }
+
+
 
     }
 }

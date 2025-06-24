@@ -1,0 +1,2774 @@
+[
+  {
+    "Title": "شرح بايثون - تعلم لغة بايثون و اهمية تعلم البرمجة بلغة بايثون؟",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 11,
+    "Url": "https://www.youtube.com/watch?v=h3VCQjyaLws"
+  },
+  {
+    "Title": "مقدمة كورس تعلم بايثون و اجابة الاسئلة الشائعة - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 14,
+    "LanguageConceptId": 11,
+    "Url": "https://www.youtube.com/watch?v=t-bCLbmgesI"
+  },
+  {
+    "Title": "#00 تثبيت و تنصيب بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 11,
+    "Url": "https://www.youtube.com/watch?v=WTRKeSoynKI"
+  },
+  {
+    "Title": "Install PyCharm - #01 تنصيب بايشارم - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 2,
+    "LanguageConceptId": 11,
+    "Url": "https://www.youtube.com/watch?v=SMyzYOPGeD8"
+  },
+  {
+    "Title": "#02 كتابة اول سطر كود في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 1,
+    "LanguageConceptId": 11,
+    "Url": "https://www.youtube.com/watch?v=oMMW_Cx0qW8"
+  },
+  {
+    "Title": "#03 بناء اول برنامج في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 11,
+    "Url": "https://www.youtube.com/watch?v=Vl1mHJMrEnk"
+  },
+  {
+    "Title": "Python Variables - #04 المتغيرات في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 10,
+    "LanguageConceptId": 11,
+    "Url": "https://www.youtube.com/watch?v=gQxch0k9B0E"
+  },
+  {
+    "Title": "Python Strings - #05 السلاسل في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 10,
+    "LanguageConceptId": 11,
+    "Url": "https://www.youtube.com/watch?v=5O_m0IGwQLw"
+  },
+  {
+    "Title": "Python Numbers - #06 الارقام في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 11,
+    "Url": "https://www.youtube.com/watch?v=HjfiVp0L3LI"
+  },
+  {
+    "Title": "Python Inputs - #07 المدخلات في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 11,
+    "Url": "https://www.youtube.com/watch?v=bWE45B_O9Lk"
+  },
+  {
+    "Title": "Build Calculator in Python - #08 بناء اله حاسبه في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "LanguageConceptId": 11,
+    "Url": "https://www.youtube.com/watch?v=hYC0ObXfGjs"
+  },
+  {
+    "Title": "Build MadLibs in Python - #09 بناء تطبيق في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 2,
+    "LanguageConceptId": 11,
+    "Url": "https://www.youtube.com/watch?v=N57Xvo8ilMw"
+  },
+  {
+    "Title": "Python Lists - #10 القوائم في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 13,
+    "Url": "https://www.youtube.com/watch?v=EgwCjNCx_v4"
+  },
+  {
+    "Title": "Python Lists 2 - #11 القوائم في بايثون ٢ - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 10,
+    "LanguageConceptId": 13,
+    "Url": "https://www.youtube.com/watch?v=SGp9syExKxk"
+  },
+  {
+    "Title": "Python Tuples - #12 القوائم الثابتة في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 13,
+    "Url": "https://www.youtube.com/watch?v=PNMSop-0kwM"
+  },
+  {
+    "Title": "Python Functions - #13 الدوال في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 14,
+    "Url": "https://www.youtube.com/watch?v=b4AEoHvCD_A"
+  },
+  {
+    "Title": "Python Functions 2 - #14 الدوال في بايثون ٢ - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 14,
+    "Url": "https://www.youtube.com/watch?v=HjiAlW4fbRw"
+  },
+  {
+    "Title": "Python Conditionals - #15 الادوات الشرطية في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 13,
+    "LanguageConceptId": 12,
+    "Url": "https://www.youtube.com/watch?v=IT1C46MDoxo"
+  },
+  {
+    "Title": "Python Comparisons - #16 المقارنات في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 12,
+    "Url": "https://www.youtube.com/watch?v=WCN4GDOZitU"
+  },
+  {
+    "Title": "Build Calculator in Python 2 - #17 بناء اله حاسبه في بايثون ٢ - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "LanguageConceptId": 12,
+    "Url": "https://www.youtube.com/watch?v=Vj8zWPW5kKg"
+  },
+  {
+    "Title": "Python Dictionaries - #18 القواميس في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 11,
+    "Url": "https://www.youtube.com/watch?v=mQ4AkeafCds"
+  },
+  {
+    "Title": "Python While Loop - #19 الحلقات التكرارية في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 12,
+    "LanguageConceptId": 12,
+    "Url": "https://www.youtube.com/watch?v=TXQSACBnvZ0"
+  },
+  {
+    "Title": "Build a Snake game with Python | برمجة لعبة الثعبان بلغة بايثون | مشاريع بايثون | تعلم بايثون",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 72,
+    "LanguageConceptId": 12,
+    "Url": "https://www.youtube.com/watch?v=NFqjO5z1jx0"
+  },
+  {
+    "Title": "Python For Loop - #20 الحلقات التكرارية في بايثون ٢ - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 20,
+    "LanguageConceptId": 12,
+    "Url": "https://www.youtube.com/watch?v=kXKcuqISXYo"
+  },
+  {
+    "Title": "Python Sets - المجموعات في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 13,
+    "LanguageConceptId": 11,
+    "Url": "https://www.youtube.com/watch?v=kp-LJqgJPmI"
+  },
+  {
+    "Title": "Python Power() - #21 دالة الاس في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 14,
+    "Url": "https://www.youtube.com/watch?v=muBnHp9JufE"
+  },
+  {
+    "Title": "Python 2D Lists & Nested Loops - #22 قوائم ثنائية الابعاد في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 10,
+    "LanguageConceptId": 13,
+    "Url": "https://www.youtube.com/watch?v=BXsVpjWKr2Q"
+  },
+  {
+    "Title": "Python Comments - #23 التعليقات في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "LanguageConceptId": 11,
+    "Url": "https://www.youtube.com/watch?v=_5z9fX2vfDs"
+  },
+  {
+    "Title": "Python Errors - #24 الاخطاء في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 9,
+    "LanguageConceptId": 15,
+    "Url": "https://www.youtube.com/watch?v=jevAO7QlkQQ"
+  },
+  {
+    "Title": "Python Reading Files - #25 قراءة الملفات في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 12,
+    "LanguageConceptId": 15,
+    "Url": "https://www.youtube.com/watch?v=ZCmdm-RuRFA"
+  },
+  {
+    "Title": "Python Writing Files - #26 كتابة الملفات في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 11,
+    "LanguageConceptId": 15,
+    "Url": "https://www.youtube.com/watch?v=fVgRlbFAoeU"
+  },
+  {
+    "Title": "Python Modules - #27 المكتبات في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 9,
+    "LanguageConceptId": 14,
+    "Url": "https://www.youtube.com/watch?v=Qj58RxZPw7c"
+  },
+  {
+    "Title": "Python Classes & Objects - #28 الفئات و الكائنات في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 13,
+    "LanguageConceptId": 15,
+    "Url": "https://www.youtube.com/watch?v=cqopVpEWvCc"
+  },
+  {
+    "Title": "Python Class Functions - #29 دوال الفئات في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 15,
+    "Url": "https://www.youtube.com/watch?v=ZaQgQN2HTGY"
+  },
+  {
+    "Title": "Python Class Inheritance - #30 الوراثة في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 15,
+    "Url": "https://www.youtube.com/watch?v=93_JLg55jGM"
+  },
+  {
+    "Title": "Python Pong Game - مشاريع بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 66,
+    "LanguageConceptId": 15,
+    "Url": "https://www.youtube.com/watch?v=xzuguCSizWw"
+  },
+  {
+    "Title": "Python Object Oriented Programming - شرح للبرمجة كائنية التوجه في بايثون",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 161,
+    "LanguageConceptId": 15,
+    "Url": "https://www.youtube.com/watch?v=A9kSngn7254"
+  },
+  {
+    "Title": "OOP project Python | Build Tic Tac Toe - مشروع بايثون",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 124,
+    "LanguageConceptId": 15,
+    "Url": "https://www.youtube.com/watch?v=GCYYkOSKj80"
+  },
+  {
+    "Title": "Python Special/Dunder Methods - الدوال الخاصة في بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 40,
+    "LanguageConceptId": 15,
+    "Url": "https://www.youtube.com/watch?v=8BCN8gXbBY8"
+  },
+  {
+    "Title": "Web Scraping with Python Beautiful Soup - مشاريع بايثون - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 75,
+    "LanguageConceptId": 15,
+    "Url": "https://www.youtube.com/watch?v=q0ert5YP968"
+  },
+  {
+    "Title": "How to Convert a Python File to .EXE - تحويل ملف بايثون الي برنامج كامل",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 15,
+    "Url": "https://www.youtube.com/watch?v=OM0qcZRIfSg"
+  },
+  {
+    "Title": "Python *args - Python args, kwargs & unpacking operators - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 11,
+    "LanguageConceptId": 14,
+    "Url": "https://www.youtube.com/watch?v=qXpjgykUxgM"
+  },
+  {
+    "Title": "Python **kwargs - Python args, kwargs & unpacking operators - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 19,
+    "LanguageConceptId": 14,
+    "Url": "https://www.youtube.com/watch?v=PhnPgml7O30"
+  },
+  {
+    "Title": "Python unpacking operators - Python args, kwargs & unpacking operators - تعلم بايثون بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 15,
+    "LanguageConceptId": 14,
+    "Url": "https://www.youtube.com/watch?v=QLJn3fFsy1k"
+  },
+  {
+    "Title": "Web Scraping with Python Beautiful Soup - تعلم استخراج البيانات من اي موقع على الانترنت",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 67,
+    "LanguageConceptId": 15,
+    "Url": "https://www.youtube.com/watch?v=taL3r_JpwBg"
+  },
+  {
+    "Title": "Python Turtle Crash Course | بايثون - رسم وجه الرجل الحديدي خطوة بخطوة",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 43,
+    "LanguageConceptId": 15,
+    "Url": "https://www.youtube.com/watch?v=XK4PMXb056c"
+  },
+  {
+    "Title": "Build To Do List Application with Python - بناء تطبيق المهام بلغة بايثون",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 137,
+    "LanguageConceptId": 15,
+    "Url": "https://www.youtube.com/watch?v=xNm6y8SYcs4"
+  },
+  {
+    "Title": "الداتا كلاس في بايثون هيوفر عليك ساعات | OOP Python Data Class",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 36,
+    "LanguageConceptId": 15,
+    "Url": "https://www.youtube.com/watch?v=HJkY_Bbiqcc"
+  },
+  {
+    "Title": "Python Pytest - Python Testing Course | كورس اختبار البرمجيات في بايثون",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 56,
+    "LanguageConceptId": 15,
+    "Url": "https://www.youtube.com/watch?v=y_j4TqS-I6A"
+  },
+  {
+    "Title": "C# Fundamentals: 01- Introduction + VS Installation",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 19,
+    "LanguageConceptId": 16,
+    "Url": "https://www.youtube.com/watch?v=DZHohhJDjHk&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=1&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 02- Solutions and Projects",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 19,
+    "LanguageConceptId": 16,
+    "Url": "https://www.youtube.com/watch?v=N61cLfMOKro&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=2&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 03- Language Syntax",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 18,
+    "LanguageConceptId": 16,
+    "Url": "https://www.youtube.com/watch?v=ArvFgo9wM3M&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=3&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 04- Writing to Console",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 16,
+    "Url": "https://www.youtube.com/watch?v=xP1vT4Qpw1w&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=4&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 05- Variables",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 16,
+    "LanguageConceptId": 16,
+    "Url": "https://www.youtube.com/watch?v=Mc74_yTAK3Y&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=5&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 06- Boolean Data Type",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 15,
+    "LanguageConceptId": 16,
+    "Url": "https://www.youtube.com/watch?v=TchQzL53Fs0&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=6&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 07- Char Data Type",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 18,
+    "LanguageConceptId": 16,
+    "Url": "https://www.youtube.com/watch?v=l0bYsUt6QCo&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=7&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 08- String Data Type (Part 1)",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 19,
+    "LanguageConceptId": 16,
+    "Url": "https://www.youtube.com/watch?v=XiS02cy6DVc&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=8&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 09- String Data Type (Part 2)",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 28,
+    "LanguageConceptId": 16,
+    "Url": "https://www.youtube.com/watch?v=AH7Z443r7UY&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=9&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 10- Numeric Data Types",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 23,
+    "LanguageConceptId": 16,
+    "Url": "https://www.youtube.com/watch?v=ufPlWRNOzu4&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=10&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 11- Arithmetic Operators",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 16,
+    "Url": "https://www.youtube.com/watch?v=O70v7hrtvKk&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=11&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 12- Operator Precedence",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 13,
+    "LanguageConceptId": 16,
+    "Url": "https://www.youtube.com/watch?v=I1W_dX3R3x8&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=12&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 13- Assignment Operators",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 16,
+    "Url": "https://www.youtube.com/watch?v=8eg1BJLByTg&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=13&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 14- Increment & Decrement Operators",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 16,
+    "Url": "https://www.youtube.com/watch?v=zIloB3AXn-E&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=14&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 15- Comparison Operators",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 9,
+    "LanguageConceptId": 16,
+    "Url": "https://www.youtube.com/watch?v=DRX5HaEqyOg&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=15&pp=iAQB"
+  },
+  {
+    "Title": "أساسيات C#: 016- تحليل وتحويل النصوص",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 16,
+    "Url": "https://www.youtube.com/watch?v=BEPC0xuuUNc&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=16&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 17- Control Flow / If Statement",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 14,
+    "LanguageConceptId": 17,
+    "Url": "https://www.youtube.com/watch?v=BgwbcCXDwsk&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=17&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 18- Debugger Basics",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 16,
+    "LanguageConceptId": 17,
+    "Url": "https://www.youtube.com/watch?v=MjhIB67NJzQ&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=18&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 19- Arrays",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 21,
+    "LanguageConceptId": 18,
+    "Url": "https://www.youtube.com/watch?v=6TYFPAQ1TC4&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=19&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 20- For Loop",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 17,
+    "LanguageConceptId": 17,
+    "Url": "https://www.youtube.com/watch?v=gsGk3RiT0pA&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=20&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 21- Ternary Operator",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 17,
+    "Url": "https://www.youtube.com/watch?v=R3aDuY5e1hM&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=21&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 22- Foreach Loop",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 17,
+    "Url": "https://www.youtube.com/watch?v=I5ZnOUD1Jgk&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=22&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 23- For & Foreach Training",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 16,
+    "LanguageConceptId": 17,
+    "Url": "https://www.youtube.com/watch?v=xYIj-5EYFdw&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=23&pp=iAQB0gcJCYYJAYcqIYzv"
+  },
+  {
+    "Title": "C# Fundamentals: 24- Do & While Loops",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 11,
+    "LanguageConceptId": 17,
+    "Url": "https://www.youtube.com/watch?v=ysV-0wzT-bQ&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=24&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 25- Switch Statement",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 13,
+    "LanguageConceptId": 17,
+    "Url": "https://www.youtube.com/watch?v=DdGNXHx-vbE&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=25&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 26- Methods - Part 1",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 11,
+    "LanguageConceptId": 19,
+    "Url": "https://www.youtube.com/watch?v=RRggnGHx5m4&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=26&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 27- Methods - Part 2",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 16,
+    "LanguageConceptId": 19,
+    "Url": "https://www.youtube.com/watch?v=VWqLyREBjSI&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=27&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 28- Comments",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 18,
+    "LanguageConceptId": 16,
+    "Url": "https://www.youtube.com/watch?v=wqfwQHc1KjE&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=28&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 29- Training: Array Findings",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 11,
+    "LanguageConceptId": 18,
+    "Url": "https://www.youtube.com/watch?v=IaKWdvMghrk&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=29&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 30- Training: Palindrome Words",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 19,
+    "Url": "https://www.youtube.com/watch?v=vC4LsUi1cBs&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=30&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 31- Value Types & Reference Types",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 20,
+    "LanguageConceptId": 16,
+    "Url": "https://www.youtube.com/watch?v=ZnrQCpeNLx4&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=31&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 32- Type Casting",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 13,
+    "LanguageConceptId": 16,
+    "Url": "https://www.youtube.com/watch?v=xIv8MADL37g&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=32&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 33- String Formatting",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 12,
+    "LanguageConceptId": 16,
+    "Url": "https://www.youtube.com/watch?v=H4xyzvUth44&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=33&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 34- String Split & Join",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 16,
+    "Url": "https://www.youtube.com/watch?v=MRjPfLAOi7c&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=34&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 35- StringBuilder",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 16,
+    "LanguageConceptId": 16,
+    "Url": "https://www.youtube.com/watch?v=M7CPJ-3Sny8&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=35&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 36- Compilation Process",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 22,
+    "LanguageConceptId": 16,
+    "Url": "https://www.youtube.com/watch?v=9i1k1JZJ7e8&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=36&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 37- Classes & Objects",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 15,
+    "LanguageConceptId": 19,
+    "Url": "https://www.youtube.com/watch?v=BSqEP9IjeSY&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=37&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 38- Constructor",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 10,
+    "LanguageConceptId": 19,
+    "Url": "https://www.youtube.com/watch?v=dwwPclPr1b4&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=38&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 39- Properties",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 20,
+    "LanguageConceptId": 19,
+    "Url": "https://www.youtube.com/watch?v=uMjwZ-dx2-w&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=39&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 40- Namespaces",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 13,
+    "LanguageConceptId": 19,
+    "Url": "https://www.youtube.com/watch?v=YatETfErO-4&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=40&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 41- Access Modifiers",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 14,
+    "LanguageConceptId": 19,
+    "Url": "https://www.youtube.com/watch?v=wYKn1V337MA&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=41&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 42- Constants & Read-Only Variables",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 13,
+    "LanguageConceptId": 16,
+    "Url": "https://www.youtube.com/watch?v=rMBP5v5IKDw&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=42&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 43- Static Classes",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 19,
+    "Url": "https://www.youtube.com/watch?v=ZXy10xiJJ8I&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=43&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 44- Variable Scopes",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 9,
+    "LanguageConceptId": 16,
+    "Url": "https://www.youtube.com/watch?v=pYsGZt8FfUw&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=44&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 45- ref & out Keywords",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 20,
+    "LanguageConceptId": 19,
+    "Url": "https://www.youtube.com/watch?v=pn1_K4p-gNU&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=45&pp=iAQB0gcJCYYJAYcqIYzv"
+  },
+  {
+    "Title": "C# Fundamentals: 46- Exceptions",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 27,
+    "LanguageConceptId": 19,
+    "Url": "https://www.youtube.com/watch?v=NWwdOvaCVoA&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=46&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 47- Enums",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 24,
+    "LanguageConceptId": 18,
+    "Url": "https://www.youtube.com/watch?v=3egRzd5F1Ds&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=47&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 48- Flags Enums",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 25,
+    "LanguageConceptId": 18,
+    "Url": "https://www.youtube.com/watch?v=a1IhR8JxnM4&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=48&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 49- Training App: Random Values Generator",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 11,
+    "LanguageConceptId": 18,
+    "Url": "https://www.youtube.com/watch?v=8AAwpLyQY8E&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=49&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 50- Training App - File System Command Line",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 23,
+    "LanguageConceptId": 18,
+    "Url": "https://www.youtube.com/watch?v=4V9IG_Tl1n0&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=50&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 51- Simple Math Expression Evaluator",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 47,
+    "LanguageConceptId": 18,
+    "Url": "https://www.youtube.com/watch?v=tx0eoGzpSZ4&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=51&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 52- Abstract Classes",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 26,
+    "LanguageConceptId": 19,
+    "Url": "https://www.youtube.com/watch?v=pGbpEsijkFI&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=52&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 53- Virtual & Protected Members",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 11,
+    "LanguageConceptId": 19,
+    "Url": "https://www.youtube.com/watch?v=k-j7N6UrhO8&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=53&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 54- Member Hiding/Shadowing",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 19,
+    "Url": "https://www.youtube.com/watch?v=pzePA7I1dNk&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=54&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 55- Interfaces",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 38,
+    "LanguageConceptId": 19,
+    "Url": "https://www.youtube.com/watch?v=IhkPu8rfZv8&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=55&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 56- ArrayList",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 18,
+    "LanguageConceptId": 18,
+    "Url": "https://www.youtube.com/watch?v=Qdhkb1xFxow&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=56&pp=iAQB0gcJCYYJAYcqIYzv"
+  },
+  {
+    "Title": "C# Fundamentals: 57- Generic List & Dictionary",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 34,
+    "LanguageConceptId": 18,
+    "Url": "https://www.youtube.com/watch?v=IwRPQMxG-ME&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=57&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 58- Stack & Queue",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 27,
+    "LanguageConceptId": 18,
+    "Url": "https://www.youtube.com/watch?v=oQxgTUZjLU8&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=58&pp=iAQB"
+  },
+  {
+    "Title": "C# Fundamentals: 059- Training: Password Manager",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 30,
+    "LanguageConceptId": 18,
+    "Url": "https://www.youtube.com/watch?v=ERh-5JkHdRQ&list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI&index=59&pp=iAQB"
+  },
+  {
+    "Title": "#001 - Introduction And What Is JavaScript ?",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 9,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=GM6dQBmc-Xg"
+  },
+  {
+    "Title": "#002 - How To Study The Course ?",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=MAauLwSHO6Y"
+  },
+  {
+    "Title": "#003 - Setting Up Environment And Tools",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=5wAtDN_CLgI"
+  },
+  {
+    "Title": "#004 - Work With Chrome Developer Tools",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=ig_1bvufUPo"
+  },
+  {
+    "Title": "#005 - Where To Put The Code",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=XQCG-zf71Mk"
+  },
+  {
+    "Title": "#006 - Comments And Bad Practices",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=x6kJMXxqmNo"
+  },
+  {
+    "Title": "#007 - Output To Screen",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=FYRypqj4Epw"
+  },
+  {
+    "Title": "#008 - Console Methods And Styling And WebAPI",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=g0SBnmqOvgQ"
+  },
+  {
+    "Title": "#009 - What Is ECMAScript ?",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=6RLo08fmGXg"
+  },
+  {
+    "Title": "#010 - Data Types And Typeof Operator",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 10,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=WaMYDuohE1A"
+  },
+  {
+    "Title": "#011 - Variables Introduction",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=NgLgguhL2to"
+  },
+  {
+    "Title": "#012 - Identifiers Name Conventions And Rules",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=8ADaKFTeB3M"
+  },
+  {
+    "Title": "#013 - Var, Let, Const Compare",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=gyWwPypW4OU"
+  },
+  {
+    "Title": "#014 - String Syntax And Character Escape Sequences",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=TzWla9f9VCY"
+  },
+  {
+    "Title": "#015 - Concatenation",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 2,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=ikK5I2gcrag"
+  },
+  {
+    "Title": "#016 - Template Literals Template Strings",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=8KjqKNlvVXk"
+  },
+  {
+    "Title": "#017 - Variable And Concatenation Challenge",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=rzmKwzHaETI"
+  },
+  {
+    "Title": "#018 - Arithmetic Operators",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=jhy86kqiSsk"
+  },
+  {
+    "Title": "#019 - Unary Plus And Negation Operators",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=liNl80DgHr8"
+  },
+  {
+    "Title": "#020 - Type Coercion",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=YFUVqq68sZU"
+  },
+  {
+    "Title": "#021 - Assignment Operators",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=n2BSsnzPr5c"
+  },
+  {
+    "Title": "#022 - Operators Challenges",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=yCogS7sHyxk"
+  },
+  {
+    "Title": "#023 - Number",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=7dMp1Iwtf24"
+  },
+  {
+    "Title": "#024 - Number Methods",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=ECs2mCrS8Sc"
+  },
+  {
+    "Title": "#025 - Math Object",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=xFCh7Whz5gw"
+  },
+  {
+    "Title": "#026 - Number Challenge",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 2,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=bu9_Wx-vO44"
+  },
+  {
+    "Title": "#027 - String Methods Part 1",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=GtmsTGAq64s"
+  },
+  {
+    "Title": "#028 - String Methods Part 2",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 12,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=3h2FBrcNOMQ"
+  },
+  {
+    "Title": "#029 - String Methods Part 3",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 12,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=_vg-kxWEubk"
+  },
+  {
+    "Title": "#030 - String Challenge",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 2,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=-m-XctesrVM"
+  },
+  {
+    "Title": "#031 - Comparison Operators",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=YmgGtaCDP9Q"
+  },
+  {
+    "Title": "#032 - Logical Operators",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=SR3wFWdsEaM"
+  },
+  {
+    "Title": "#033 - If Conditions",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=rUa4NQQn7Zc"
+  },
+  {
+    "Title": "#034 - Nested If Condition",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=Innbt6DX64A"
+  },
+  {
+    "Title": "#035 - Conditional Ternary Operator",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=zfBgIOaDBOM"
+  },
+  {
+    "Title": "#036 - Nullish Coalescing Operator And Logical Or",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=-VU6Gumxs4k"
+  },
+  {
+    "Title": "#037 - If Condition Challenge",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 2,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=qQ8AOc69GEI"
+  },
+  {
+    "Title": "#038 - Switch Statement",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=1-5bIDFybDk"
+  },
+  {
+    "Title": "#039 - Switch And If Condition Challenge",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=UYOmHW-5vwQ"
+  },
+  {
+    "Title": "#040 - Array Big Introduction",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=MLVJhya1CV0"
+  },
+  {
+    "Title": "#041 - Using Length With Array",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=COMiJl7l6kw"
+  },
+  {
+    "Title": "#042 - Add And Remove From Array",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=VvPxe6qj5XY"
+  },
+  {
+    "Title": "#043 - Searching Array",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=ss75DBXkZ4Y"
+  },
+  {
+    "Title": "#044 - Sorting Arrays",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=1hOTVQKYtNY"
+  },
+  {
+    "Title": "#045 - Slicing Array",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=MLcZ-12YW0U"
+  },
+  {
+    "Title": "#046 - Joining Arrays",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=gDgw2sobpdU"
+  },
+  {
+    "Title": "#047 - Array Challenge",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 2,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=YSxfPXLfSQM"
+  },
+  {
+    "Title": "#048 - Loop - For And Concept Of Loop",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=NnR4sYnnBoI"
+  },
+  {
+    "Title": "#049 - Looping On Sequences",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=cgr2f_wmxmY"
+  },
+  {
+    "Title": "#050 - Nested Loops And Trainings",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=xPAk_2sed_M"
+  },
+  {
+    "Title": "#051 - Loop Control - Break, Continue, Label",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=Z3fF7MrBPXc"
+  },
+  {
+    "Title": "#052 - Loop - For Advanced Example",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=2bK3u5qbzik"
+  },
+  {
+    "Title": "#053 - Practice - Add Products To Page",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=5kD2LeFKPzE"
+  },
+  {
+    "Title": "#054 - Loop - While",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=CkTIcjLufCE"
+  },
+  {
+    "Title": "#055 - Loop - Do While",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=STs3tI1kDzM"
+  },
+  {
+    "Title": "#056 - Loop - Challenge",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=Db2QlMCFOIY"
+  },
+  {
+    "Title": "#057 - Function Intro And Basic Usage",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=wJ7hjluDQHI"
+  },
+  {
+    "Title": "#058 - Function Advanced Examples",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=zIy3YMFhy-o"
+  },
+  {
+    "Title": "#059 - Function Return And Use Cases",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=QuO3APKjP7o"
+  },
+  {
+    "Title": "#060 - Function Default Parameters",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=J_2BRSluV7U"
+  },
+  {
+    "Title": "#061 - Function Rest Parameters",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=XTZVhG90lM0"
+  },
+  {
+    "Title": "#062 - Function Ultimate Practice",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 11,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=fx7IxbfDEFY"
+  },
+  {
+    "Title": "#063 - Random Arguments Function Challenge",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=rLbr9bPrNcg"
+  },
+  {
+    "Title": "#064 - Anonymous Function And Practice",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=p2tjvCWSAfE"
+  },
+  {
+    "Title": "#065 - Return Nested Function",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=N2skhUPDWjw"
+  },
+  {
+    "Title": "#066 - Arrow Function Syntax",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=UdCzA_upIbw"
+  },
+  {
+    "Title": "#067 - Scope - Global And Local",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=y1J61Ho_e4g"
+  },
+  {
+    "Title": "#068 - Scope - Block",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=MPJSE3lNkD4"
+  },
+  {
+    "Title": "#069 - Scope - Lexical (Static)",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=mM8U1qOq2hg"
+  },
+  {
+    "Title": "#070 - Arrow Function Challenge",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 2,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=JHOaa3dmMSU"
+  },
+  {
+    "Title": "#071 - Higher Order Functions - Map",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=hTUsHXxEvHc"
+  },
+  {
+    "Title": "#072 - Higher Order Functions - Map Practice",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=T3rJ5JMxvgE"
+  },
+  {
+    "Title": "#073 - Higher Order Functions - Filter",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=Np6AzHRR38s"
+  },
+  {
+    "Title": "#074 - Higher Order Functions - Filter Practice",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=-7UzTnJeUL8"
+  },
+  {
+    "Title": "#075 - Higher Order Functions - Reduce",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=F2dIgixMePE"
+  },
+  {
+    "Title": "#076 - Higher Order Functions - Reduce Practice",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=EvZdtTz4KAs"
+  },
+  {
+    "Title": "#077 - Higher Order Functions - ForEach And Practice",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=O1Fq0xZThAg"
+  },
+  {
+    "Title": "#078 - Higher Order Functions - Challenge",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=Wn-JbwQLAlA"
+  },
+  {
+    "Title": "#079 - Object - Introduction",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 9,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=9dkSSPWu_qY"
+  },
+  {
+    "Title": "#080 - Dot Notation vs Bracket Notation",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=C9AWlPyd9lo"
+  },
+  {
+    "Title": "#081 - Nested Object And Advanced Trainings",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=PbWkJcPrA1g"
+  },
+  {
+    "Title": "#082 - Create Object With New Keyword",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=OIu_q4Ekg3w"
+  },
+  {
+    "Title": "#083 - This Keyword",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=XnK3JYPtAJI"
+  },
+  {
+    "Title": "#084 - Create Object With Create Method",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=pCT0ukMWqcQ"
+  },
+  {
+    "Title": "#085 - Create Object With Assign Method",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=3DCEt5quosE"
+  },
+  {
+    "Title": "#086 - What Is DOM And Select Elements",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=AOabnOI4vOQ"
+  },
+  {
+    "Title": "#087 - Get Set Elements Content And Attributes",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=9j9XvUnWndI"
+  },
+  {
+    "Title": "#088 - Check Attributes And Examples",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=H6KTmUWx9A0"
+  },
+  {
+    "Title": "#089 - Create And Append Elements",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=JNCu3XIjluk"
+  },
+  {
+    "Title": "#090 - Product With Title And Description Practice",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 11,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=QQ6g0Yryh_s"
+  },
+  {
+    "Title": "#091 - Deal With Children's",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 9,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=DA3zF8Pm9Tc"
+  },
+  {
+    "Title": "#092 - DOM Events",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=BFd05UsHP48"
+  },
+  {
+    "Title": "#093 - Validate Form And Prevent Default",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=Iq0K54HzdGs"
+  },
+  {
+    "Title": "#094 - Event Simulation - Click Focus Blur",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=XY7GjH0DwYM"
+  },
+  {
+    "Title": "#095 - Class List Object And Methods",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=ShSLbgFu4gg"
+  },
+  {
+    "Title": "#096 - CSS Styling And Stylesheets",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=G5Ql9pQFxJA"
+  },
+  {
+    "Title": "#097 - Before, After, Prepend, Append, Remove",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=5dTV-28Z868"
+  },
+  {
+    "Title": "#098 - DOM Traversing",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=oTvOBJO5KHQ"
+  },
+  {
+    "Title": "#099 - DOM Cloning",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 9,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=b3YxfLUzaFc"
+  },
+  {
+    "Title": "#100 - AddEventListener",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=OsrT0kxQCvA"
+  },
+  {
+    "Title": "#101 - DOM Challenge",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=mGhGjzIKEqk"
+  },
+  {
+    "Title": "#102 - What Is BOM?",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=KxhIRUjcdxQ"
+  },
+  {
+    "Title": "#103 - Alert, Confirm, Prompt",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=bRvu4_3uubQ"
+  },
+  {
+    "Title": "#104 - setTimeout and clearTimeout",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=vwERdirszK4"
+  },
+  {
+    "Title": "#105 - setInterval and clearInterval",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=-4tIbTx55nQ"
+  },
+  {
+    "Title": "#106 - Window Location Object",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=6UZIhbPEUGg"
+  },
+  {
+    "Title": "#107 - Window Open And Close",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=M7LO4aTXW_I"
+  },
+  {
+    "Title": "#108 - Window History Object",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=UhQ0RIdCB3M"
+  },
+  {
+    "Title": "#109 - Scroll, ScrollTo, ScrollBy, Focus, Print, Stop",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=kJslAJD39Nk"
+  },
+  {
+    "Title": "#110 - Scroll To Top Using Y Practice",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=TkAgnDT3ZjM"
+  },
+  {
+    "Title": "#111 - Local Storage",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=n64yffJXsHY"
+  },
+  {
+    "Title": "#112 - Local Storage Color Application Practice",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=QsGN8B8g8QE"
+  },
+  {
+    "Title": "#113 - Session Storage And Use Cases",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=lT-hZqsKfu4"
+  },
+  {
+    "Title": "#114 - BOM Challenge",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=LzKt8GaoFMs"
+  },
+  {
+    "Title": "#115 - Destructuring Arrays Part 1",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=tR6VARwdmzA"
+  },
+  {
+    "Title": "#116 - Destructuring Arrays Part 2",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=cv3LaTelG3I"
+  },
+  {
+    "Title": "#117 - Destructuring Arrays Part 3 - Swap Variables",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=NnTQs7dYVf0"
+  },
+  {
+    "Title": "#118 - Destructuring Objects Part 1",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=4_McBh1NcAk"
+  },
+  {
+    "Title": "#119 - Destructuring Objects Part 2",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=zq-ErjysJ84"
+  },
+  {
+    "Title": "#120 - Destructuring Function Parameters",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=2WtdhvOkgcs"
+  },
+  {
+    "Title": "#121 - Destructuring Mixed Content",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=I6mI4GW6Du4"
+  },
+  {
+    "Title": "#122 - Destructuring Challenge",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=n21fO9TER7c"
+  },
+  {
+    "Title": "#123 - Set Data Types And Methods",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=lsirOGbdWYA"
+  },
+  {
+    "Title": "#124 - Set vs WeakSet And Garbage Collector",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=umjMxxzvYsI"
+  },
+  {
+    "Title": "#125 - Map Data Type Vs Object",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=VN8btoo2DII"
+  },
+  {
+    "Title": "#126 - Map Methods",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=xLfjINocEok"
+  },
+  {
+    "Title": "#127 - Map Vs WeakMap",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=kA3Xjh3WQlA"
+  },
+  {
+    "Title": "#128 - Array.from Method",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=gaesHQz41oc"
+  },
+  {
+    "Title": "#129 - Array.copyWithin Method",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=M5aiQTPJQ10"
+  },
+  {
+    "Title": "#130 - Array.some Method",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=nrmA_yGlG0g"
+  },
+  {
+    "Title": "#131 - Array.every Method",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=A-Tb2nY1Kfo"
+  },
+  {
+    "Title": "#132 - Spread Syntax And Use Cases",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=D9UdBHoAOzg"
+  },
+  {
+    "Title": "#133 - Map And Set Challenge",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 24,
+    "Url": "https://www.youtube.com/watch?v=SuxyO5je5XY"
+  },
+  {
+    "Title": "#134 - Intro And What Is Regular Expression",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=V-8vs_teVlo"
+  },
+  {
+    "Title": "#135 - Regular Expressions - Modifiers",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=c5ZyMM0CKzk"
+  },
+  {
+    "Title": "#136 - Regular Expressions - Ranges Part 1",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=HcVBlbDHbFA"
+  },
+  {
+    "Title": "#137 - Regular Expressions - Ranges Part 2",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=3f30hJMi4jI"
+  },
+  {
+    "Title": "#138 - Regular Expressions - Character Classes Part 1",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=gYB66iXxKlM"
+  },
+  {
+    "Title": "#139 - Regular Expressions - Character Classes Part 2",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 9,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=jrg1p3Xv6E0"
+  },
+  {
+    "Title": "#140 - Regular Expressions - Quantifiers Part 1",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=n_E9It_E2eo"
+  },
+  {
+    "Title": "#141 - Regular Expressions - Quantifiers Part 2",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=f1DBhT9YKvI"
+  },
+  {
+    "Title": "#142 - Regular Expressions - Quantifiers Part 3",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=k0JeghEiRBg"
+  },
+  {
+    "Title": "#143 - Regular Expressions - Replace With Pattern",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=08ny8Udc4Ug"
+  },
+  {
+    "Title": "#144 - Regular Expressions - Form Validation",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=tFtDqOzD1g0"
+  },
+  {
+    "Title": "#145 - Test Your Regular Expressions And Discussions",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=aTBNZ3jKHpA"
+  },
+  {
+    "Title": "#146 - Regular Expressions - Challenge",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=_n_oiZRqH_k"
+  },
+  {
+    "Title": "#147 - OOP Introduction",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=uv5OULDiCXg"
+  },
+  {
+    "Title": "#148 - Constructor Function Introduction",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=_zBImgVB3Pk"
+  },
+  {
+    "Title": "#149 - Constructor Function New Syntax",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=QvE2IJxF2H4"
+  },
+  {
+    "Title": "#150 - Deal With Properties And Methods",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=tMvXS98_KgI"
+  },
+  {
+    "Title": "#151 - Update Properties And Built In Constructors",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=vBqlMWCejSA"
+  },
+  {
+    "Title": "#152 - Class Static Properties And Methods",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=xFCh7Whz5gw"
+  },
+  {
+    "Title": "#153 - Class Inheritance",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=Rhjht0ATx-4"
+  },
+  {
+    "Title": "#154 - Class Encapsulation",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=EPp4KTSpVFY"
+  },
+  {
+    "Title": "#155 - Prototype Introduction",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=iKEunMHFmVc"
+  },
+  {
+    "Title": "#156 - Add To Prototype Chain And Extend Constructors Features",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=boUkOH37_tM"
+  },
+  {
+    "Title": "#157 - Object Meta Data And Descriptor Part 1",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=Fn33wjewamg"
+  },
+  {
+    "Title": "#158 - Object Meta Data And Descriptor Part 2",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 26,
+    "Url": "https://www.youtube.com/watch?v=IMy3si0WJkE"
+  },
+  {
+    "Title": "#159 - Date And Time Introduction",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=G5Ql9pQFxJA"
+  },
+  {
+    "Title": "#160 - Get Date And Time",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=lljWW6UEEhI"
+  },
+  {
+    "Title": "#161 - Set Date And Time",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=rahCIVgxc50"
+  },
+  {
+    "Title": "#162 - Formatting Date And Time",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=N4aYazqnvYQ"
+  },
+  {
+    "Title": "#163 - Tracking Operations Time",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=YhOuTEAImyk"
+  },
+  {
+    "Title": "#164 - Generator Function Introduction",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=6t4YL6aa2XU"
+  },
+  {
+    "Title": "#165 - Delegate Generator Function",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=lYb4pnr1nYM"
+  },
+  {
+    "Title": "#166 - Generate Infinite Numbers",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=zjANdEj6QSs"
+  },
+  {
+    "Title": "#167 - Modules Import And Export",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=3NZEb3uPLtM"
+  },
+  {
+    "Title": "#168 - Named vs Default Export And Import All",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 25,
+    "Url": "https://www.youtube.com/watch?v=xbW_gX9KIak"
+  },
+  {
+    "Title": "#169 - What Is JSON",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 27,
+    "Url": "https://www.youtube.com/watch?v=VA_AROETZ58"
+  },
+  {
+    "Title": "#170 - JSON Syntax And Compare With JS Object",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 27,
+    "Url": "https://www.youtube.com/watch?v=mCAe4RZSLrM"
+  },
+  {
+    "Title": "#171 - What Is API",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 27,
+    "Url": "https://www.youtube.com/watch?v=J8_DaHkqw5o"
+  },
+  {
+    "Title": "#172 - Parse And Stringify",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 27,
+    "Url": "https://www.youtube.com/watch?v=Hoj5Kkn5tSU"
+  },
+  {
+    "Title": "#173 - Asynchronous vs Synchronous Programming",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 27,
+    "Url": "https://www.youtube.com/watch?v=qsncfaOUpyg"
+  },
+  {
+    "Title": "#174 - Call Stack And Web API",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 27,
+    "Url": "https://www.youtube.com/watch?v=AzBaH0wNEos"
+  },
+  {
+    "Title": "#175 - Event Loop And Callback Queue",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 27,
+    "Url": "https://www.youtube.com/watch?v=e-oSGQz7eT8"
+  },
+  {
+    "Title": "#176 - What Is AJAX And Network Information",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 27,
+    "Url": "https://www.youtube.com/watch?v=X-RkZHyzidc"
+  },
+  {
+    "Title": "#177 - Request And Response From Real API",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 27,
+    "Url": "https://www.youtube.com/watch?v=-RmWQYMGeIs"
+  },
+  {
+    "Title": "#178 - Loop On Data",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 27,
+    "Url": "https://www.youtube.com/watch?v=26ZkK1JcSgE"
+  },
+  {
+    "Title": "#179 - Callback Hell Or Pyramid Of Doom",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 27,
+    "Url": "https://www.youtube.com/watch?v=vZjHCcZJMi4"
+  },
+  {
+    "Title": "#180 - Promise Intro And Syntax",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 27,
+    "Url": "https://www.youtube.com/watch?v=UXmqduAHxzY"
+  },
+  {
+    "Title": "#181 - Promise - Then, Catch And Finally",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 27,
+    "Url": "https://www.youtube.com/watch?v=EOysmTtZzzc"
+  },
+  {
+    "Title": "#182 - Promise And XHR",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 27,
+    "Url": "https://www.youtube.com/watch?v=QvzH9Y8dw2s"
+  },
+  {
+    "Title": "#183 - Fetch API",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 27,
+    "Url": "https://www.youtube.com/watch?v=oO0a7tQcGps"
+  },
+  {
+    "Title": "#184 - Promise All And All Settled And Race",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 27,
+    "Url": "https://www.youtube.com/watch?v=OipVzp0R7zs"
+  },
+  {
+    "Title": "#185 - Async And Training",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 27,
+    "Url": "https://www.youtube.com/watch?v=PI2zuNkELTs"
+  },
+  {
+    "Title": "#186 - Await And Training",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 27,
+    "Url": "https://www.youtube.com/watch?v=5iLxtN4POts"
+  },
+  {
+    "Title": "#187 - Try, Catch And Finally With Fetch",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 27,
+    "Url": "https://www.youtube.com/watch?v=nb21H-gAbM4"
+  },
+  {
+    "Title": "#188 - The End And Advices",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 27,
+    "Url": "https://www.youtube.com/watch?v=P2M11Inc6EM"
+  },
+  {
+    "Title": "كورس html كامل بالعربي | ماذا ستتعلم في هذه الدورة؟",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 28,
+    "Url": "https://www.youtube.com/watch?v=Dv39fDYei9A&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=1&t=7s&pp=iAQB"
+  },
+  {
+    "Title": "#1 كورس html كامل بالعربي | download vscode",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 1,
+    "LanguageConceptId": 28,
+    "Url": "https://www.youtube.com/watch?v=SMRzDOgtyQA&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=2&pp=iAQB"
+  },
+  {
+    "Title": "#2 كورس html كامل بالعربي | انشاء ملفات الموقع",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 9,
+    "LanguageConceptId": 28,
+    "Url": "https://www.youtube.com/watch?v=l2eS3Duuv54&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=3&pp=iAQB"
+  },
+  {
+    "Title": "#3 كورس html كامل بالعربي | tags",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 9,
+    "LanguageConceptId": 28,
+    "Url": "https://www.youtube.com/watch?v=qh1QE23RQmQ&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=4&pp=iAQB0gcJCYYJAYcqIYzv"
+  },
+  {
+    "Title": "#4 كورس html كامل بالعربي | html components",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "LanguageConceptId": 28,
+    "Url": "https://www.youtube.com/watch?v=jfOfZfbNCsk&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=5&pp=iAQB"
+  },
+  {
+    "Title": "#5 كورس html كامل بالعربي | head",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 23,
+    "LanguageConceptId": 28,
+    "Url": "https://www.youtube.com/watch?v=a36qFvjpjk8&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=6&pp=iAQB"
+  },
+  {
+    "Title": "#6 كورس html كامل بالعربي | الفقرات النصية",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 14,
+    "LanguageConceptId": 28,
+    "Url": "https://www.youtube.com/watch?v=Xn6v-TKSDaI&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=7&pp=iAQB"
+  },
+  {
+    "Title": "#7 كورس html كامل بالعربي | اول مشروع",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 9,
+    "LanguageConceptId": 28,
+    "Url": "https://www.youtube.com/watch?v=lHSGcRHN8t8&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=8&pp=iAQB0gcJCYYJAYcqIYzv"
+  },
+  {
+    "Title": "#8 كورس html كامل بالعربي | التعليقات comments",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "LanguageConceptId": 28,
+    "Url": "https://www.youtube.com/watch?v=3YQ0dcuX1Sk&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=9&pp=iAQB"
+  },
+  {
+    "Title": "#9 كورس html كامل بالعربي | html text formatting",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 14,
+    "LanguageConceptId": 28,
+    "Url": "https://www.youtube.com/watch?v=sEpjAolWKEM&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=10&pp=iAQB"
+  },
+  {
+    "Title": "#10 كورس html كامل بالعربي | الصور img",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 13,
+    "LanguageConceptId": 30,
+    "Url": "https://www.youtube.com/watch?v=L33wdNQ9sFE&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=11&pp=iAQB0gcJCYYJAYcqIYzv"
+  },
+  {
+    "Title": "#11 كورس html كامل بالعربي | الصوتيات audio",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 30,
+    "Url": "https://www.youtube.com/watch?v=77Azzc4ZrKY&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=12&pp=iAQB"
+  },
+  {
+    "Title": "#12 كورس html كامل بالعربي | الفيديوهات video",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 15,
+    "LanguageConceptId": 30,
+    "Url": "https://www.youtube.com/watch?v=1WeVMnWqoqA&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=13&pp=iAQB"
+  },
+  {
+    "Title": "#13 كورس html كامل بالعربي | الجداول table",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 15,
+    "LanguageConceptId": 28,
+    "Url": "https://www.youtube.com/watch?v=wQdBNQC8DJk&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=14&pp=iAQB"
+  },
+  {
+    "Title": "#14 كورس html كامل بالعربي | القوائم Lists",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 11,
+    "LanguageConceptId": 28,
+    "Url": "https://www.youtube.com/watch?v=G8Sewufyuuo&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=15&pp=iAQB"
+  },
+  {
+    "Title": "#15 كورس html كامل بالعربي | Semantic Elements",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "LanguageConceptId": 28,
+    "Url": "https://www.youtube.com/watch?v=SpBJxj4xt6M&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=16&pp=iAQB"
+  },
+  {
+    "Title": "#16 كورس html كامل بالعربي | الروابط links",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 19,
+    "LanguageConceptId": 28,
+    "Url": "https://www.youtube.com/watch?v=q2JqKoz82lU&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=17&pp=iAQB"
+  },
+  {
+    "Title": "#17 كورس html كامل بالعربي | form input",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 19,
+    "LanguageConceptId": 29,
+    "Url": "https://www.youtube.com/watch?v=j2sNOdGMV6I&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=18&pp=iAQB"
+  },
+  {
+    "Title": "#18 كورس html كامل بالعربي | input action method",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 10,
+    "LanguageConceptId": 29,
+    "Url": "https://www.youtube.com/watch?v=D4kxh4xX38M&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=19&pp=iAQB"
+  },
+  {
+    "Title": "#19 كورس html كامل بالعربي | انواع ال input",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 12,
+    "LanguageConceptId": 29,
+    "Url": "https://www.youtube.com/watch?v=LlnT-Sm5qc4&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=20&pp=iAQB"
+  },
+  {
+    "Title": "#20 كورس html كامل بالعربي | date time month week input",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "LanguageConceptId": 29,
+    "Url": "https://www.youtube.com/watch?v=XVTl5K9U40Y&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=21&pp=iAQB"
+  },
+  {
+    "Title": "#21 كورس html كامل بالعربي | radio checkbox",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 13,
+    "LanguageConceptId": 29,
+    "Url": "https://www.youtube.com/watch?v=2_fdryKGv0E&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=22&pp=iAQB"
+  },
+  {
+    "Title": "#22 كورس html كامل بالعربي | select option datalist",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 12,
+    "LanguageConceptId": 29,
+    "Url": "https://www.youtube.com/watch?v=i9tYs13vDhM&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=23&pp=iAQB"
+  },
+  {
+    "Title": "#23 كورس html كامل بالعربي | الازرار buttons",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 29,
+    "Url": "https://www.youtube.com/watch?v=S54j7BCi3Nc&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=24&pp=iAQB"
+  },
+  {
+    "Title": "#24 كورس html كامل بالعربي | validate textarea",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 17,
+    "LanguageConceptId": 29,
+    "Url": "https://www.youtube.com/watch?v=jlD4wL7vxc4&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=25&pp=iAQB"
+  },
+  {
+    "Title": "#25 كورس html كامل بالعربي | الفرق بين iframe و بين embed و بين object",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 23,
+    "LanguageConceptId": 30,
+    "Url": "https://www.youtube.com/watch?v=o6As7cP3eIo&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=26&pp=iAQB0gcJCYYJAYcqIYzv"
+  },
+  {
+    "Title": "#26 كورس html كامل بالعربي | تحميل الملفات - download files in html",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 11,
+    "LanguageConceptId": 28,
+    "Url": "https://www.youtube.com/watch?v=4XQDgWmpQsU&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=27&pp=iAQB"
+  },
+  {
+    "Title": "#27 كورس html كامل بالعربي | ماذا بعد تعلم الدورة؟",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 2,
+    "LanguageConceptId": 28,
+    "Url": "https://www.youtube.com/watch?v=lNiA7eDrH-k&list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&index=28&pp=iAQB"
+  },
+  {
+    "Title": "بداية كورس css بالعربي | تعلم css بسهولة",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=_QO55W7KPmI&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=1&pp=iAQB"
+  },
+  {
+    "Title": "#1 | CSS Syntax | كيفية كتابة css",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 18,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=uH5loDWAwmk&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=2&pp=iAQB"
+  },
+  {
+    "Title": "#2 priority in css",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=wk_UCoFdM3U&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=3&pp=iAQB"
+  },
+  {
+    "Title": "#3 تعلم ال selectors in css | class id tag",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 12,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=G2I83J5D8ao&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=4&pp=iAQB"
+  },
+  {
+    "Title": "#4 شرح Descendant Selector | direct child Selector",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 12,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=a8_gmyNuKTY&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=5&pp=iAQB"
+  },
+  {
+    "Title": "#5 شرح كامل عن box model | border- margin - padding",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 21,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=2f3MEkllP9Q&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=6&pp=iAQB"
+  },
+  {
+    "Title": "#6 شرح margin auto",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=GtakjN6a8as&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=7&pp=iAQB"
+  },
+  {
+    "Title": "#7 شرح النسبة المئوية في css",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 12,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=d76DdyNSG-A&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=8&pp=iAQB"
+  },
+  {
+    "Title": "#8 شرح fit content - min content - max content",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=ajg74uySBdo&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=9&pp=iAQB"
+  },
+  {
+    "Title": "#9 شرح خاصية max/min width - max/min height",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 12,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=9SLYTWQvgWs&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=10&pp=iAQB"
+  },
+  {
+    "Title": "#10 شرح كامل لخاصية border radius",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 8,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=w9aw763VwTA&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=11&pp=iAQB"
+  },
+  {
+    "Title": "#11 الفرق بين inline & block",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 9,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=teLgeqbUCaM&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=12&pp=iAQB"
+  },
+  {
+    "Title": "#12 شرح بالتفصيل عن خاصية text align",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=PnaMwuPNxQc&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=13&pp=iAQB"
+  },
+  {
+    "Title": "#13 شرح بالتفصيل عن خاصية direction",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=zvFUjsKFS2U&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=14&pp=iAQB0gcJCYYJAYcqIYzv"
+  },
+  {
+    "Title": "#14 شرح بالتفصيل عن خاصية text transform",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=6cUQCu70chU&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=15&pp=iAQB"
+  },
+  {
+    "Title": "#15 شرح بالتفصيل عن خاصية text spacing",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=N2l2xzPh2mI&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=16&pp=iAQB"
+  },
+  {
+    "Title": "#16 شرح بالتفصيل عن خاصية text decoration",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=90yToLEdsug&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=17&pp=iAQB"
+  },
+  {
+    "Title": "#17 شرح بالتفصيل الفرق بين text shadow - box shadow",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 13,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=yADq3c57ncg&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=18&pp=iAQB"
+  },
+  {
+    "Title": "#18 شرح بالتفصيل عن خاصية wrapping و white space",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 13,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=IWOLikk2yqs&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=19&pp=iAQB"
+  },
+  {
+    "Title": "#19 شرح بالتفصيل عن خاصية font family",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 16,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=_2D_GPo97zg&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=20&pp=iAQB"
+  },
+  {
+    "Title": "#20 شرح بالتفصيل عن خاصية font size",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 9,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=DP1tURdVjr8&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=21&pp=iAQB"
+  },
+  {
+    "Title": "#21 شرح بالتفصيل عن خاصية font style",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 2,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=CXmVIVS7zwk&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=22&pp=iAQB"
+  },
+  {
+    "Title": "#22 شرح بالتفصيل عن خاصية font variant",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 3,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=mIW9oE3ae9g&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=23&pp=iAQB0gcJCYYJAYcqIYzv"
+  },
+  {
+    "Title": "#23 شرح بالتفصيل عن خاصية font weight",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 15,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=Kyh3B_jqZx8&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=24&pp=iAQB"
+  },
+  {
+    "Title": "#24 شرح بالتفصيل عن خاصية font shorthand",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 9,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=9Ry6Ocqk5Do&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=25&pp=iAQB"
+  },
+  {
+    "Title": "#25 شرح بالتفصيل عن خاصية background in css",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 25,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=RGCitnwhD50&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=26&pp=iAQB"
+  },
+  {
+    "Title": "#26 شرح بالتفصيل عن خاصية linear gradient",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 13,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=FAKi56TrVP0&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=27&pp=iAQB"
+  },
+  {
+    "Title": "#27 شرح بالتفصيل عن خاصية radial gradient",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=oYZMLLR1wA0&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=28&pp=iAQB"
+  },
+  {
+    "Title": "#28 شرح بالتفصيل عن خاصية float",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 12,
+    "LanguageConceptId": 32,
+    "Url": "https://www.youtube.com/watch?v=bUstMr15GCM&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=29&pp=iAQB"
+  },
+  {
+    "Title": "#29 شرح بالتفصيل عن خاصية overflow",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 6,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=FbKtf2RYGkE&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=30&pp=iAQB"
+  },
+  {
+    "Title": "#30 شرح بالتفصيل عن خاصية position",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 15,
+    "LanguageConceptId": 32,
+    "Url": "https://www.youtube.com/watch?v=4xGFEM3Zr7I&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=31&pp=iAQB"
+  },
+  {
+    "Title": "#31 شرح بالتفصيل عن خاصية z index",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "LanguageConceptId": 32,
+    "Url": "https://www.youtube.com/watch?v=OhJqMZ2gGAc&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=32&pp=iAQB"
+  },
+  {
+    "Title": "#32 شرح بالتفصيل عن خاصية list style",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=-DMQMqv8DEc&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=33&pp=iAQB"
+  },
+  {
+    "Title": "#33 شرح بالتفصيل عن تنسيق الجداول | table style",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=tRx5aIjnVq0&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=34&pp=iAQB"
+  },
+  {
+    "Title": "#34 شرح بالتفصيل عن css units",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 10,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=-z0lL2EUJJY&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=35&pp=iAQB"
+  },
+  {
+    "Title": "#35 شرح بالتفصيل عن Pseudo classes",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 14,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=yfAbvXR8v-s&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=36&pp=iAQB"
+  },
+  {
+    "Title": "#36 شرح بالتفصيل عن Pseudo elements",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 11,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=nWo4Q0kjNvs&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=37&pp=iAQB"
+  },
+  {
+    "Title": "#37 شرح بالتفصيل عن sibling selectors",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=nVob0XHQ-5c&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=38&pp=iAQB"
+  },
+  {
+    "Title": "#38 شرح بالتفصيل عن attribute selectors",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 14,
+    "LanguageConceptId": 31,
+    "Url": "https://www.youtube.com/watch?v=DD1nd-5PElQ&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=39&pp=iAQB"
+  },
+  {
+    "Title": "#39 شرح بالتفصيل خاصية transform",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 15,
+    "LanguageConceptId": 32,
+    "Url": "https://www.youtube.com/watch?v=V1ZIuEylc_M&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=40&pp=iAQB"
+  },
+  {
+    "Title": "#40 شرح بالتفصيل الخاصيات الجديدة translate , scale, rotate",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "LanguageConceptId": 32,
+    "Url": "https://www.youtube.com/watch?v=ZMjaLi6fZVA&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=41&pp=iAQB"
+  },
+  {
+    "Title": "#41 شرح بالتفصيل خاصية transition",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 15,
+    "LanguageConceptId": 32,
+    "Url": "https://www.youtube.com/watch?v=OI4sFng8ATs&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=42&pp=iAQB0gcJCYYJAYcqIYzv"
+  },
+  {
+    "Title": "#42 تعلم ال animation في ال css في 20 دقيقة | animation css",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 22,
+    "LanguageConceptId": 32,
+    "Url": "https://www.youtube.com/watch?v=_z_WUh-GuPM&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=43&pp=iAQB"
+  },
+  {
+    "Title": "#43 | شرح display block - inline - inline block",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 13,
+    "LanguageConceptId": 32,
+    "Url": "https://www.youtube.com/watch?v=05ZWs5YSWSs&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=44&pp=iAQB"
+  },
+  {
+    "Title": "#44 | display none - opacity - visibility | اخفاء العناصر",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 4,
+    "LanguageConceptId": 32,
+    "Url": "https://www.youtube.com/watch?v=bO8O0kOQoNc&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=45&pp=iAQB"
+  },
+  {
+    "Title": "#45 | CSS Flex box | تعلم Flexbox بالكامل في فيديو واحد",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 49,
+    "LanguageConceptId": 32,
+    "Url": "https://www.youtube.com/watch?v=BjWex7Pz8iY&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=46&pp=iAQB"
+  },
+  {
+    "Title": "#46 |شرح كامل ل CSS Grid",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 54,
+    "LanguageConceptId": 32,
+    "Url": "https://www.youtube.com/watch?v=zQyuMYFLD1s&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=47&pp=iAQB"
+  },
+  {
+    "Title": "#47 شرح كامل لل responsive css",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 22,
+    "LanguageConceptId": 33,
+    "Url": "https://www.youtube.com/watch?v=aRiqBoqTwHw&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=48&pp=iAQB"
+  },
+  {
+    "Title": "responsive form using html and css | عمل تصميم متجاوب",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 11,
+    "LanguageConceptId": 33,
+    "Url": "https://www.youtube.com/watch?v=PzT-pnTdNmc&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=49&pp=iAQB"
+  },
+  {
+    "Title": "Make a Responsive Glass Website Using HTML and CSS Only | عمل موقع الكتروني متجاوب بتأثير زجاجي انيق",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 31,
+    "LanguageConceptId": 33,
+    "Url": "https://www.youtube.com/watch?v=v2jP362A86A&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=50&pp=iAQB"
+  },
+  {
+    "Title": "تصميم موقع افاتار بال html و ال css فقط | make website using html and css",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 20,
+    "LanguageConceptId": 33,
+    "Url": "https://www.youtube.com/watch?v=8uf6lp-TkL8&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=51&pp=iAQB"
+  },
+  {
+    "Title": "responsive dashboard using html and css only | تصميم لوحة تحكم متجاوبة",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 38,
+    "LanguageConceptId": 33,
+    "Url": "https://www.youtube.com/watch?v=5HUC4UrOUCI&list=PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS&index=52&pp=iAQB"
+  },
+  {
+    "Title": "00 - | R For Beginners | - | R Tutorial For Beginners | - | Introduction | - بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 2,
+    "LanguageConceptId": 34,
+    "Url": "https://www.youtube.com/watch?v=a0GjqX5RnxQ&list=PL1DUmTEdeA6LKTMW3wrlT3GiFMCL_r_Sn&index=1&t=7s&pp=iAQB"
+  },
+  {
+    "Title": "01 - | R For Beginners | - | Set Up R Environment | Install R and R Studio | - بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 7,
+    "LanguageConceptId": 34,
+    "Url": "https://www.youtube.com/watch?v=X542KXJb1XM&list=PL1DUmTEdeA6LKTMW3wrlT3GiFMCL_r_Sn&index=2&pp=iAQB"
+  },
+  {
+    "Title": "02 - | R For Beginners | - | Explore R studio | - | How to Use R Studio | - بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 10,
+    "LanguageConceptId": 34,
+    "Url": "https://www.youtube.com/watch?v=tNZzGrjfFLM&list=PL1DUmTEdeA6LKTMW3wrlT3GiFMCL_r_Sn&index=3&pp=iAQB0gcJCdAJAYcqIYzv"
+  },
+  {
+    "Title": "03 - | R For Beginners | - | Variables In R | - بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 13,
+    "LanguageConceptId": 34,
+    "Url": "https://www.youtube.com/watch?v=N8k7vBbidhs&list=PL1DUmTEdeA6LKTMW3wrlT3GiFMCL_r_Sn&index=4&pp=iAQB"
+  },
+  {
+    "Title": "03.1 - | R For Beginners | - | Vectors In R | - بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 18,
+    "LanguageConceptId": 34,
+    "Url": "https://www.youtube.com/watch?v=XQt3E0w1nfc&list=PL1DUmTEdeA6LKTMW3wrlT3GiFMCL_r_Sn&index=5&pp=iAQB"
+  },
+  {
+    "Title": "04 - | R For Beginners | - | Matrix In R | - بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 16,
+    "LanguageConceptId": 34,
+    "Url": "https://www.youtube.com/watch?v=jJdc3Dg0dAQ&list=PL1DUmTEdeA6LKTMW3wrlT3GiFMCL_r_Sn&index=6&pp=iAQB"
+  },
+  {
+    "Title": "05 - | R For Beginners | - | Lists In R | - بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 24,
+    "LanguageConceptId": 34,
+    "Url": "https://www.youtube.com/watch?v=8jbxTOp1uqM&list=PL1DUmTEdeA6LKTMW3wrlT3GiFMCL_r_Sn&index=7&pp=iAQB"
+  },
+  {
+    "Title": "06 - | R For Beginners | - | Factors in R | - بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 21,
+    "LanguageConceptId": 34,
+    "Url": "https://www.youtube.com/watch?v=KvQ6Ty85Gk4&list=PL1DUmTEdeA6LKTMW3wrlT3GiFMCL_r_Sn&index=8&pp=iAQB"
+  },
+  {
+    "Title": "07 - | R For Beginners | - | Program Control statements in R | - بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 17,
+    "LanguageConceptId": 34,
+    "Url": "https://www.youtube.com/watch?v=WPWrsRCqidg&list=PL1DUmTEdeA6LKTMW3wrlT3GiFMCL_r_Sn&index=9&pp=iAQB"
+  },
+  {
+    "Title": "08 - | R For Beginners | - | Functions in R | - بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 14,
+    "LanguageConceptId": 34,
+    "Url": "https://www.youtube.com/watch?v=8kd8bgA4q8c&list=PL1DUmTEdeA6LKTMW3wrlT3GiFMCL_r_Sn&index=10&pp=iAQB"
+  },
+  {
+    "Title": "08.1 - | R For Beginners | - | Lapply and Sapply Functions in R | - بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 15,
+    "LanguageConceptId": 34,
+    "Url": "https://www.youtube.com/watch?v=f_GA09PrB2M&list=PL1DUmTEdeA6LKTMW3wrlT3GiFMCL_r_Sn&index=11&pp=iAQB"
+  },
+  {
+    "Title": "09 - | R For Beginners | - |Read Data From CSV - Read.CSV | - بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 21,
+    "LanguageConceptId": 35,
+    "Url": "https://www.youtube.com/watch?v=iTaa1_1pPzk&list=PL1DUmTEdeA6LKTMW3wrlT3GiFMCL_r_Sn&index=12&pp=iAQB"
+  },
+  {
+    "Title": "9.1 - | R For Beginners | - |Read Data From Tab delimited Files - read.delim | - بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 17,
+    "LanguageConceptId": 35,
+    "Url": "https://www.youtube.com/watch?v=Z4euaB4EfT0&list=PL1DUmTEdeA6LKTMW3wrlT3GiFMCL_r_Sn&index=13&pp=iAQB"
+  },
+  {
+    "Title": "9.2 - | R For Beginners | - |Read Data From Flat Files - Using read.table ( )| - بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 15,
+    "LanguageConceptId": 35,
+    "Url": "https://www.youtube.com/watch?v=NxKu11kbAgE&list=PL1DUmTEdeA6LKTMW3wrlT3GiFMCL_r_Sn&index=14&pp=iAQB0gcJCdAJAYcqIYzv"
+  },
+  {
+    "Title": "10 - | R For Beginners | - |Install Packages|Read Data From Excel - XLConnect - XLSX | - بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 25,
+    "LanguageConceptId": 35,
+    "Url": "https://www.youtube.com/watch?v=Vm1afk2UldY&list=PL1DUmTEdeA6LKTMW3wrlT3GiFMCL_r_Sn&index=15&pp=iAQB0gcJCdAJAYcqIYzv"
+  },
+  {
+    "Title": "11 - | R For Beginners | - |Exploring Data Using Statistical Functions In R| - بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 26,
+    "LanguageConceptId": 36,
+    "Url": "https://www.youtube.com/watch?v=vmmA4l-wy2Q&list=PL1DUmTEdeA6LKTMW3wrlT3GiFMCL_r_Sn&index=16&pp=iAQB"
+  },
+  {
+    "Title": "12 - | R For Beginners | - |Selecting and Removing Variables From Dataset| - بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 15,
+    "LanguageConceptId": 35,
+    "Url": "https://www.youtube.com/watch?v=MMzyDm5nWBY&list=PL1DUmTEdeA6LKTMW3wrlT3GiFMCL_r_Sn&index=17&pp=iAQB"
+  },
+  {
+    "Title": "12.1- | R For Beginners | - |Select observations, Subset and Random Samples From Dataset| - بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 14,
+    "LanguageConceptId": 35,
+    "Url": "https://www.youtube.com/watch?v=s7vfdoqEmv8&list=PL1DUmTEdeA6LKTMW3wrlT3GiFMCL_r_Sn&index=18&pp=iAQB"
+  },
+  {
+    "Title": "13 - | R For Beginners | - |Working with date values In R| - بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 16,
+    "LanguageConceptId": 35,
+    "Url": "https://www.youtube.com/watch?v=x3SAef-3BlE&list=PL1DUmTEdeA6LKTMW3wrlT3GiFMCL_r_Sn&index=19&pp=iAQB"
+  },
+  {
+    "Title": "14 - | R For Beginners | - |writing SQL commands in R| - بالعربي",
+    "ResourceType": "Video",
+    "TotalDurationMinutes": 5,
+    "LanguageConceptId": 35,
+    "Url": "https://www.youtube.com/watch?v=5EwPNtQOECQ&list=PL1DUmTEdeA6LKTMW3wrlT3GiFMCL_r_Sn&index=20&pp=iAQB"
+  }
+]
