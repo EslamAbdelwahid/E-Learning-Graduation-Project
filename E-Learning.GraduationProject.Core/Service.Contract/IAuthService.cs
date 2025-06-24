@@ -14,6 +14,7 @@ namespace E_Learning.GraduationProject.Core.Service.Contract
         Task<bool> SendPasswordResetEmailAsync(string email);
         Task<bool> ResetPasswordAsync(string email, string token, string newPassword);
         Task<bool> IsTokenValidAsync(string email, string token);
+        Task<LoginResponseDto> GoogleLoginAsync(string tokenId);
 
     }
 }

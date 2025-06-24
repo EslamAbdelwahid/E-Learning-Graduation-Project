@@ -37,6 +37,14 @@ namespace E_Learning.GraduationProject.APIs.Controllers
             return Ok(res);
         }
 
+        [HttpPost("google-login")]
+        public async Task<IActionResult> GoogleLogin([FromBody] GoogleLoginDto googleLoginDto)
+        {
+            var res = await authService.GoogleLoginAsync(googleLoginDto.TokenId);
+            if (res is null) return Unauthorized(new ApiErrorResponse(StatusCodes.Status401Unauthorized));
+            return Ok(res);
+        }
+
         [HttpPost("ForgotPassword")]
         public async Task<IActionResult> ForgotPassword(ForgotPasswordDto forgotPasswordDto)
         {

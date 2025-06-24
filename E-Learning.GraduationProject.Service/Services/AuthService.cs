@@ -5,14 +5,9 @@ using E_Learning.GraduationProject.Core.Entities;
 using E_Learning.GraduationProject.Core.Entities.Identity;
 using E_Learning.GraduationProject.Core.Hellper;
 using E_Learning.GraduationProject.Core.Service.Contract;
+using Google.Apis.Auth;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Logging.Abstractions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace E_Learning.GraduationProject.Service.Services
 {
@@ -160,5 +155,49 @@ namespace E_Learning.GraduationProject.Service.Services
             return await userManager.FindByEmailAsync(email) is not null;
         }
 
+        public async Task<LoginResponseDto> GoogleLoginAsync(string tokenId)
+        {
+            // Validate the Google token and get all the data of the user using email
+            var payload = await GoogleJsonWebSignature.ValidateAsync(tokenId);
+
+            var user = await userManager.FindByEmailAsync(payload.Email);
+
+            // Create new user
+            if (user == null)
+            {
+                 
+                user = new ApplicationUser
+                {
+                    Email = payload.Email,
+                    UserName = payload.Email.Split("@")[0],
+                    FirstName = payload.GivenName,
+                    LastName = payload.FamilyName,
+                    EmailConfirmed = true
+                };
+
+                var createResult = await userManager.CreateAsync(user);
+                if (!createResult.Succeeded)
+                    return null;
+
+                // Add default role for Google sign-up users
+                await userManager.AddToRoleAsync(user, "Student");
+            }
+            
+            //there is a user exist with the given email
+
+            // Generate token and return response
+            var token = await tokenService.CreateTokenAsync(user);
+            var roles = await userManager.GetRolesAsync(user);
+
+            return new LoginResponseDto
+            {
+                Id = user.Id,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                Email = user.Email,
+                Token = token,
+                Roles = roles.ToList()
+            };
+        }
     }
 }

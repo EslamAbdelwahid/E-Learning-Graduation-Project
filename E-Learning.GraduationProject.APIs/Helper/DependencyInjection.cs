@@ -31,6 +31,8 @@ using E_Learning.GraduationProject.Repository.Repository;
 using StackExchange.Redis;
 using E_Learning.GraduationProject.Core.Mapping.Baskets;
 using E_Learning.GraduationProject.Core.Mapping.Orders;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.Google;
 
 
 namespace E_Learning.GraduationProject.APIs.Helper
@@ -47,6 +49,7 @@ namespace E_Learning.GraduationProject.APIs.Helper
             services.ConfigureInvalidModelStateRespnoseService();
             services.AddAuthenticationService(configuration);
             services.AddRedisService(configuration);
+            services.AddGoogleAuthentication(configuration);
             return services;
         }
         private static IServiceCollection AddBuiltInService(this IServiceCollection services)
@@ -198,6 +201,25 @@ namespace E_Learning.GraduationProject.APIs.Helper
 
                 return ConnectionMultiplexer.Connect(connection);
             });
+            return services;
+        }
+
+        public static IServiceCollection AddGoogleAuthentication(this IServiceCollection services, IConfiguration configuration)
+        {
+            services.AddAuthentication(options =>
+            {
+                options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
+            })
+            .AddCookie()
+            .AddGoogle(GoogleDefaults.AuthenticationScheme, options =>
+            {
+                options.ClientId = configuration["Authentication:Google:ClientId"];
+                options.ClientSecret = configuration["Authentication:Google:ClientSecret"];
+                options.CallbackPath = "/google-login";
+
+            });
+
             return services;
         }
 
