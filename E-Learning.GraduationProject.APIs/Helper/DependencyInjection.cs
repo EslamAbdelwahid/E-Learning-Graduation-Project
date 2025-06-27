@@ -172,22 +172,43 @@ namespace E_Learning.GraduationProject.APIs.Helper
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             }).AddJwtBearer(options =>
             {
-                // Configure how incoming JWT tokens are validated.
+                // Your existing TokenValidationParameters configuration stays the same  
                 options.TokenValidationParameters = new TokenValidationParameters()
                 {
                     ValidateIssuer = true,
                     ValidIssuer = configuration["JWT:Issuer"],
-
                     ValidateAudience = true,
                     ValidAudience = configuration["JWT:Audience"],
-
                     ValidateLifetime = true,
-
                     ValidateIssuerSigningKey = true,
                     IssuerSigningKey = new SymmetricSecurityKey(
-
                         Encoding.UTF8.GetBytes(configuration["JWT:SecretKey"])
                     )
+                };
+
+                // Add this new event handler to read tokens from cookies  
+                options.Events = new JwtBearerEvents
+                {
+                    OnMessageReceived = context =>
+                    {
+                        // First check if token is in Authorization header (existing behavior)  
+                        var token = context.Request.Headers["Authorization"]
+                            .FirstOrDefault()?.Split(" ").Last();
+
+                        // If no token in header, check cookies  
+                        if (string.IsNullOrEmpty(token))
+                        {
+                            token = context.Request.Cookies["authToken"];
+                        }
+
+                        // Set the token for validation  
+                        if (!string.IsNullOrEmpty(token))
+                        {
+                            context.Token = token;
+                        }
+
+                        return Task.CompletedTask;
+                    }
                 };
             });
 

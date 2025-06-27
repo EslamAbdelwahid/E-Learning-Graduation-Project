@@ -41,12 +41,12 @@ namespace E_Learning.GraduationProject.APIs.Controllers
             {
                 HttpOnly = true,
                 Secure = true, // Use true if in production with HTTPS
-                SameSite = SameSiteMode.None, // Adjust based on frontend origin
+                SameSite = SameSiteMode.Strict, // Adjust based on frontend origin
                 Expires = DateTime.UtcNow.AddDays(7) // Token expiration
             };
 
             // Set the token in the cookie
-            Response.Cookies.Append("token", res.Token, cookieOptions);
+            Response.Cookies.Append("authToken", res.Token, cookieOptions);
 
             // Return rest of user info in body (or just Ok())
             return Ok(new
