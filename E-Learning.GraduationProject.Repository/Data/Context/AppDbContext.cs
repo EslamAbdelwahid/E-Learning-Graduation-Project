@@ -39,6 +39,7 @@ namespace E_Learning.GraduationProject.Repository.Data.Context
         public DbSet<Instructor> Instructors { get; set; }
         public DbSet<Course> Courses { get; set; }
         public DbSet<Order> Orders { get; set; }
+        public DbSet<ContactUs> contacts { get; set; }
         
 
 

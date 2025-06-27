@@ -33,6 +33,7 @@ using E_Learning.GraduationProject.Core.Mapping.Baskets;
 using E_Learning.GraduationProject.Core.Mapping.Orders;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
+using E_Learning.GraduationProject.Core.Mapping.Contacts;
 
 
 namespace E_Learning.GraduationProject.APIs.Helper
@@ -94,6 +95,7 @@ namespace E_Learning.GraduationProject.APIs.Helper
             services.AddScoped<IPaymentService, PaymentService>();
             services.AddScoped<IOrderService, OrderService>();
             services.AddScoped<IStudentService, StudentService>();
+            services.AddScoped<IContactUsService, ContactUsService>();
 
 
 
@@ -140,6 +142,7 @@ namespace E_Learning.GraduationProject.APIs.Helper
             services.AddAutoMapper(M => M.AddProfile(new CourseProfile()));
             services.AddAutoMapper(M => M.AddProfile(new BasketProfile()));
             services.AddAutoMapper(M => M.AddProfile(new OrderProfile()));
+            services.AddAutoMapper(M => M.AddProfile(new ContactUsProfile()));
             return services;
         }
         private static IServiceCollection ConfigureInvalidModelStateRespnoseService(this IServiceCollection services)

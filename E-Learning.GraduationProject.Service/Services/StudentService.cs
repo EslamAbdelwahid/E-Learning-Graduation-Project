@@ -10,6 +10,7 @@ using E_Learning.GraduationProject.Core.Specifications.Orders;
 using E_Learning.GraduationProject.Core.Specifications.StudentFavoriteCourses;
 using E_Learning.GraduationProject.Core.Specifications.Students;
 using Microsoft.EntityFrameworkCore;
+using Stripe.TestHelpers.Issuing;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,6 +40,8 @@ namespace E_Learning.GraduationProject.Service.Services
 
             var enrollments = await _unitOfWork.Repository<StudentProgress, int>().GetAllWithSpecAsync(spec);
 
+          
+
             var enrolledCourses = enrollments.Select(sp => new EnrolledCourseDto
             {
                 CourseId = sp.Course.Id,
@@ -47,8 +50,15 @@ namespace E_Learning.GraduationProject.Service.Services
                 Price = sp.Course.Price,
                 ThumbnailUrl = sp.Course.ThumbnailUrl,
                 IsPublished = sp.Course.IsPublished,
+            }).ToList();
 
-            });
+            foreach (var item in enrolledCourses)
+            {
+                var favSpec = new StudentFavoriteCoursesSpec(studentId, item.CourseId);
+                var fav = await _unitOfWork.Repository<StudentCourseFavorite, int>().GetWithSpecAsync(favSpec);
+
+                item.IsFavorite = fav != null ;   
+            }
 
             return enrolledCourses;
         }
