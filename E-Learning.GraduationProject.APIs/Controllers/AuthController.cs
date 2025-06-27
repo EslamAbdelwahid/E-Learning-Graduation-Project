@@ -12,6 +12,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
     public class AuthController : ControllerBase
     {
         private readonly IAuthService authService;
@@ -33,8 +34,29 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         public async Task<IActionResult> LogIn(LogInDto logInDto)
         {
             var res = await authService.LogInAsync(logInDto);
-            if (res is null) return  Unauthorized(new ApiErrorResponse(StatusCodes.Status401Unauthorized));
-            return Ok(res);
+            if (res is null) return Unauthorized(new ApiErrorResponse(StatusCodes.Status401Unauthorized));
+
+            // Create cookie options (adjust as needed)
+            var cookieOptions = new CookieOptions
+            {
+                HttpOnly = true,
+                Secure = true, // Use true if in production with HTTPS
+                SameSite = SameSiteMode.None, // Adjust based on frontend origin
+                Expires = DateTime.UtcNow.AddDays(7) // Token expiration
+            };
+
+            // Set the token in the cookie
+            Response.Cookies.Append("token", res.Token, cookieOptions);
+
+            // Return rest of user info in body (or just Ok())
+            return Ok(new
+            {
+                res.Id,
+                res.Email,
+                res.FirstName,
+                res.LastName,
+                res.Roles
+            });
         }
 
         [HttpPost("google-login")]
