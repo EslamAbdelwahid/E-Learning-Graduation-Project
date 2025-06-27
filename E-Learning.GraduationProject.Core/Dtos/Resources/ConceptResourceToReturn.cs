@@ -1,4 +1,5 @@
-﻿using E_Learning.GraduationProject.Core.Entities;
+﻿using E_Learning.GraduationProject.Core.Dtos.LanguageConcepts;
+using E_Learning.GraduationProject.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,6 @@ namespace E_Learning.GraduationProject.Core.Dtos.Resources
         public string Title { get; set; }
 
         public int? LanguageConceptId { get; set; }
-        public LanguageConcept? LanguageConcept { get; set; }
 
         public string Url { get; set; }
 

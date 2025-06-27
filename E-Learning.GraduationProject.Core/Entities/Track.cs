@@ -15,6 +15,7 @@ namespace E_Learning.GraduationProject.Core.Entities
         [JsonPropertyName("description")]
         public string Description { get; set; }
 
+
         public string IconUrl { get; set; }
 
         [JsonPropertyName("estimatedCompletionWeeks")]

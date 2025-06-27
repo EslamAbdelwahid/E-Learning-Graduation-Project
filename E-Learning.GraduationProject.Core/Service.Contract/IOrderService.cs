@@ -10,7 +10,7 @@ namespace E_Learning.GraduationProject.Core.Service.Contract
 {
     public interface IOrderService
     {
-        Task<OrderToReturnDto?> CreateOrderAsync(string buyerEmail, string basketId);
+        Task<OrderToReturnDto?> CreateOrderAsync(int studentId, string buyerEmail, string basketId);
         Task<IEnumerable<OrderToReturnDto>?> GetAllOrdersForSpecificUserAsync(string buyerEmail);
         Task<OrderToReturnDto?> GetOrderByIdForSpecificUserAsync(string buyerEmail, int orderId);
 

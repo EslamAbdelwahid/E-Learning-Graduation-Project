@@ -55,14 +55,6 @@ namespace E_Learning.GraduationProject.Service.Services
             return _mapper.Map<ConceptResourceToReturn>(resource);
         }
 
-        // not done pagination
-        public async Task<IEnumerable<ConceptResourceToReturn>?> GetAllResourcesForSpecificLanguageAsync(int languageId)
-        {
-            var spec = new ConceptResourceSpecifications(languageId);
-            var resources = await _unitOfWork.Repository<ConceptResource, int>().GetAllWithSpecAsync(spec);
-            if (resources is null) return null;
-            return _mapper.Map<IEnumerable<ConceptResourceToReturn>>(resources);
-        }
 
         public async Task<ConceptResourceToReturn?> CreateResourceAsync(ConceptResourceDto model)
         {

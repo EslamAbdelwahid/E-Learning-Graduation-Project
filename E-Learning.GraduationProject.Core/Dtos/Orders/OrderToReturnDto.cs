@@ -16,6 +16,7 @@ namespace E_Learning.GraduationProject.Core.Dtos.Orders
         public DateTimeOffset CreatedAt { get; set; } 
   
         public string BuyerMail { get; set; }
+        public int BuyerId { get; set; }
         public OrderStatus Status { get; set; } 
         public decimal TotalAmount { get; set; }
 

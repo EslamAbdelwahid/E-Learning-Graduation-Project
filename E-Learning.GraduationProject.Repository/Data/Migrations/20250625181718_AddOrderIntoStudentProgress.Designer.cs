@@ -4,16 +4,19 @@ using E_Learning.GraduationProject.Repository.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace E_Learning.GraduationProject.Repository.Data.Migrations
+namespace E_Learning.GraduationProject.Repository.data.migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250625181718_AddOrderIntoStudentProgress")]
+    partial class AddOrderIntoStudentProgress
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -337,9 +340,6 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("BuyerId")
-                        .HasColumnType("int");
-
                     b.Property<string>("BuyerMail")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -576,38 +576,6 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
                         .IsUnique();
 
                     b.ToTable("Students");
-                });
-
-            modelBuilder.Entity("E_Learning.GraduationProject.Core.Entities.StudentCourseFavorite", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("CourseId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTimeOffset>("CreatedAt")
-                        .HasColumnType("datetimeoffset");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("StudentId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTimeOffset?>("UpdatedAt")
-                        .HasColumnType("datetimeoffset");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CourseId");
-
-                    b.HasIndex("StudentId");
-
-                    b.ToTable("StudentCourseFavorite");
                 });
 
             modelBuilder.Entity("E_Learning.GraduationProject.Core.Entities.StudentProgress", b =>
@@ -1019,25 +987,6 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("E_Learning.GraduationProject.Core.Entities.StudentCourseFavorite", b =>
-                {
-                    b.HasOne("E_Learning.GraduationProject.Core.Entities.Instructors.Course", "Course")
-                        .WithMany("FavoriteByStudents")
-                        .HasForeignKey("CourseId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("E_Learning.GraduationProject.Core.Entities.Student", "Student")
-                        .WithMany()
-                        .HasForeignKey("StudentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Course");
-
-                    b.Navigation("Student");
-                });
-
             modelBuilder.Entity("E_Learning.GraduationProject.Core.Entities.StudentProgress", b =>
                 {
                     b.HasOne("E_Learning.GraduationProject.Core.Entities.Instructors.Course", "Course")
@@ -1134,8 +1083,6 @@ namespace E_Learning.GraduationProject.Repository.Data.Migrations
 
             modelBuilder.Entity("E_Learning.GraduationProject.Core.Entities.Instructors.Course", b =>
                 {
-                    b.Navigation("FavoriteByStudents");
-
                     b.Navigation("StudentProgresses");
                 });
 

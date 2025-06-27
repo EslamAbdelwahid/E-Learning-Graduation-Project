@@ -8,6 +8,7 @@
         public string ThumbnailUrl { get; set; } // picture UI
         public bool IsPublished { get; set; }
 
+
         // Relationships
         public int? InstructorId { get; set; }
         public Instructor? Instructor { get; set; }
@@ -18,6 +19,7 @@
         public int? TrackId { get; set; }
         public Track? Track { get; set; }
 
+        public ICollection<StudentCourseFavorite>? FavoriteByStudents { get; set; }
         public ICollection<StudentProgress>? StudentProgresses { get; set; } 
     }
 }

@@ -23,8 +23,6 @@ namespace E_Learning.GraduationProject.APIs.Controllers
             )
         {
             _paymentService = paymentService;
-            _paymentService = paymentService;
-            
             _webhookSecret = configuration["Stripe:WebhookSecret"]
                 ?? throw new ArgumentNullException("Stripe:WebhookSecret is not configured");
         }
@@ -72,8 +70,10 @@ namespace E_Learning.GraduationProject.APIs.Controllers
                         
                         return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
                     }
-
-                    await _paymentService.HandlePaymentIntentSucceeded(paymentIntent.Id);
+                    var order =  await _paymentService.GetOrderByPaymentIntentId(paymentIntent.Id);
+                    if (order == null || order.BuyerId == 0)
+                        return BadRequest(new ApiErrorResponse(400, "Student not found"));
+                    await _paymentService.HandlePaymentIntentSucceeded(paymentIntent.Id, order.BuyerId);
                     break;
 
                 case EventTypes.PaymentIntentPaymentFailed:

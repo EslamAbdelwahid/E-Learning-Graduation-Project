@@ -14,7 +14,6 @@ namespace E_Learning.GraduationProject.Core.Service.Contract
     {
         // pagination ToDo
         Task<PaginationResponseToReturn<ConceptResourceToReturn>?> GetAllResourcesAsync(ConceptResourceParames parames);
-        Task<IEnumerable<ConceptResourceToReturn>?> GetAllResourcesForSpecificLanguageAsync(int languageId);
         Task<ConceptResourceToReturn?> GetResourceByIdAsync(int resourceId);
 
         Task<ConceptResourceToReturn?> CreateResourceAsync(ConceptResourceDto model);

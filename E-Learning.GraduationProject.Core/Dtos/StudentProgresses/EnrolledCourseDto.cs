@@ -14,5 +14,6 @@ namespace E_Learning.GraduationProject.Core.Dtos.StudentProgresses
         public decimal Price { get; set; }
         public string ThumbnailUrl { get; set; } = string.Empty;
         public bool IsPublished { get; set; }
+        public bool IsFavorite { get; set; }
     }
 }

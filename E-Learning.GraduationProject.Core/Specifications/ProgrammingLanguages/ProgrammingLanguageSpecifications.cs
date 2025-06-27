@@ -60,6 +60,7 @@ namespace E_Learning.GraduationProject.Core.Specifications.ProgrammingLanguages
         private void ApplyIncludes()
         {
             Includes.Add(PL => PL.Concepts);
+            
         }
 
 

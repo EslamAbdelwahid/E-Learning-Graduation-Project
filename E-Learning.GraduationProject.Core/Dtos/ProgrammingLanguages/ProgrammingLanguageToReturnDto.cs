@@ -1,4 +1,5 @@
-﻿using E_Learning.GraduationProject.Core.Entities;
+﻿using E_Learning.GraduationProject.Core.Dtos.LanguageConcepts;
+using E_Learning.GraduationProject.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,6 @@ namespace E_Learning.GraduationProject.Core.Dtos.ProgrammingLanguages
         public bool IsActive { get; set; }
 
         public DateTimeOffset CreatedAt { get; set; }
-        public ICollection<LanguageConcept>? Concepts { get; set; }
+        
     }
 }

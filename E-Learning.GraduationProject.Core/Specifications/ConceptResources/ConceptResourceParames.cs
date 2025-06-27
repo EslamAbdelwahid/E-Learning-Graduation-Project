@@ -11,6 +11,7 @@ namespace E_Learning.GraduationProject.Core.Specifications.ConceptResources
       
         public int PageIndex { get; set; } = 1;
         public int PageSize { get; set; } = 5;
+        public int? languageConceptId { get; set; }
         public string? Sort { get; set; } // orderby Asc Desc [Duration , title]
 
         private string? search; //search by title

@@ -22,13 +22,13 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<OrderToReturnDto>> CreateOrder([FromQuery] string basketId)
+        public async Task<ActionResult<OrderToReturnDto>> CreateOrder([FromQuery] string basketId , int studentId)
         {
             var buyerEmail = User.FindFirstValue(ClaimTypes.Email);
             if (string.IsNullOrEmpty(buyerEmail))
                 return Unauthorized(new ApiErrorResponse(StatusCodes.Status401Unauthorized, "Email claim not found."));
 
-            var order = await _orderService.CreateOrderAsync(buyerEmail, basketId);
+            var order = await _orderService.CreateOrderAsync(studentId , buyerEmail, basketId);
 
             if (order == null)
                 return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest, "Order Creation Failed"));

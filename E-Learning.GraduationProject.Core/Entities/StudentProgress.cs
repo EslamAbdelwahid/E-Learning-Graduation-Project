@@ -1,6 +1,7 @@
 ﻿using E_Learning.GraduationProject.Core.Entities.Enums;
 using E_Learning.GraduationProject.Core.Entities.Identity;
 using E_Learning.GraduationProject.Core.Entities.Instructors;
+using E_Learning.GraduationProject.Core.Entities.Orders;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,6 +28,9 @@ namespace E_Learning.GraduationProject.Core.Entities
         public int ProgressPercentage { get; set; } = 0;
         public bool IsCompleted { get; set; } = false;
         public DateTime EnrolledAt { get; set; } = DateTime.UtcNow;
+
+        public int? OrderId { get; set; } 
+        public Order? Order { get; set; }  // nullable if some enrollments are free
 
     }
 }

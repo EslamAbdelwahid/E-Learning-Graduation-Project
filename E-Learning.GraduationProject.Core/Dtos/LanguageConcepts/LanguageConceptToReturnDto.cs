@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using E_Learning.GraduationProject.Core.Dtos.Resources;
+using E_Learning.GraduationProject.Core.Dtos.PractiseProblems;
 
 namespace E_Learning.GraduationProject.Core.Dtos.LanguageConcepts
 {
@@ -28,8 +30,7 @@ namespace E_Learning.GraduationProject.Core.Dtos.LanguageConcepts
         public string? ProgrammingLanguageName { get; set; }
         public DateTimeOffset CreatedAt { get; set; } 
 
-        public ICollection<ConceptResource>? Resources { get; set; }
 
-        public ICollection<PractiseProblem>? Problems { get; set; }
+        public ICollection<PractiseProblemToReturnDto>? Problems { get; set; }
     }
 }

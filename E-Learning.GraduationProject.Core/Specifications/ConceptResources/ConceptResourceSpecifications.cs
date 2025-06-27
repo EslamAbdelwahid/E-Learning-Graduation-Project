@@ -14,6 +14,8 @@ namespace E_Learning.GraduationProject.Core.Specifications.ConceptResources
         public ConceptResourceSpecifications(ConceptResourceParames parames): base(
             CR =>
             (string.IsNullOrEmpty(parames.Search) ||  CR.Title.ToLower().Contains( parames.Search))
+            &&
+            (parames.languageConceptId == null || CR.LanguageConceptId == parames.languageConceptId )
             )
         {
 

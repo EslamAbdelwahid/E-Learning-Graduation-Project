@@ -23,11 +23,14 @@ namespace E_Learning.GraduationProject.Service.Services
 
         public async Task<List<UserDto>> GetAllUsersAsync(string searchInputByName)
         {
-            var usersQuery = _userManager.Users.AsQueryable();
+            var usersQuery = _userManager.Users
+                    .Include(u => u.Student)
+                    .Include(u => u.Instructor)
+                    .AsQueryable();
 
             if (!string.IsNullOrEmpty(searchInputByName))
             {
-               
+
                 usersQuery = usersQuery.Where(u =>
                     u.FirstName.ToLower().Contains(searchInputByName.ToLower()) ||
                     u.LastName.ToLower().Contains(searchInputByName.ToLower()) ||
@@ -41,10 +44,11 @@ namespace E_Learning.GraduationProject.Service.Services
             foreach (var user in users)
             {
                 var roles = await _userManager.GetRolesAsync(user);
-
+                var entityId = user.Student?.Id ?? user.Instructor?.Id;
                 userDtos.Add(new UserDto
                 {
                     Id = user.Id,
+                    EntityId = entityId,
                     Email = user.Email,
                     FirstName = user.FirstName,
                     LastName = user.LastName,

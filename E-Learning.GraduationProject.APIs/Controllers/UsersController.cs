@@ -26,7 +26,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         }
 
         [HttpGet("GetAllUsers")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetAllUsers([FromQuery] string? searchByName)
         {
             var users = await userService.GetAllUsersAsync(searchByName);
@@ -63,7 +63,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteUser(string id)
         {
             var success = await userService.DeleteUserAsync(id);
@@ -76,7 +76,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         }
 
         [HttpPost("{userId}/AssignRole")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> AssignRoleToUser(string userId, [FromBody] AssignRoleDto dto)
         {
             var res = await userService.AssignRoleToUserAsync(userId, dto.RoleName);

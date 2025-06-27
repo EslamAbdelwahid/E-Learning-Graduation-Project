@@ -35,7 +35,7 @@ namespace E_Learning.GraduationProject.Service.Services
             _mapper = mapper;
         }
 
-        public async Task<OrderToReturnDto?> CreateOrderAsync(string buyerEmail, string basketId)
+        public async Task<OrderToReturnDto?> CreateOrderAsync(int studentId , string buyerEmail, string basketId)
         {
             var basket = await _basketService.GetBasketByIdAsync(basketId);
             if (basket is null) return null;
@@ -76,6 +76,7 @@ namespace E_Learning.GraduationProject.Service.Services
 
             var order = new Order()
             {
+                BuyerId = studentId,
                 BuyerMail = buyerEmail,
                 OrderItems = orderItems,
                 PaymentIntentId = paymentResult.PaymentIntentId,

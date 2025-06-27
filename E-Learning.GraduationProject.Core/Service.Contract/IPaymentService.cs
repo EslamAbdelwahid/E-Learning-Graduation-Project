@@ -13,8 +13,9 @@ namespace E_Learning.GraduationProject.Core.Service.Contract
     public interface IPaymentService
     {
         Task<BasketToReturnDto> CreateOrUpdatePaymentIntent(string basketId);
-        Task<OrderToReturnDto> HandlePaymentIntentSucceeded(string paymentIntentId);
+        Task<OrderToReturnDto> HandlePaymentIntentSucceeded(string paymentIntentId, int studentId);
         Task<OrderToReturnDto> HandlePaymentIntentFailed(string paymentIntentId);
+        Task<OrderToReturnDto> GetOrderByPaymentIntentId(string paymentIntentId);
 
     }
 }

@@ -43,18 +43,6 @@ namespace E_Learning.GraduationProject.APIs.Controllers
             return Ok(resource);
         }
 
-        //not tested yet
-        [HttpGet("{languageId}/Resources")]
-        public async Task<ActionResult<IEnumerable<ConceptResourceToReturn>>> GetAllResourcesForSpecificLanguage(int? languageId)
-        {
-            if (languageId is null) return BadRequest(new ApiErrorResponse(StatusCodes.Status400BadRequest));
-
-            var resources = await _resourceService.GetAllResourcesForSpecificLanguageAsync(languageId.Value);
-
-            if (resources is null) return NotFound(new ApiErrorResponse(StatusCodes.Status404NotFound));
-
-            return Ok(resources);
-        }
 
         [HttpPost]
         public async Task<ActionResult<ConceptResourceToReturn>> CreateResource(ConceptResourceDto model)

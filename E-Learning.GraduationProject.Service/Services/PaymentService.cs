@@ -23,18 +23,21 @@ namespace E_Learning.GraduationProject.Service.Services
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
         private readonly IConfiguration _configuration;
+        private readonly IStudentService _studentService;
 
         public PaymentService(
             IBasketService basketService,
             IUnitOfWork unitOfWork,
             IMapper mapper,
-            IConfiguration configuration
+            IConfiguration configuration,
+            IStudentService studentService
             )
         {
             _basketService = basketService;
             _unitOfWork = unitOfWork;
             _mapper = mapper;
             _configuration = configuration;
+            _studentService = studentService;
             StripeConfiguration.ApiKey = _configuration["Stripe:SecretKey"];
 
         }
@@ -110,7 +113,7 @@ namespace E_Learning.GraduationProject.Service.Services
             return basket;
         }
 
-        public async Task<OrderToReturnDto> HandlePaymentIntentSucceeded(string paymentIntentId)
+        public async Task<OrderToReturnDto> HandlePaymentIntentSucceeded(string paymentIntentId , int studentId )
         {
 
             var spec = new OrderPaymentIntentSpecifications(paymentIntentId);
@@ -122,6 +125,8 @@ namespace E_Learning.GraduationProject.Service.Services
             order.Status = OrderStatus.PaymentReceived;
 
             _unitOfWork.Repository<Order, int>().Update(order);
+
+            await _studentService.EnrollStudentInPaidCoursesAsync(order.Id, order.BuyerMail, studentId);
 
             var res = await _unitOfWork.CompleteAsync();
 
@@ -151,6 +156,11 @@ namespace E_Learning.GraduationProject.Service.Services
                 throw new InvalidOperationException("Failed to update the order status after payment failure");
         }
 
-
+        public async Task<OrderToReturnDto> GetOrderByPaymentIntentId(string paymentIntentId)
+        {
+            var spec = new OrderPaymentIntentSpecifications(paymentIntentId);
+            var order =  await _unitOfWork.Repository<Order, int>().GetWithSpecAsync(spec);
+            return _mapper.Map<OrderToReturnDto>(order);
+        }
     }
 }
