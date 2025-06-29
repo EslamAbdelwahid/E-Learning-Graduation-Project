@@ -61,7 +61,7 @@ namespace E_Learning.GraduationProject.APIs.Helper
             }
 
             app.UseHttpsRedirection();
-
+            app.UseCors("AllowFrontend");
             app.UseAuthentication();
             app.UseAuthorization();
 

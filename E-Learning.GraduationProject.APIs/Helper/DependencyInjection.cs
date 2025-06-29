@@ -44,6 +44,7 @@ namespace E_Learning.GraduationProject.APIs.Helper
         {
             services.AddBuiltInService();
             services.AddSwaggerService();
+            services.AddCorsService();
             services.AddUserDefinedService();
             services.AddDbContextService(configuration);
             services.AddAutoMapperService();
@@ -215,6 +216,20 @@ namespace E_Learning.GraduationProject.APIs.Helper
             return services;
         }
 
+        private static IServiceCollection AddCorsService(this IServiceCollection services)
+        {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowFrontend", policy =>
+                {
+                    policy.WithOrigins("http://localhost:5173", "https://edulearningplatform.netlify.app")  
+                          .AllowAnyHeader()
+                          .AllowAnyMethod()
+                          .AllowCredentials();
+                });
+            });
+            return services;
+        }
 
         private static IServiceCollection AddRedisService(this IServiceCollection services, IConfiguration configuration)
         {
