@@ -1,5 +1,6 @@
 ﻿using E_Learning.GraduationProject.APIs.Errors;
 using E_Learning.GraduationProject.Core.Dtos.Auth;
+using E_Learning.GraduationProject.Core.Entities.Identity;
 using E_Learning.GraduationProject.Core.Service.Contract;
 using E_Learning.GraduationProject.Service.Services;
 using Microsoft.AspNetCore.Authorization;
@@ -7,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
+using System.Security.Claims;
 
 namespace E_Learning.GraduationProject.APIs.Controllers
 {
@@ -16,10 +18,12 @@ namespace E_Learning.GraduationProject.APIs.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IAuthService authService;
+        private readonly UserManager<ApplicationUser> userManager;
 
-        public AuthController(IAuthService authService)
+        public AuthController(IAuthService authService, UserManager<ApplicationUser> userManager)
         {
             this.authService = authService;
+            this.userManager = userManager;
         }
 
         [HttpPost("Register")]
@@ -99,6 +103,31 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         public IActionResult Logout()
         {
             return Ok(new { message = "Logout successful. Please remove the token from your storage." });
+        }
+
+        [HttpGet("CheckAuth")]
+        [Authorize]
+        public async Task<IActionResult> CheckAuth()
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (string.IsNullOrEmpty(userId))
+                return Unauthorized(new ApiErrorResponse(StatusCodes.Status401Unauthorized, "Invalid token"));
+
+            var user = await userManager.FindByIdAsync(userId);
+            if (user == null)
+                return Unauthorized(new ApiErrorResponse(StatusCodes.Status401Unauthorized, "User not found"));
+
+            var roles = await userManager.GetRolesAsync(user);
+
+            return Ok(new
+            {
+                Id = user.Id,
+                Email = user.Email,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                Roles = roles.ToList(),
+                IsAuthenticated = true
+            });
         }
 
     }
