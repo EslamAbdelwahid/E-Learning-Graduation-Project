@@ -113,7 +113,6 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         }
 
         [HttpGet("CheckAuth")]
-        [Authorize]
         public async Task<IActionResult> CheckAuth()
         {
             try
