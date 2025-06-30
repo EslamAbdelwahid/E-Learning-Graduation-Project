@@ -28,7 +28,8 @@ namespace E_Learning.GraduationProject.Core.Dtos.Auth
         [Required(ErrorMessage = "Address is Required!")]
         public AddressDto AddressDto { get; set; }
 
-        public bool IsInstructor { get; set; }
+        [Required(ErrorMessage = "Role is Required")]
+        public string Role { get; set; }
 
     }
 }
