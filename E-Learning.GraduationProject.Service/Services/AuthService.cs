@@ -85,7 +85,15 @@ namespace E_Learning.GraduationProject.Service.Services
             await unitOfWork.Repository<Student, int>().AddAsync(student);
             await unitOfWork.CompleteAsync();
 
-            await userManager.AddToRoleAsync(user, "Student");
+            if (registerDto.IsInstructor)
+            {
+                await userManager.AddToRoleAsync(user, "Instructor");
+            }
+            else
+            {
+                await userManager.AddToRoleAsync(user, "Student");
+            }
+            
 
             var appUserDto = new AppUserDto()
             {

@@ -14,43 +14,31 @@ namespace E_Learning.GraduationProject.Core.Specifications
         {
             Criteria = criteria;
         }
-
         public BaseSpecification()
         {
 
         }
 
-
         public Expression<Func<TEntity, bool>> Criteria { get; set; } = null;
-
         public List<Expression<Func<TEntity, object>>> Includes { get; set; } = new List<Expression<Func<TEntity, object>>>();
-
         public Expression<Func<TEntity, object>> OrderBy { get; set; } = null;
-
         public Expression<Func<TEntity, object>> OrderByDesc { get; set; } = null;
-
         public int Take { get; set; }
         public int Skip { get; set; }
         public bool IsPagination { get; set; }
-
         public void ApplyPagination(int take , int skip)
         {
             IsPagination = true;
             Take = take;
             Skip = skip;
         }
-
-
         public void AddOrderBy(Expression<Func<TEntity, object>> expression)
         {
             OrderBy = expression;
         }
-
         public void AddOrderByDesc(Expression<Func<TEntity, object>> expression)
         {
             OrderByDesc = expression;
         }
-
-
     }
 }

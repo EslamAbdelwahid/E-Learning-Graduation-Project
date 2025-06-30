@@ -52,8 +52,6 @@ namespace E_Learning.GraduationProject.Core.Specifications.Courses
         {
             ApplyIncludes();
         }
-
-
         private void ApplyIncludes()
         {
             Includes.Add(C => C.Instructor);
