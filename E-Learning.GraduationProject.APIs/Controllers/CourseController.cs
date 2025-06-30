@@ -26,7 +26,7 @@ namespace E_Learning.GraduationProject.APIs.Controllers
         }
 
         [HttpGet]
-        [Cached(300)] // 5 min
+       // [Cached(300)] // 5 min
         public async Task<ActionResult<PaginationResponseToReturn<CourseToReturnDto>>> GetAllCourses([FromQuery] CourseParams specParams)
         {
             var Courses = await _courseService.GetAllCoursesAsync(specParams);

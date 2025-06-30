@@ -31,7 +31,7 @@ namespace E_Learning.GraduationProject.APIs
             await app.AddMiddlewaresAsync();
 
            
-            app.UseCors("AllowAll");
+          
 
             app.Run();
         }

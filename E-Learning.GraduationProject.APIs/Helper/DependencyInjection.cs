@@ -34,6 +34,7 @@ using E_Learning.GraduationProject.Core.Mapping.Orders;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
 using E_Learning.GraduationProject.Core.Mapping.Contacts;
+using Microsoft.AspNetCore.HttpOverrides;
 
 
 namespace E_Learning.GraduationProject.APIs.Helper
@@ -44,7 +45,6 @@ namespace E_Learning.GraduationProject.APIs.Helper
         {
             services.AddBuiltInService();
             services.AddSwaggerService();
-            services.AddCorsService();
             services.AddUserDefinedService();
             services.AddDbContextService(configuration);
             services.AddAutoMapperService();
@@ -52,6 +52,7 @@ namespace E_Learning.GraduationProject.APIs.Helper
             services.AddAuthenticationService(configuration);
             services.AddRedisService(configuration);
             services.AddGoogleAuthentication(configuration);
+            services.AddCorsService();
             return services;
         }
         private static IServiceCollection AddBuiltInService(this IServiceCollection services)
@@ -218,11 +219,20 @@ namespace E_Learning.GraduationProject.APIs.Helper
 
         private static IServiceCollection AddCorsService(this IServiceCollection services)
         {
+            services.Configure<ForwardedHeadersOptions>(options =>
+            {
+                options.ForwardedHeaders =
+                    ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto;
+                // Only loopback proxies are allowed by default. Clear that restriction to enable it for any proxy.
+                options.KnownNetworks.Clear();
+                options.KnownProxies.Clear();
+            });
+
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowFrontend", policy =>
                 {
-                    policy.WithOrigins("http://localhost:5173", "https://edulearningplatform.netlify.app")  
+                    policy.WithOrigins("http://localhost:5173", "https://edulearningplatform.netlify.app")
                           .AllowAnyHeader()
                           .AllowAnyMethod()
                           .AllowCredentials();

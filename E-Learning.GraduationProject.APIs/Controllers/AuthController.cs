@@ -48,12 +48,13 @@ namespace E_Learning.GraduationProject.APIs.Controllers
             if (res is null) return Unauthorized(new ApiErrorResponse(StatusCodes.Status401Unauthorized));
 
             // Create cookie options (adjust as needed)
+
             var cookieOptions = new CookieOptions
             {
-                HttpOnly = true,
-                Secure = true, // Use true if in production with HTTPS
-                SameSite = SameSiteMode.Strict, // Adjust based on frontend origin
-                Expires = DateTime.UtcNow.AddDays(7) // Token expiration
+                HttpOnly = true, // Prevents client-side JavaScript access
+                Expires = DateTime.UtcNow.AddDays(7), // Or whatever your expiration is
+                Secure = true, // Always set to true for production (requires HTTPS)
+                SameSite = SameSiteMode.None // Crucial for cross-site requests
             };
 
             // Set the token in the cookie

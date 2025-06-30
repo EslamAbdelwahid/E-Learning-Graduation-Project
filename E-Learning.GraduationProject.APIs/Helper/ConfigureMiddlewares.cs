@@ -60,11 +60,13 @@ namespace E_Learning.GraduationProject.APIs.Helper
                 app.UseSwaggerUI();
             }
 
-            app.UseHttpsRedirection();
-            app.UseCors("AllowFrontend");
-            app.UseAuthentication();
-            app.UseAuthorization();
+            app.UseForwardedHeaders();
 
+            app.UseHttpsRedirection(); // Ensure this is present and correctly configured
+
+            app.UseRouting();
+
+            app.UseCors("AllowFrontend"); // Apply the CORS policy
 
             app.MapControllers();
             return app;
